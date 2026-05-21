@@ -1,4 +1,4 @@
-// import image from '../assets/images/si.png'
+import image from '../assets/images/SU.png'
  
 function Page() {
     return (
@@ -33,7 +33,8 @@ function Page() {
                     </div>
                 </div>
 
-                <div className="right w-full lg:w-1/2 bg-orange-400 rounded-3xl min-h-[20px] md:min-h-[20px] flex items-center justify-center">
+                <div className="right w-full lg:w-1/2  rounded-3xl min-h-[20px] md:min-h-[20px] flex items-center justify-center">
+                <img src={image} alt="" className='image'/>
                 </div>
             </div>
         </>
