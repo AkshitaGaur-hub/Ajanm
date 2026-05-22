@@ -40,7 +40,7 @@ body {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 18px 1.25rem;
 }
 
@@ -74,6 +74,7 @@ button {
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
+  margin-left: 15px;
 }
 
 button:hover {
@@ -304,6 +305,12 @@ button:hover {
   text-align: center;
 }
 
+.cardimage {
+  width:60px;
+  height:auto;
+}
+
+
 .footer {
   background: var(--fbg);
   margin-top: 2rem;
@@ -346,6 +353,7 @@ button:hover {
   border: none;
   border-radius: 7px;
   padding: 8px;
+  gap:4px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -424,7 +432,7 @@ button:hover {
 
 .leftprogram {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   line-height: 1.9;
   flex-direction: column;
   width: 35%;
@@ -457,7 +465,7 @@ button:hover {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 5px;
   align-items: center;
   text-align: left;
 }
@@ -466,6 +474,7 @@ button:hover {
   font-size: x-large;
   font-weight: bold;
 }
+
 
 @media (max-width: 768px) {
   nav {

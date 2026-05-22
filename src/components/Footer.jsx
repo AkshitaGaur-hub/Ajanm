@@ -1,6 +1,7 @@
 import React from 'react'
 import qr from '../assets/images/qr.png'
 import phone from '../assets/images/phone.png'
+import { FaGooglePlay,FaAppStore } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -18,7 +19,7 @@ const Footer = () => {
                 </div>
 
                 <div className="App">
-                    {/* <img src={} alt="" srcset="" /> */}
+                    <FaAppStore />
                     <div className="text flex flex-col">
                         <p>Download at</p>
                         <h3><b>App Store</b></h3>
@@ -26,7 +27,7 @@ const Footer = () => {
                 </div>
 
                 <div className="play flex">
-                    {/* <img src={} alt="" srcset="" /> */}
+                    <FaGooglePlay/>
                     <div className="text flex flex-col">
                         <p>Get it on</p>
                         <h3><b>Google Play</b></h3>
