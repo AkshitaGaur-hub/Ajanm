@@ -312,7 +312,7 @@ button:hover {
 
 
 .footer {
-  background: var(--fbg);
+  background: var(--primary);
   margin-top: 2rem;
   padding: 1rem;
   display: flex;
