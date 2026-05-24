@@ -20,7 +20,7 @@ function Program() {
     return (
         <>
             <div className='program'>
-                <div className="leftprogram w-[35%]">
+                <div className="leftprogram">
                     <div className="quote bg-white px-3 py-2 text-center rounded shadow my-2 w-fit">
                         THE AJANM PROGRAM
                     </div>
