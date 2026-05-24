@@ -21,7 +21,7 @@ function Features() {
             <li className='cursor-pointer hover:font-bold transition-all duration-300'>
               <Link to="/features">Features</Link>
             </li>
-            <Link to=''><li className='cursor-pointer hover:font-bold transition-all duration-300'>Ajanm App</li></Link>
+            <Link to='/ajanmapp'><li className='cursor-pointer hover:font-bold transition-all duration-300'>Ajanm App</li></Link>
             <Link to=''><li className='cursor-pointer hover:font-bold transition-all duration-300'>Programs</li></Link>
             <Link to=''><li className='cursor-pointer hover:font-bold transition-all duration-300'>Testimonals</li></Link>
             <Link to=''><li className='cursor-pointer hover:font-bold transition-all duration-300'>About Us</li></Link>

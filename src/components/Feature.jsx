@@ -1,16 +1,17 @@
 import "./Features.css"
 import Navbar from './Navbar'
 import Footer from './Footer'
-import { FaHeart, FaComments, FaAppleAlt } from "react-icons/fa";
-
+import msg from '../assets/images/msg.png'
+import heart from '../assets/images/heart.png'
+import apple from '../assets/images/apple.png'
 function Feature() {
     return (
         <>
             <Navbar />
-            <div class='features'>
-                <h1 class='heading'>Features of the Program</h1>
-                <p class='para'>Everything you need for a complete </p>
-                <p class='para'>mind-body transformation</p>
+            <div className='features'>
+                <h1 className='heading'>Features of the Program</h1>
+                <p className='para'>Everything you need for a complete </p>
+                <p className='para'>mind-body transformation</p>
                 <div className="centercard">
                     <div className='card_container'>
                         <div className="card1">
@@ -94,9 +95,7 @@ function Feature() {
 
                         <div className="health-card">
                             <div className="icon-wrapper">
-                                <i className="icon-heart-line">
-                                    <FaHeart/>
-                                </i>
+                                <img src={heart} alt="" className="icon-img" />
                             </div>
 
                             <h4 className="card-title">Physical Health</h4>
@@ -108,9 +107,7 @@ function Feature() {
 
                         <div className="health-card">
                             <div className="icon-wrapper">
-                                <i className="icon-chat">
-                                    <FaComments/>
-                                </i>
+                                <img src={msg} alt="" className="icon-img" />
                             </div>
 
                             <h4 className="card-title">Mental Health</h4>
@@ -122,9 +119,7 @@ function Feature() {
 
                         <div className="health-card">
                             <div className="icon-wrapper">
-                                <i className="icon-food-line">
-                                    <FaAppleAlt/>
-                                </i>
+                                <img src={apple} alt="" className="icon-img" />
                             </div>
 
                             <h4 className="card-title">Lifestyle Concerns</h4>

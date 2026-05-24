@@ -5,6 +5,7 @@ import Table from './components/Table'
 import Program from './components/Program'
 import Footer from './components/Footer'
 import Feature from "./components/Feature";
+import AjanmApp from "./components/AjanmApp"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         } />
 
         <Route path="/features" element={<Feature/>}/>
+        <Route path="/ajanmapp" element={<AjanmApp/>}/>
         </Routes>
       </BrowserRouter>
 

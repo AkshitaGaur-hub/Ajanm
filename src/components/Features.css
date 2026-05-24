@@ -1,27 +1,28 @@
-.features{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    /* margin-left: 2rem; */
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* margin-left: 2rem; */
 }
-.heading{
-    font-weight: bolder;
-    font-size:xx-large;
-}
-
-.para{
-    font-weight:lighter;
-    font-size:small;
+.heading {
+  font-weight: bolder;
+  font-size: xx-large;
 }
 
-.centercard{
-    display:flex;
-    justify-content: center;
-    margin-top: 2rem;
+.para {
+  font-weight: lighter;
+  font-size: small;
+}
+
+.centercard {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .health-section {
+  margin-top: 2rem;
   padding: 80px 20px;
   background: var(--fbg);
   color: var(--text);
@@ -45,12 +46,12 @@
 .health-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 20px;
 }
 
 .health-card {
   background: white;
-  padding: 30px;
+  padding: 10px;
   border-radius: 20px;
   text-align: center;
 }
@@ -64,4 +65,31 @@
 .card-desc {
   margin-top: 10px;
   color: gray;
+}
+
+.icon-img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* For Ajnam App page */
+.ajnamapp{
+    display: flex;
+}
+.lhs {
+  display: flex;
+  justify-content: center;
+}
+.rhs {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  text-align: left;
+  line-height: 2;
 }
