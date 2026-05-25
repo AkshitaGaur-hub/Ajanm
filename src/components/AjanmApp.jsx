@@ -3,6 +3,9 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import './Features.css'
 import { IoMdCheckbox } from "react-icons/io";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
+import { FaAppStoreIos } from "react-icons/fa";
+
 
 
 const AjanmApp = () => {
@@ -34,7 +37,15 @@ const AjanmApp = () => {
                     <h1 className='heading'>Ajanm App</h1>
                     <b>Your wellness companion in your pocket</b>
                     <div className="point my-4">
-                        <IoMdCheckbox />
+                        <span className='flex items-center gap-4'><IoMdCheckbox /><p>Personalized Plans</p></span>
+                        <span className='flex items-center gap-4'><IoMdCheckbox /><p>Track Progress</p></span>
+                        <span className='flex items-center gap-4'><IoMdCheckbox /><p>Daily reminders</p></span>
+                        <span className='flex items-center gap-4'><IoMdCheckbox /><p>Expert support</p></span>
+                        <span className='flex items-center gap-4'><IoMdCheckbox /><p>Insights and analytics</p></span>
+                    </div>
+                    <div className="btn flex">
+                     <button className="download flex items-center gap-4"><FaAppStoreIos/>App store</button>
+                      <button className="download flex items-center gap-4"><IoLogoGooglePlaystore />Google Play</button>
                     </div>
                 </div>
             </div>

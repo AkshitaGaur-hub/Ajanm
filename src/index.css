@@ -285,7 +285,7 @@ button:hover {
 
 .card_container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
   width: 80%;
@@ -310,6 +310,12 @@ button:hover {
   height:auto;
 }
 
+iframe{
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    border-radius: 20px;
+}
 
 .footer {
   background: var(--primary);
@@ -387,12 +393,18 @@ button:hover {
 }
 
 .card_container {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
-  width: 80%;
+      display: flex;
+    justify-content: space-around;
+    /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
+    gap: 20px;
+    width: 80%;
 }
-
+html{
+    scroll-behavior: smooth;
+}
+.testimon{
+  margin-left:2rem;
+}
 .star {
   width: 70px;
   height: auto;

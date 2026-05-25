@@ -93,3 +93,56 @@
   text-align: left;
   line-height: 2;
 }
+.point{
+    line-height: 5;
+    font-size: medium;
+}
+.download{
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+.download:hover{
+    background-color: rgb(46, 46, 46);
+}
+
+
+/* Ajanm Program */
+.pro{
+    height:900px;
+    width:450px;
+}
+.lefths{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.righths{
+    display: flex;
+    justify-content: center;
+}
+.cardss{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin-left: 8rem;
+}
+.items{
+    background-color: var(--white);
+    border-radius: 20px;
+    /* padding:20px; */
+    width:25vw;
+    align-items: center;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8rem;
+  
+}
+
+.number{
+    width:70px;
+    height:120px;
+}

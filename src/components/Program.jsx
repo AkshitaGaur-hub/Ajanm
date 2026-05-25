@@ -36,14 +36,14 @@ function Program() {
                 <div className="rightprogram">
                     <div className='card_container'>
                         <div className="card1">
-                            <img src={women} alt="" srcset="" className="cardimage"/>
+                            <img src={women} alt="" srcset="" className="cardimage" />
                             <div className="cardt">
                                 <h2 className='card-title'><b>Yoga & Movement</b></h2>
                                 <p className='card-text'>Therapeutic exercises for strength, flexibility & healing.</p>
                             </div>
                         </div>
                         <div className="card1">
-                            <img src={habit} alt="" srcset="" className="cardimage"/>
+                            <img src={habit} alt="" srcset="" className="cardimage" />
                             <div className="cardt">
                                 <h2 className='card-title'><b>Nutrition & Diet</b></h2>
                                 <p className='card-text'>Personalized nutrition plans for optimal health.</p>
@@ -51,7 +51,7 @@ function Program() {
                         </div>
 
                         <div className="card1">
-                            <img src={mind} alt="" srcset="" className="cardimage"/>
+                            <img src={mind} alt="" srcset="" className="cardimage" />
                             <div className="cardt">
                                 <h2 className='card-title'><b>Habit & Lifestyle</b></h2>
                                 <p className='card-text'>Build sustainable habits for long term wellness.</p>
@@ -59,7 +59,7 @@ function Program() {
 
                         </div>
                         <div className="card1">
-                            <img src={med} alt="" srcset="" className="cardimage"/>
+                            <img src={med} alt="" srcset="" className="cardimage" />
                             <div className="cardt">
                                 <h2 className='card-title'><b>Mind & Breath</b></h2>
                                 <p className='card-text'>Pranayama & meditation for mental clarity & stress relief.</p>
@@ -67,14 +67,14 @@ function Program() {
                         </div>
 
                         <div className="card1">
-                            <img src={mon} alt="" srcset="" className="cardimage"/>
+                            <img src={mon} alt="" srcset="" className="cardimage" />
                             <div className="cardt">
                                 <h2 className='card-title'><b>AI Tracking</b></h2>
                                 <p className='card-text'>Smart analytics to monitor your progress.</p>
                             </div>
                         </div>
                         <div className="card1">
-                            <img src={man} alt="" srcset="" className="cardimage"/>
+                            <img src={man} alt="" srcset="" className="cardimage" />
                             <div className="cardt">
                                 <h2 className='card-title'><b>Expert Support</b></h2>
                                 <p className='card-text'>Guidance from expert proffesionals every step of the way.</p>
@@ -122,23 +122,26 @@ function Program() {
             </div>
 
 
-            <div className="real">
+            <div id="testimonials" className='testimon'>
+                <h1 className='text-5xl font-extrabold'>Testimonials</h1>
+                <div className="real">
                 <h1 className='text-3xl'><b>Real People, Real Transformation</b></h1>
                 <div className='card_container'>
                     <div className="card1">
-                        <p className='card-title'>Thanks to AJANM, I am stress free, Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque.</p>
+                        <p className='card-title text-2xl'>Thanks to AJANM, I am stress free, Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque.</p>
                         <h2 className='card-text flex flex-col'><b>Karan Kukreja</b><p className='flex items-center gap-8'>Bhopal, India <img className='star' src={star} alt="" /></p></h2>
                     </div>
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/JFHEh9XaSvA"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
 
-                    <div className="card1">
-                        <p className='card-title'>I Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, debitis?</p>
-                        <h2 className='card-text flex flex-col'><b>Neha Sharma</b><p className='flex items-center gap-8'>Delhi, India <img className='star' src={star} alt="" /></p></h2>
-                    </div>
-
-                    <div className="card1">
-                        <p className='card-title'>Lost 13kgs, improved PCOS Lorem ipsum dolor sit amet consectetur.</p>
-                        <h2 className='card-text flex flex-col'><b>Priya Mehta</b><p className='flex items-center gap-8'>Mumbai, India <img className='star' src={star} alt="" /></p></h2>
-                    </div>
+                </div>
                 </div>
             </div>
         </>
