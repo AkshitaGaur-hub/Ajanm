@@ -39,24 +39,16 @@ const Footer = () => {
                 </div>
             </div> */}
             <div className="footer text-black py-6 flex flex-col md:flex-row p-4 md:p-8 gap-6 md:gap-12 justify-between">
-    {/* address section */}
-    <div className='address'>
-        <h2 className='text-xl font-bold'>Address</h2>
-        <p>Shri Maa Bharti Sr. Sec. School</p>
-        <p>Shiv Colony, Behind Power house, Chirawa, Rajasthan</p>
-        <p>Contact no. - 9352122398</p>
-        <span>Email - <a href="mailto:@gmail.com" className="text-green-900 hover:underline">mailid</a></span>
-        
-    </div>
+    
     <vr className="border-l border-gray-600"></vr>
     {/*Links*/}
      <div className='links flex flex-col gap-2'>
         <h2 className='text-xl font-bold'>Links</h2>
         <a href="/" className="text-green-900 hover:underline">Home</a>
         <a href="/features" className="text-green-900 hover:underline">Features</a>
-        <a href="/" className="text-green-900 hover:underline">Ajanm App</a>
-        <a href="/" className="text-green-900 hover:underline">Program</a>
-        <a href="/" className="text-green-900 hover:underline">About us</a>
+        <a href="/ajanmapp" className="text-green-900 hover:underline">Ajanm App</a>
+        <a href="/ajanmprogram" className="text-green-900 hover:underline">Program</a>
+        <a href="/aboutus" className="text-green-900 hover:underline">About us</a>
     </div>
     <vr className="border-l border-gray-600"></vr>
     {/* copyright */}

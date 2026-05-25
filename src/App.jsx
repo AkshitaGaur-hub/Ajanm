@@ -7,6 +7,8 @@ import Footer from './components/Footer'
 import Feature from "./components/Feature";
 import AjanmApp from "./components/AjanmApp"
 import AjanmProgram from "./components/AjanmProgram"
+import Aboutus from "./components/Aboutus"
+import Blogs from "./components/Blogs"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
         <Route path="/features" element={<Feature/>}/>
         <Route path="/ajanmapp" element={<AjanmApp/>}/>
         <Route path="/ajanmprogram" element={<AjanmProgram/>}/>
+        <Route path="/aboutus" element={<Aboutus/>}/>
+        <Route path="/blogs" element={<Blogs/>}/>
 
         </Routes>
       </BrowserRouter>

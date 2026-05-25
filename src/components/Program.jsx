@@ -128,7 +128,7 @@ function Program() {
                 <h1 className='text-3xl'><b>Real People, Real Transformation</b></h1>
                 <div className='card_container'>
                     <div className="card1">
-                        <p className='card-title text-2xl'>Thanks to AJANM, I am stress free, Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque.</p>
+                        <p className='card-title text-xl'>Thanks to AJANM, I am stress free, Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque.</p>
                         <h2 className='card-text flex flex-col'><b>Karan Kukreja</b><p className='flex items-center gap-8'>Bhopal, India <img className='star' src={star} alt="" /></p></h2>
                     </div>
                     <iframe
