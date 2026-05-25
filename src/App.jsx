@@ -9,6 +9,7 @@ import AjanmApp from "./components/AjanmApp"
 import AjanmProgram from "./components/AjanmProgram"
 import Aboutus from "./components/Aboutus"
 import Blogs from "./components/Blogs"
+import Subscribe from "./components/Subscribe.jsx"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/ajanmprogram" element={<AjanmProgram/>}/>
         <Route path="/aboutus" element={<Aboutus/>}/>
         <Route path="/blogs" element={<Blogs/>}/>
+        <Route path="/subscribe" element={<Subscribe/>}/>
 
         </Routes>
       </BrowserRouter>

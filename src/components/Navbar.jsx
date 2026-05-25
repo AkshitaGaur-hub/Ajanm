@@ -29,7 +29,9 @@ function Features() {
             <Link to='/aboutus'><li className='cursor-pointer hover:font-bold transition-all duration-300'>About Us</li></Link>
             <Link to='/blogs'><li className='cursor-pointer hover:font-bold transition-all duration-300'>Blogs</li></Link>
           </ul>
+          <Link to='/subscribe'>
           <button className="color border-radius padding flex align-items">Subscribe Now</button>
+          </Link>
         </div>
       </nav>
     </>

@@ -1,4 +1,6 @@
 import image from '../assets/images/SU.png'
+import { Link } from "react-router-dom";
+
  
 function Page() {
     return (
@@ -16,7 +18,9 @@ function Page() {
                         <span id="para">and empower you.</span>
                     </div>
                     <div id="programbtn" className="flex flex-wrap gap-4">
+                        <Link to="/subscribe">
                         <button className="color border-radius padding flex align-items">Start Your Journey</button>
+                        </Link>
                         <button className='explore-btn border-radius padding flex align-items'>Explore Program</button>
                     </div>
 
