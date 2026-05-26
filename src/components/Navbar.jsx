@@ -1,23 +1,37 @@
 import { Link } from "react-router-dom";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 
 function Features() {
+  const [open, setOpen] = useState(false);
   return (
     <>
-      <nav className='flex flex-col md:flex-row md:items-center justify-between p-4 gap-4'>
+      <nav className='flex flex-col md:flex-row md:items-center justify-between px-4 py-3 gap-4 overflow-x-hidden'>
         <div className="logo">
           <Link to='/'>
-            {/* <img
-              src="https://ajanm.ai/wp-content/uploads/2024/04/Ajnk.png"
-              alt="Ajanm Logo"
-              className="max-h-[50px]"
-            /> */}
             <span className='font-bold text-2xl md:text-3xl mx-2'>AJANM</span>
           </Link>
 
         </div>
 
-        <div className='flex flex-col md:flex-row md:items-center gap-4 w-full md:w-auto'>
-          <ul className='flex flex-wrap gap-3 md:gap-6 items-center justify-center md:justify-start'>
+        <div className='flex items-center justify-between w-full md:w-auto'>
+          <div
+            className="hamburger md:hidden cursor-pointer z-2"
+            onClick={() => setOpen(!open)}
+          >
+            {open ? <X /> : <Menu />}
+          </div>
+
+          <ul
+            className={`
+    navlinks
+    ${open ? "active" : ""}
+    flex flex-col md:flex-row
+    gap-6
+    items-center
+    justify-center md:justify-start
+  `}
+          >
             <li className='cursor-pointer hover:font-bold transition-all duration-300'>
               <Link to="/features">Features</Link>
             </li>
@@ -29,8 +43,13 @@ function Features() {
             <Link to='/aboutus'><li className='cursor-pointer hover:font-bold transition-all duration-300'>About Us</li></Link>
             <Link to='/blogs'><li className='cursor-pointer hover:font-bold transition-all duration-300'>Blogs</li></Link>
           </ul>
-          <Link to='/subscribe'>
-          <button className="color border-radius padding flex align-items">Subscribe Now</button>
+          <Link
+            to='/subscribe'
+            className="mx-auto md:mx-0"
+          >
+            <button className="color border-radius padding flex align-items">
+              Subscribe Now
+            </button>
           </Link>
         </div>
       </nav>

@@ -7,6 +7,7 @@ function Page() {
         <>
             <div className='container mx-auto flex flex-col lg:flex-row w-full justify-center items-start gap-8 py-8'>
                 <div className="left w-full lg:w-1/2 flex flex-col justify-center gap-6">
+                <div className="hero">
                     <div className="quote bg-white px-3 py-2 text-center rounded shadow my-2 w-fit">
                         108-DAY TRANSFORMATION JOURNEY
                     </div>
@@ -17,6 +18,7 @@ function Page() {
                         <span id="para">wisdom with cutting-edge AI technology to heal, rejuvenate</span>
                         <span id="para">and empower you.</span>
                     </div>
+                </div>
                     <div id="programbtn" className="flex flex-wrap gap-4">
                         <Link to="/subscribe">
                         <button className="color border-radius padding flex align-items">Start Your Journey</button>

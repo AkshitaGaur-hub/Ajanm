@@ -125,23 +125,34 @@ function Program() {
             <div id="testimonials" className='testimon'>
                 <h1 className='text-5xl font-extrabold'>Testimonials</h1>
                 <div className="real">
-                <h1 className='text-3xl'><b>Real People, Real Transformation</b></h1>
-                <div className='card_container'>
-                    <div className="card1">
-                        <p className='card-title text-xl'>Thanks to AJANM, I am stress free, Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque.</p>
-                        <h2 className='card-text flex flex-col'><b>Karan Kukreja</b><p className='flex items-center gap-8'>Bhopal, India <img className='star' src={star} alt="" /></p></h2>
-                    </div>
-                    <iframe
-                        width="560"
-                        height="315"
-                        src="https://www.youtube.com/embed/JFHEh9XaSvA"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                    ></iframe>
+                    <h1 className='text-3xl'><b>Real People, Real Transformation</b></h1>
+                    <div className="testimonial_container">
 
-                </div>
+                        <div className="testimonial_card">
+                            <p className="testimonial_text">
+                                “Thanks to AJANM, I am stress free. The personalized yoga and nutrition
+                                guidance completely changed my lifestyle and mindset.”
+                            </p>
+
+                            <div className="testimonial_user">
+                                <div>
+                                    <h3>Karan Kukreja</h3>
+                                    <span>Bhopal, India</span>
+                                </div>
+
+                                <img className='star' src={star} alt="" />
+                            </div>
+                        </div>
+
+                        <iframe
+                            src="https://www.youtube.com/embed/JFHEh9XaSvA"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+
+                    </div>
                 </div>
             </div>
         </>
