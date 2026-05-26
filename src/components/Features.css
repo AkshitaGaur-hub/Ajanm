@@ -190,6 +190,9 @@
 /* Blogs */
 
 /* Subscribe */
+.sub{
+
+}
 .subscribe {
   margin-left: 3rem;
   /* line-height: 5; */
@@ -216,6 +219,14 @@
   border-radius: 50px;
   width: 50px;
   height: 50px;
+}
+
+.rhside {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+.lhside {
+  width: 50%;
 }
 /* Responsive */
 
@@ -289,14 +300,43 @@
     justify-content: center;
     align-items: center;
   }
-  .ab{
-    display:none;
+  .ab {
+    display: none;
   }
-  .lhands{
-    width:100%;
+  .lhands {
+    width: 100%;
   }
-  .rhands{
+  .rhands {
     margin-left: 0;
     margin-top: 1rem;
+  }
+  .sn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rhside {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .lhside {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .siddhasana {
+    margin: 1rem;
+    width: 353px;
+    height: 250px;
+    border-radius: 20px;
+  }
+  .subscribe {
+    margin-left: 0;
+  }
+  .sub{
+    margin-left: 2rem;
   }
 }

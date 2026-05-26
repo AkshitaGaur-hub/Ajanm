@@ -9,14 +9,16 @@ const Subscribe = () => {
         <>
             <Navbar />
             <div className="subscribe">
+                <div className="sub">
                 <h1 className="heading ">Subscribe Now</h1>
                 <h3 className='text-2xl font-light'>Choose Your Plan</h3>
                 <p className="para text-gray-600">Start Your Journy Today</p>
+                </div>
                 <div className="sn flex">
-                    <div className="lhside w-[50%]">
+                    <div className="lhside">
                         <img src={image} alt="" className='siddhasana' />
                     </div>
-                    <div className="rhside w-[50%]">
+                    <div className="rhside">
                         <div className="fee">
                             <h3 className='text-2xl font-bold'>108-Days of Transformation</h3>
                             <h1 className="heading">₹2100</h1>
@@ -30,7 +32,7 @@ const Subscribe = () => {
                                 <span className='flex items-center gap-3'><IoMdCheckbox /><p className='m-0'>Free access to our contents</p></span>
                                 <span className='flex items-center gap-3'><IoMdCheckbox /><p className='m-0'>Free access to Live webinars</p></span>
                             </div>
-                            <button>Pay now</button>
+                            <button className='m-1'>Pay now</button>
                         </div>
                     </div>
                 </div>
