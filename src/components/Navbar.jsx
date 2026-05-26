@@ -24,14 +24,32 @@ function Features() {
 
           <ul
             className={`
-    navlinks
-    ${open ? "active" : ""}
-    flex flex-col md:flex-row
-    gap-6
+    fixed top-0
+    ${open ? "right-0" : "-right-full"}
+
+    h-screen w-[70%]
+    bg-[#fff9f1] shadow-2xl
+
+    flex flex-col
+    gap-8
     items-center
-    justify-center md:justify-start
+    justify-center
+
+    transition-all duration-500
+
+    md:static
+    md:h-auto
+    md:w-auto
+    md:bg-transparent
+    md:shadow-none
+    md:flex-row
+    md:gap-6
+    md:translate-x-0
+
+    z-40
   `}
           >
+            <Link to='/'><li className='cursor-pointer hover:font-bold transition-all duration-300'>Home</li></Link>
             <li className='cursor-pointer hover:font-bold transition-all duration-300'>
               <Link to="/features">Features</Link>
             </li>

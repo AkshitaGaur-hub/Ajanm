@@ -13,12 +13,10 @@ const AjanmApp = () => {
         <>
             <Navbar />
             <div className="ajnamapp">
-                <div className="lhs w-[50%]">
+                <div className="lhs">
                     <img
-                        width="480px"
-                        height="550px"
                         src="https://ajanm.ai/wp-content/uploads/2025/05/download-ajanm-app.png"
-                        className="scale-with-grid"
+                        className="appphone"
                         alt="Download Ajanm App"
                         decoding="async"
                         loading="lazy"
@@ -33,7 +31,7 @@ const AjanmApp = () => {
                         sizes="(max-width:767px) 480px, (max-width:780px) 100vw, 780px"
                     />
                 </div>
-                <div className="rhs w-[50%]">
+                <div className="rhs">
                     <h1 className='heading'>Ajanm App</h1>
                     <b>Your wellness companion in your pocket</b>
                     <div className="point my-4">

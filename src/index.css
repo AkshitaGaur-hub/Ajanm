@@ -326,14 +326,9 @@ button:hover {
 
 .footer {
   background: var(--primary);
-  /* margin-top: 2rem; */
+  width: 100%;
   padding: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: space-around;
-  align-items: center;
-  height: auto;
+  box-sizing: border-box;
 }
 
 .mob {
@@ -400,11 +395,11 @@ button:hover {
   justify-content: center;
 }
 
-.card_container{
-    display: grid;
-    grid-template-columns: repeat(3, 260px);
-    justify-content: center;
-    gap: 20px;
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(3, 260px);
+  justify-content: center;
+  gap: 20px;
 }
 
 html {

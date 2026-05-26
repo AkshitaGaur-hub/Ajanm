@@ -14,8 +14,6 @@ const AjanmProgram = () => {
     return (
         <>
             <Navbar />
-            <div className="ajanmprogram flex">
-                <div className="lefths w-[50%]">
                     <div className="top">
                         <h1 className="heading">
                             The AJANM Program
@@ -25,6 +23,8 @@ const AjanmProgram = () => {
                             A 105-day structured program designed for lasting transformation.
                         </p>
                     </div>
+            <div className="ajanmprogram flex">
+                <div className="lefths">
                     <div className="cardss">
                         <div className='items flex'>
                             <img src={num1} alt="" className='number' />
@@ -72,7 +72,7 @@ const AjanmProgram = () => {
                     </div>
                 </div>
 
-                <div className="righths w-[50%]">
+                <div className="righths">
                     <img src={pro} alt="" className='pro' />
                 </div>
             </div>

@@ -40,7 +40,7 @@ const Footer = () => {
             </div> */}
             <div className="footer text-black py-6 flex flex-col md:flex-row p-4 md:p-8 gap-6 md:gap-12 justify-between">
     
-    <vr className="border-l border-gray-600"></vr>
+    {/* <div className="hidden md:block w-px bg-gray-600"></div> */}
     {/*Links*/}
      <div className='links flex flex-col gap-2'>
         <h2 className='text-xl font-bold'>Links</h2>
@@ -50,7 +50,7 @@ const Footer = () => {
         <a href="/ajanmprogram" className="text-green-900 hover:underline">Program</a>
         <a href="/aboutus" className="text-green-900 hover:underline">About us</a>
     </div>
-    <vr className="border-l border-gray-600"></vr>
+    <div className="hidden md:block w-px bg-gray-600"></div>
     {/* copyright */}
      <div className='admission'>
         <h2 className='text-xl font-bold'>For Subscription</h2>
