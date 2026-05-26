@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { HashLink } from 'react-router-hash-link';
 
 function Features() {
   const [open, setOpen] = useState(false);
@@ -56,7 +57,9 @@ function Features() {
             <Link to='/ajanmapp'><li className='cursor-pointer hover:font-bold transition-all duration-300'>Ajanm App</li></Link>
             <Link to='/ajanmprogram'><li className='cursor-pointer hover:font-bold transition-all duration-300'>Programs</li></Link>
             <li className='cursor-pointer hover:font-bold transition-all duration-300'>
-              <a href="#testimonials">Testimonials</a>
+              <HashLink smooth to="/#testimonials">
+                Testimonials
+              </HashLink>
             </li>
             <Link to='/aboutus'><li className='cursor-pointer hover:font-bold transition-all duration-300'>About Us</li></Link>
             <Link to='/blogs'><li className='cursor-pointer hover:font-bold transition-all duration-300'>Blogs</li></Link>
