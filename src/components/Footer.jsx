@@ -42,29 +42,29 @@ const Footer = () => {
     
     {/* <div className="hidden md:block w-px bg-gray-600"></div> */}
     {/*Links*/}
-     <div className='links flex flex-col gap-2'>
+     <div className='links flex flex-col gap-2 text-white'>
         <h2 className='text-xl font-bold'>Links</h2>
-        <a href="/" className="text-green-900 hover:underline">Home</a>
-        <a href="/features" className="text-green-900 hover:underline">Features</a>
-        <a href="/ajanmapp" className="text-green-900 hover:underline">Ajanm App</a>
-        <a href="/ajanmprogram" className="text-green-900 hover:underline">Program</a>
-        <a href="/aboutus" className="text-green-900 hover:underline">About us</a>
+        <a href="/" className="text-white hover:underline">Home</a>
+        <a href="/features" className="text-white hover:underline">Features</a>
+        <a href="/ajanmapp" className="text-white hover:underline">Ajanm App</a>
+        <a href="/ajanmprogram" className="text-white hover:underline">Program</a>
+        <a href="/aboutus" className="text-white hover:underline">About us</a>
     </div>
-    <div className="hidden md:block w-px bg-gray-600"></div>
+    <div className="hidden text-white md:block w-px bg-gray-600"></div>
     {/* copyright */}
      <div className='admission'>
-        <h2 className='text-xl font-bold'>For Subscription</h2>
-        <p>Please contact us for Any Queries.</p>
-        <span>Email - <a href="mailto:@gmail.com" className="text-green-900 hover:underline">mailid</a>
+        <h2 className='text-xl text-white font-bold'>For Subscription</h2>
+        <p className='text-white'>Please contact us for Any Queries.</p>
+        <span className='text-white'>Email - <a href="mailto:@gmail.com" className="text-white hover:underline">mailid</a>
         </span>
-        <p className='mt-4 text-sm'>&copy; {new Date().getFullYear()} Ajanm.ai | All rights reserved.</p>
+        <p className='mt-4 text-sm text-white'>&copy; {new Date().getFullYear()} Ajanm.ai | All rights reserved.</p>
     </div>
     <vr className="border-l border-gray-600"></vr>
     {/* ads */}
     <div className='flex '>
        <div className='ads'>
-        <h2 className='text-xl font-bold'>Connect With Us</h2>
-        <p>Follow us on social media for updates and news.</p>
+        <h2 className='text-xl text-white font-bold'>Connect With Us</h2>
+        <p className='text-white'>Follow us on social media for updates and news.</p>
         {/* <div className='social-icons flex gap-4 mt-2'>
             <a href="https://www.facebook.com/shrimaabhartischool" target="_blank" rel="noopener noreferrer" className="">
                 <FontAwesomeIcon
@@ -86,9 +86,9 @@ const Footer = () => {
             </a>
            
         </div> */}
-        <hr className="border-t border-gray-600 my-4"></hr>
+        <hr className="border-t text-white border-gray-600 my-4"></hr>
 
-        <p >Desgined and developed with <span className="cursor-pointer">💚</span></p>
+        <p className='text-white'>Desgined and developed with <span className="cursor-pointer">💚</span></p>
     </div>
     </div>
     </div>
