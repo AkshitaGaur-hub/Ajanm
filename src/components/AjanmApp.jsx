@@ -12,11 +12,11 @@ const AjanmApp = () => {
     return (
         <>
             <Navbar />
-            <div className="ajnamapp">
+            <div className="ajnamapp overflow-hidden">
                 <div className="lhs">
                     <img
                         src="https://ajanm.ai/wp-content/uploads/2025/05/download-ajanm-app.png"
-                        className="appphone"
+                        className="appphone w-full max-w-[240px] h-auto"
                         alt="Download Ajanm App"
                         decoding="async"
                         loading="lazy"

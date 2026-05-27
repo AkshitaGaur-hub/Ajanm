@@ -11,13 +11,23 @@
   --nav-gap: 24px;
   --fbg: #fbdfb9;
 }
+html,
+body {
+  overflow-x: hidden;
+  padding-top: 50px;
+}
 
 * {
-  max-width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* border: 1px solid red; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .image {
@@ -44,14 +54,25 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 18px 1.25rem;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: var(--bg);
+  width: 100%;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-
+.go {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+}
 ul {
   display: flex;
   align-items: center;
@@ -59,7 +80,7 @@ ul {
   list-style: none;
 }
 .hamburger {
-  display: none;
+  color: black;
   cursor: pointer;
   z-index: 1000;
 }
@@ -286,19 +307,18 @@ button:hover {
   width: 100%;
 }
 
+.p_container {
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  justify-content: center;
+  gap: 20px;
+}
+
 .card_container {
-  /* display: grid;
-  grid-template-columns: repeat(2, 320px);
-  justify-content: center;
-  gap: 24px;
-  width: 100%; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 395px);
+    justify-content: center;
+    gap: 38px;
 }
 
 .testimonial_container {
@@ -328,7 +348,10 @@ button:hover {
   background: var(--primary);
   width: 100%;
   padding: 1rem;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .mob {
@@ -509,7 +532,17 @@ iframe {
 
 @media (max-width: 768px) {
   .hamburger {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 70px;
+    font-weight: 600;
+    font-size: large;
+    list-style: none;
+  }
+
+  .ull {
+    color: white;
   }
   .testimonial_container {
     display: flex;
@@ -608,8 +641,7 @@ iframe {
   .footer {
     flex-direction: column;
     align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem;
+    text-align: center;
   }
 
   .mob {
@@ -687,5 +719,90 @@ iframe {
 @media (max-width: 540px) {
   .tableborder > div {
     flex: 1 1 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .ajnamapp,
+  .ajanmprogram,
+  .team,
+  .program {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .lhs,
+  .rhs,
+  .lefths,
+  .righths,
+  .lhands,
+  .rhands,
+  .leftprogram,
+  .rightprogram,
+  .rhside,
+  .lhside {
+    width: 100%;
+  }
+
+  .rhs {
+    padding: 2rem;
+    margin: 0;
+    align-items: center;
+  }
+
+  .cardss,
+  .top,
+  .rhands,
+  .subscribe,
+  .sub {
+    margin-left: 0;
+  }
+
+  .items {
+    width: 90%;
+  }
+
+  .appphone {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+  }
+
+  .pro {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .ab {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .siddhasana {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 1rem auto;
+  }
+
+  .health-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card_container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+  }
+
+  .testimonial_card {
+    width: 90%;
   }
 }

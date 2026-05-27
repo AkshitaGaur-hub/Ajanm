@@ -34,7 +34,7 @@ function Program() {
                     </button>
                 </div>
                 <div className="rightprogram">
-                    <div className='card_container'>
+                    <div className='p_container'>
                         <div className="card1">
                             <img src={women} alt="" srcset="" className="cardimage" />
                             <div className="cardt">
