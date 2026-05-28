@@ -8,74 +8,96 @@ function Features() {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <nav className='flex flex-col md:flex-row md:items-center justify-between px-4 py-3 gap-4 overflow-x-hidden'>
-        <div className="logo flex">
-          <Link to='/'>
-          <img src={logo} alt="" className="go"/>
-            <span className='font-bold text-2xl md:text-3xl'>AJANM</span>
-          </Link>
+      <nav className='flex items-center justify-between px-4 py-3 overflow-x-hidden'>
 
-        </div>
+        {/* LOGO */}
+        <Link to='/' className="flex items-center gap-2">
+          <img src={logo} alt="" className="go" />
+          <span className='font-bold text-2xl md:text-3xl'>
+            AJANM
+          </span>
+        </Link>
 
-        <div className='flex items-center justify-between w-full md:w-auto'>
+        <div className='flex items-center gap-4 md:w-auto'>
+
+          {/* HAMBURGER */}
           <div
-            className="hamburger md:hidden cursor-pointer z-2"
+            className="hamburger md:hidden cursor-pointer z-50"
             onClick={() => setOpen(!open)}
           >
             {open ? <X /> : <Menu />}
           </div>
 
+          {/* NAV LINKS */}
           <ul
-            className={`hamburger ull
-    fixed top-0
-    ${open ? "right-0" : "-right-full"}
+            className={`
+        fixed top-0 left-0
+        h-screen w-[75%]
+        bg-white shadow-2xl
+        flex flex-col
+        gap-8
+        pt-24
+        px-8
+        text-lg
+        font-medium
+        transition-all duration-500
+        z-40
 
-    h-screen w-[70%]
-    bg-[#e67e22] shadow-2xl
-    text-bold
-    text-white
-    flex flex-col
-    gap-8
-    // items-center
-    justify-center
-    m-2
+        ${open ? "translate-x-0" : "-translate-x-full"}
 
-    transition-all duration-500
-
-    md:static
-    md:h-auto
-    md:w-auto
-    md:bg-transparent
-    md:shadow-none
-    md:flex-row
-    md:gap-6
-    md:translate-x-0
-
-    z-40
-  `}
+        md:static
+        md:h-auto
+        md:w-auto
+        md:bg-transparent
+        md:shadow-none
+        md:flex-row
+        md:gap-6
+        md:p-0
+        md:translate-x-0
+      `}
           >
-            <Link to='/'><li className='cursor-pointer hover:underline transition-all duration-300'>Home</li></Link>
-            <li className='cursor-pointer hover:underline transition-all duration-300'>
+
+            <Link to='/'><li>Home</li></Link>
+
+            <li>
               <Link to="/features">Features</Link>
             </li>
-            <Link to='/ajanmapp'><li className='cursor-pointer hover:underline transition-all duration-300'>Ajanm App</li></Link>
-            <Link to='/ajanmprogram'><li className='cursor-pointer hover:underline transition-all duration-300'>Programs</li></Link>
-            <li className='cursor-pointer hover:underline transition-all duration-300'>
+
+            <Link to='/ajanmapp'><li>Ajanm App</li></Link>
+
+            <Link to='/ajanmprogram'><li>Programs</li></Link>
+
+            <li>
               <HashLink smooth to="/#testimonials">
                 Testimonials
               </HashLink>
             </li>
-            <Link to='/aboutus'><li className='cursor-pointer hover:underline transition-all duration-300'>About Us</li></Link>
-            <Link to='/blogs'><li className='cursor-pointer hover:underline transition-all duration-300'>Blogs</li></Link>
+
+            <Link to='/aboutus'><li>About Us</li></Link>
+
+            <Link to='/blogs'><li>Blogs</li></Link>
+
+            {/* MOBILE ONLY SUBSCRIBE */}
+            <Link
+              to='/subscribe'
+              className="md:hidden"
+            >
+              <button className="w-full bg-orange-500 text-white py-3 rounded-xl shadow-md">
+                Subscribe Now
+              </button>
+            </Link>
           </ul>
+
+          {/* DESKTOP ONLY SUBSCRIBE */}
           <Link
             to='/subscribe'
-            className="mx-auto md:mx-0"
+            className="hidden md:block"
           >
             <button className="color border-radius padding flex align-items">
               Subscribe Now
             </button>
           </Link>
+
         </div>
       </nav>
     </>
