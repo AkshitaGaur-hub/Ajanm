@@ -92,7 +92,7 @@ function Program() {
             </div>
 
             <div className='program'>
-                <div className="leftprogram w-[35%]">
+                <div className="leftprogramm">
                     <img src={image} alt="" srcset="" className='image' />
                 </div>
                 <div className="rightprogram">
@@ -123,27 +123,44 @@ function Program() {
 
 
             <div id="testimonials" className='testimon'>
-                <h1 className='text-5xl font-extrabold'>Testimonials</h1>
-                <div className="real">
-                    <h1 className='text-3xl'><b>Real People, Real Transformation</b></h1>
-                    <div className="testimonial_container">
+                <div className="testimonial_heading">
 
-                        <div className="testimonial_card">
-                            <p className="testimonial_text">
-                                “Thanks to AJANM, I am stress free. The personalized yoga and nutrition
-                                guidance completely changed my lifestyle and mindset.”
-                            </p>
+                    <span className='mini_title'>
+                        TESTIMONIALS
+                    </span>
 
-                            <div className="testimonial_user">
-                                <div>
-                                    <h3>Karan Kukreja</h3>
-                                    <span>Bhopal, India</span>
-                                </div>
+                    <h1 className='main_title'>
+                        Real People, Real Transformation
+                    </h1>
+                    <p className='sub_title'>
+                        Hear from our community who've experienced life-changing
+                        results through our holistic approach.
+                    </p>
 
-                                <img className='star' src={star} alt="" />
+                </div>
+                <div className="testimonial_container">
+
+                    <div className="testimonial_card">
+                        <div className='quote_icon'>“</div>
+                        <p className="testimonial_text">
+                            “Thanks to AJANM, I am stress free. The personalized yoga and nutrition
+                            guidance completely changed my lifestyle and mindset.”
+                        </p>
+
+                        <div className="testimonial_user">
+                            <div className='avatar'>
+                                K
                             </div>
-                        </div>
 
+                            <div>
+                                <h3>Karan Kukreja</h3>
+                                <span>Bhopal, India</span>
+                            </div>
+
+                            <img className='star' src={star} alt="" />
+                        </div>
+                    </div>
+                    <div className="video_box">
                         <iframe
                             src="https://www.youtube.com/embed/JFHEh9XaSvA"
                             title="YouTube video player"
@@ -151,10 +168,11 @@ function Program() {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                         ></iframe>
-
                     </div>
+
                 </div>
             </div>
+
         </>
     )
 }

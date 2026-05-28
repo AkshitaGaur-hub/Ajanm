@@ -37,6 +37,10 @@ img {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
+.leftprogramm {
+  width: 35%;
+}
+
 .image img {
   width: 100%;
   display: block;
@@ -61,7 +65,12 @@ nav {
   background: var(--bg);
   width: 100%;
 }
-
+.left {
+  width: 50%;
+}
+.right {
+  width: 50%;
+}
 .logo a {
   display: flex;
   align-items: center;
@@ -102,6 +111,7 @@ button {
   font-weight: 500;
   cursor: pointer;
   margin-left: 15px;
+  margin-right: 15px;
 }
 
 button:hover {
@@ -136,9 +146,9 @@ button:hover {
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.25rem;
+  /* max-width: 1200px; */
+  margin-left: 43px;
+  /* padding: 0 1.25rem; */
 }
 
 #org {
@@ -315,15 +325,10 @@ button:hover {
 }
 
 .card_container {
-    display: grid;
-    grid-template-columns: repeat(3, 395px);
-    justify-content: center;
-    gap: 38px;
-}
-
-.testimonial_container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 395px);
   justify-content: center;
+  gap: 38px;
 }
 
 .card1 {
@@ -389,11 +394,44 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
+.testimon {
+  padding: 6rem 1rem;
+  background: #fdf8f2;
+}
+
+.testimonial_heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.mini_title {
+  color: #e67e22;
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.main_title {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-top: 1rem;
+  color: #111;
+}
+
+.sub_title {
+  max-width: 700px;
+  margin: 1.5rem auto 0;
+  color: #666;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
 
 .program {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  gap: 21rem;
   width: 100%;
   padding: 2rem;
   overflow: hidden;
@@ -412,7 +450,7 @@ button:hover {
 }
 
 .rightprogram {
-  flex: 2;
+  /* flex: 2; */
   min-width: 0;
   display: flex;
   justify-content: center;
@@ -470,47 +508,87 @@ html {
   min-height: 60px;
 }
 
+.quote_icon {
+  font-size: 5rem;
+  color: #f2c9a4;
+  line-height: 1;
+}
+
 .holistic {
   font-size: x-large;
   font-weight: bold;
 }
+
 .testimonial_container {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 5rem;
+  /* align-items: stretch; */
+
+  width: min(1200px, 95%);
+  margin: auto;
 }
 
 .testimonial_card {
   background: white;
-  border-radius: 28px;
-  padding: 40px;
-  width: 420px;
-  min-height: 350px;
+  border-radius: 32px;
+  padding: 3rem;
+
+  min-height: 420px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .testimonial_text {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.8;
   color: #222;
   font-weight: 500;
 }
 
+.video_box {
+  overflow: hidden;
+  border-radius: 32px;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+
+  min-height: 420px;
+}
+
+.video_box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 .testimonial_user {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
+  justify-content: space-between;
+
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #7c3aed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .testimonial_user h3 {
@@ -531,6 +609,15 @@ iframe {
 }
 
 @media (max-width: 768px) {
+  .plan1 {
+    width: 22%;
+    font-size: 10px;
+  }
+
+  .plan1 i {
+    font-size: 14px;
+  }
+
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -656,6 +743,21 @@ iframe {
 
   .star {
     width: 56px;
+  }
+  .testimonial_container {
+    grid-template-columns: 1fr;
+  }
+
+  .main_title {
+    font-size: 2.7rem;
+  }
+
+  .testimonial_card {
+    min-height: auto;
+  }
+
+  .video_box {
+    min-height: 320px;
   }
 }
 
