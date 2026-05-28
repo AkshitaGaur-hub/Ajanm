@@ -19,7 +19,7 @@ import man from '../assets/images/man.png';
 function Program() {
     return (
         <>
-            <div className='program'>
+            <div className='programm'>
                 <div className="leftprogram">
                     <div className="quote bg-white px-3 py-2 text-center rounded shadow my-2 w-fit">
                         THE AJANM PROGRAM
@@ -95,13 +95,12 @@ function Program() {
                 <div className="leftprogramm">
                     <img src={image} alt="" srcset="" className='image' />
                 </div>
-                <div className="rightprogram">
+                <div className="rightprogramm">
                     <div className="rp">
                         <div className="quote bg-white px-3 py-2 text-center rounded shadow my-2 w-fit">
                             Why 108 Days
                         </div>
-                        <h1 className='text-4xl'>A Journey Rooted in</h1>
-                        <h1 className='text-4xl'>Ancient Wisdom & <span className='text-green-700'>Modern Science</span></h1>
+                        <h1 className ='text-4xl'>A Journey Rooted in Ancient Wisdom & <span className='text-green-700'>Modern Science</span></h1>
                         <p><b>Cosmic Connection : </b>108 aligns with universal energy and abundance.</p>
                         <p><b>Chekra Hermony : </b>The heart chekra connects 108 nadis.</p>
                         <p><b>Hosotic Healing : </b>108 meditatin styles and breath cycles provide balance.</p>

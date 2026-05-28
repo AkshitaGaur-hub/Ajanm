@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Page() {
     return (
         <>
-            <div className='container mx-auto flex flex-col w-full lg:flex-row w-full justify-center items-start gap-8 py-8'>
+           <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center gap-10 py-8">
 
                 <div className="left flex flex-col justify-center gap-6">
                 <div className="hero">
@@ -41,7 +41,9 @@ function Page() {
                 </div>
 
                 <div className="right rounded-3xl min-h-[20px] md:min-h-[20px] flex items-center justify-center">
-                <img src={image} alt="" className='image'/>
+                <div className="image">
+                <img src={image} alt="" />
+                </div>
                 </div>
             </div>
         </>
