@@ -633,6 +633,9 @@ iframe {
 }
 
 @media (max-width: 768px) {
+  body{
+    margin-top:4rem;
+  }
   .plan1 {
     width: 22%;
     font-size: 10px;
@@ -830,6 +833,10 @@ iframe {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .social-icons{
+    display: flexbox;
+    justify-content: center;
   }
 
   .mob {
