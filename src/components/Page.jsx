@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Page() {
     return (
         <>
-            <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center gap-10 py-8">
+            <div className="container mx-auto flex flex-col md:flex-row justify-center items-center gap-10 py-8">
 
                 <div className="left flex flex-col justify-center gap-6">
                     <div className="hero">
