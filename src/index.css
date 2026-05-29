@@ -88,12 +88,16 @@ nav {
   object-fit: contain;
   display: block;
 }
+
+/* check it gardbad in desktop site */
 ul {
   display: flex;
   align-items: center;
-  gap: 25px;
-  list-style: none;
+  font-size: medium;
+  gap: 2rem;
+  /* list-style: none; */
 }
+
 .hamburger {
   color: black;
   cursor: pointer;
@@ -356,10 +360,10 @@ button:hover {
   height: auto;
 }
 
-.footer {
-  background: var(--primary);
+footer {
+  /* background: var(); */
   width: 100%;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -404,6 +408,7 @@ button:hover {
 .testimon {
   padding: 1rem 1rem;
   background: #fdf8f2;
+  margin-bottom: 1px;
 }
 
 .testimonial_heading {
@@ -551,6 +556,7 @@ html {
 
   width: min(1200px, 95%);
   margin: auto;
+  margin-bottom: 2rem;
 }
 
 .testimonial_card {
@@ -633,8 +639,8 @@ iframe {
 }
 
 @media (max-width: 768px) {
-  body{
-    margin-top:4rem;
+  body {
+    margin-top: 4rem;
   }
   .plan1 {
     width: 22%;
@@ -834,7 +840,7 @@ iframe {
     align-items: center;
     text-align: center;
   }
-  .social-icons{
+  .social-icons {
     display: flexbox;
     justify-content: center;
   }
@@ -865,7 +871,7 @@ iframe {
   }
 
   .video_box {
-    min-height: 320px;
+    min-height: auto;
   }
 }
 
@@ -928,9 +934,11 @@ iframe {
 
 @media (max-width: 540px) {
   .tableborder > div {
-    flex: 1 1 100%;
+    flex: 1 1 48%;
+    min-width: 48%;
   }
 }
+
 @media (max-width: 1024px) {
   .ajnamapp,
   .ajanmprogram,

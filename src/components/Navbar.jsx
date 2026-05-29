@@ -57,25 +57,25 @@ function Features() {
       `}
           >
 
-            <Link to='/'><li>Home</li></Link>
+            <Link to='/' className ='hover:underline'><li>Home</li></Link>
 
             <li>
-              <Link to="/features">Features</Link>
+              <Link to="/features" className ='hover:underline'>Features</Link>
             </li>
 
-            <Link to='/ajanmapp'><li>Ajanm App</li></Link>
+            <Link to='/ajanmapp' className ='hover:underline'><li>Ajanm App</li></Link>
 
-            <Link to='/ajanmprogram'><li>Programs</li></Link>
+            <Link to='/ajanmprogram' className ='hover:underline'><li>Programs</li></Link>
 
-            <li>
+            <li className='hover:underline'>
               <HashLink smooth to="/#testimonials">
                 Testimonials
               </HashLink>
             </li>
 
-            <Link to='/aboutus'><li>About Us</li></Link>
+            <Link to='/aboutus' className='hover:underline'><li>About Us</li></Link>
 
-            <Link to='/blogs'><li>Blogs</li></Link>
+            <Link to='/blogs' className='hover:underline'><li>Blogs</li></Link>
 
             {/* MOBILE ONLY SUBSCRIBE */}
             <Link

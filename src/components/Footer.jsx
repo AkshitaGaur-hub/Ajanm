@@ -1,97 +1,152 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-// import qr from '../assets/images/qr.png'
-// import phone from '../assets/images/phone.png'
-// import { FaGooglePlay,FaAppStore } from "react-icons/fa";
-import { IoLogoYoutube } from "react-icons/io";
-import { BsInstagram } from "react-icons/bs";
-import { FaFacebookSquare } from "react-icons/fa";
+import React from "react";
+import { Mail, Phone, MapPin, ChevronRight } from 'lucide-react';
+import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 
+const footerLinks = [
+  { text: "Our Approach (108 Days)", href: "#" },
+  { text: "Health Programs", href: "#" },
+  { text: "Expert Mentors", href: "#" },
+  { text: "Ajanm Community", href: "#" },
+  { text: "Blog & Insights", href: "#" },
+];
 
+const socialLinks = [
+  { icon: FaInstagram, href: "#" },
+  { icon: FaLinkedin, href: "#" },
+  { icon: FaYoutube, href: "#" },
+];
+
+const legalLinks = [
+  { text: "Privacy Policy", href: "#" },
+  { text: "Terms of Service", href: "#" },
+  { text: "Careers", href: "#" },
+];
 
 const Footer = () => {
-    return (
-        <>
-            {/* <div className="footer flex">
-                <div className="mob">
-                    <img src={phone} alt="" srcset="" />
-                </div>
-                <div className="wellness flex flex-col">
-                    <b className='text-xl'>Your Wellness Companion</b>
-                    <b className='text-xl'>is Just a Download Away</b>
-                    <p>Get the AJANM app and start your personalized</p>
-                    <p>wellness journy today.</p>
-                </div>
+  return (
+    <footer className="w-full bg-[#f8f5f0] text-[#222] mt-16">
 
-                <div className="App">
-                    <FaAppStore />
-                    <div className="text flex flex-col">
-                        <p>Download at</p>
-                        <h3><b>App Store</b></h3>
-                    </div>
-                </div>
+      {/* TOP */}
+      <div className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 border-b border-gray-200">
 
-                <div className="play flex">
-                    <FaGooglePlay/>
-                    <div className="text flex flex-col">
-                        <p>Get it on</p>
-                        <h3><b>Google Play</b></h3>
-                    </div>
-                </div>
+        {/* BRAND */}
+        <div className="flex flex-col gap-5">
+          <h1 className="text-3xl font-extrabold tracking-wide">
+            AJANM
+          </h1>
 
-                <div className="qr">
-                    <img className='qr' src={qr} alt="" srcset="" />
-                </div>
-            </div> */}
-            <div className="footer text-black py-6 flex flex-col md:flex-row p-4 md:p-8 gap-6 md:gap-12 justify-between">
+          <p className="text-sm leading-7 text-gray-600">
+            Ancient wisdom meets modern wellness. Personalized healing,
+            sustainable habits, and AI-driven guidance for your journey.
+          </p>
+        </div>
 
-                {/* <div className="hidden md:block w-px bg-gray-600"></div> */}
-                {/*Links*/}
-                <div className='links flex flex-col gap-2 text-white'>
-                    <h2 className='text-xl font-bold underline'>Links</h2>
-                    <a href="/" className="text-white hover:underline">Home</a>
-                    <a href="/features" className="text-white hover:underline">Features</a>
-                    <a href="/ajanmapp" className="text-white hover:underline">Ajanm App</a>
-                    <a href="/ajanmprogram" className="text-white hover:underline">Program</a>
-                    <a href="/aboutus" className="text-white hover:underline">About us</a>
-                </div>
-                <div className="hidden text-white md:block w-px bg-gray-600"></div>
-                {/* copyright */}
-                <div className='admission'>
-                    <h2 className='text-xl text-white font-bold underline'>For Subscription</h2>
-                    <p className='text-white'>Please contact us for Any Queries.</p>
-                    <span className='text-white'>Email - <a href="mailto:@gmail.com" className="text-white hover:underline">mailid</a>
-                    </span>
-                    <p className='mt-4 text-sm text-white'>&copy; {new Date().getFullYear()} Ajanm.ai | All rights reserved.</p>
-                </div>
-                <vr className="border-l border-gray-600"></vr>
-                {/* ads */}
-                <div className='flex '>
-                    <div className='ads'>
-                        <h2 className='text-xl text-white font-bold underline'>Connect With Us</h2>
-                        <p className='text-white'>Follow us on social media for updates and news.</p>
-                        <div className='social-icons flex gap-4 mt-2'>
-                            <Link to="/"><IoLogoYoutube /></Link>
-                            <Link to="/"><FaFacebookSquare /></Link>
-                            <Link to="/"><BsInstagram /></Link>
-                        </div>
-                        <hr className="border-t text-white border-gray-600 my-4" />
+        {/* LINKS */}
+        <div className="flex flex-col gap-4">
+          <h2 className="text-lg font-bold">
+            Quick Links
+          </h2>
 
-                        <p className='text-white'>Desgined and developed with <span className="cursor-pointer">💚</span></p>
-                    </div>
-                </div>
+          {footerLinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.href}
+              className="flex items-center gap-2 text-sm text-gray-700 hover:text-orange-500 transition"
+            >
+              <ChevronRight size={16} />
+              {link.text}
+            </a>
+          ))}
+        </div>
 
-                <div className="form flex flex-col g-2">
+        {/* CONTACT */}
+        <div className="flex flex-col gap-5">
+          <h2 className="text-lg font-bold">
+            Contact
+          </h2>
 
-                    <lable className='text-white'><b>Enter your email id to Subscribe</b></lable>
-                    <div className="enter flex g-3">
-                        <input className='border border-white rounded-md' type="Email" placeholder='Enter Your Mail id' />
-                        <button className='explore-btn'><b>Subscribe</b></button>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
-}
+          <div className="flex items-center gap-3 text-sm text-gray-700">
+            <Mail size={18} className="text-orange-500" />
+            hello@ajanm.ai
+          </div>
 
-export default Footer
+          <div className="flex items-center gap-3 text-sm text-gray-700">
+            <Phone size={18} className="text-orange-500" />
+            +91 XXX XXX XXXX
+          </div>
+
+          <div className="flex items-center gap-3 text-sm text-gray-700">
+            <MapPin size={18} className="text-orange-500" />
+            Gurugram, India
+          </div>
+
+          {/* SOCIALS */}
+          <div className="flex gap-4 pt-2">
+            {socialLinks.map((link, index) => {
+              const Icon = link.icon;
+
+              return (
+                <a
+                  key={index}
+                  href={link.href}
+                  className="p-2 rounded-full bg-white shadow hover:scale-110 transition"
+                >
+                  <Icon size={18} className="text-orange-500" />
+                </a>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* NEWSLETTER */}
+        <div className="flex flex-col gap-5">
+          <h2 className="text-lg font-bold">
+            Stay Updated
+          </h2>
+
+          <p className="text-sm text-gray-600 leading-6">
+            Subscribe for wellness tips, insights, and updates.
+          </p>
+
+          <div className="flex w-full">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="flex-1 px-4 py-3 border border-gray-300 rounded-l-xl outline-none"
+            />
+
+            <button className="bg-black text-white px-5 py-3 rounded-r-xl hover:bg-gray-800 transition">
+              Join
+            </button>
+          </div>
+
+          <button className="bg-[#4d664a] text-white py-3 rounded-full font-semibold hover:bg-[#3f513c] transition">
+            Download App
+          </button>
+        </div>
+      </div>
+
+      {/* BOTTOM */}
+      <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+
+        <p className="text-center md:text-left">
+          © 2026 AJANM Private Limited. All rights reserved.
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-6">
+          {legalLinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.href}
+              className="hover:text-orange-500 transition"
+            >
+              {link.text}
+            </a>
+          ))}
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
