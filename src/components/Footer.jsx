@@ -17,9 +17,9 @@ const socialLinks = [
 ];
 
 const legalLinks = [
-  { text: "Privacy Policy", href: "#" },
-  { text: "Terms of Service", href: "#" },
-  { text: "Careers", href: "#" },
+  { text: "|   Privacy Policy", href: "./privacy" },
+  { text: "|   Terms of Service", href: "https://ajanm.ai/terms-of-service/" },
+  { text: "|   Refund Policy", href: "https://ajanm.ai/refunds-cancellations-policy/" },
 ];
 
 const Footer = () => {
@@ -67,7 +67,7 @@ const Footer = () => {
 
           <div className="flex items-center gap-3 text-sm text-gray-700">
             <Mail size={18} className="text-orange-500" />
-            hello@ajanm.ai
+        <span>Email - <a href="mailto:admin@ajanm.ai" className="hover:underline">admin@ajanm.ai</a></span>
           </div>
 
           <div className="flex items-center gap-3 text-sm text-gray-700">
@@ -77,7 +77,7 @@ const Footer = () => {
 
           <div className="flex items-center gap-3 text-sm text-gray-700">
             <MapPin size={18} className="text-orange-500" />
-            Gurugram, India
+            BK Vedic Pvt. Ltd. 3, Paneri Upvan, Bedla Road,Fatehpura, Udaipur,Rajasthan, 313001
           </div>
 
           {/* SOCIALS */}

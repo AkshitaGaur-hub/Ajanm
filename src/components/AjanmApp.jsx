@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import Navbar from './Navbar'
 import Footer from './Footer'
 import './Features.css'
@@ -42,8 +43,12 @@ const AjanmApp = () => {
                         <span className='flex items-center gap-4'><IoMdCheckbox /><p>Insights and analytics</p></span>
                     </div>
                     <div className="btn flex">
-                     <button className="download flex items-center gap-4"><FaAppStoreIos/>App store</button>
-                      <button className="download flex items-center gap-4"><IoLogoGooglePlaystore />Google Play</button>
+                        <Link to="https://apps.apple.com/in/app/ajanm/id6736587790">
+                            <button className="download flex items-center gap-4"><FaAppStoreIos />App store</button>
+                        </Link>
+                        <Link to="https://play.google.com/store/apps/details?id=ajanm.ai&pcampaignid=web_share">
+                            <button className="download flex items-center gap-4"><IoLogoGooglePlaystore />Google Play</button>
+                        </Link>
                     </div>
                 </div>
             </div>

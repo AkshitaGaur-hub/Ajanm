@@ -40,9 +40,9 @@ function Page() {
                     </div>
                 </div>
 
-                <div className="right rounded-md overflow-hidden min-h-[20px] md:min-h-[20px] flex items-center justify-center">
+                <div className="right  overflow-hidden">
                     <div className="image">
-                        <img src={image} alt="" className="rounded-lg" />
+                        <img src={image} alt="" className='rounded-4xl'/>
                     </div>
                 </div>
             </div>

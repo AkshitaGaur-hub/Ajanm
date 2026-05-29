@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Feature from "./components/Feature";
 import AjanmApp from "./components/AjanmApp"
 import AjanmProgram from "./components/AjanmProgram"
+import Privacy from "./components/Privacy.jsx"
 import Aboutus from "./components/Aboutus"
 import Blogs from "./components/Blogs"
 import Subscribe from "./components/Subscribe.jsx"
@@ -24,6 +25,7 @@ function App() {
       <Table />
       <Program />
       <Footer />
+      
           </>
         } />
 
@@ -33,6 +35,8 @@ function App() {
         <Route path="/aboutus" element={<Aboutus/>}/>
         <Route path="/blogs" element={<Blogs/>}/>
         <Route path="/subscribe" element={<Subscribe/>}/>
+        <Route path="/privacy" element={<Privacy/>}/>
+
 
         </Routes>
       </BrowserRouter>

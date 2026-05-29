@@ -35,21 +35,36 @@ img {
   display: block;
 }
 
-.image {
-  width: 100%;
+/* .image {
+  width: 500px;
+  height:300px;
   border-radius: 20px;
   object-fit: cover;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-}
+} */
+/* .image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+} */
 
-.leftprogramm {
-  width: 35%;
+.image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .image img {
   width: 100%;
+  height: auto;
   display: block;
+  border-radius: 20px;
   object-fit: cover;
+}
+.leftprogramm {
+  width: 35%;
 }
 
 body {
@@ -151,14 +166,13 @@ button:hover {
   margin-bottom: 1rem;
 }
 
-.right {
+/* .right {
   margin-top: 2.5rem;
-}
+} */
 
 .container {
-  /* max-width: 1200px; */
-  margin-left: 43px;
-  /* padding: 0 1.25rem; */
+  width: min(1200px, 92%);
+  margin-inline: auto;
 }
 
 #org {
@@ -640,7 +654,7 @@ iframe {
 
 @media (max-width: 768px) {
   body {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
   .plan1 {
     width: 22%;
@@ -652,8 +666,21 @@ iframe {
   .left {
     width: 100%;
   }
+  /* .right {
+    width: 100%;
+    margin-top:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  } */
+
   .right {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
   }
   .plan1 i {
     font-size: 14px;
@@ -673,7 +700,7 @@ iframe {
     align-items: center;
     font-size: medium;
     padding-top: 3rem;
-    gap: 4rem;
+    gap: 3rem;
   }
   .ull {
     color: white;
@@ -822,10 +849,9 @@ iframe {
   .ab {
     display: none;
   }
-  .hamburger {
+  /* .hamburger {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     gap: 5rem;
     font-weight: 600;
     font-size: large;
@@ -836,8 +862,8 @@ iframe {
     align-items: center;
     font-size: medium;
     padding-top: 3rem;
-    gap: 4rem;
-  }
+    gap: 2.5rem;
+  } */
 }
 
 @media (max-width: 640px) {
@@ -1047,5 +1073,37 @@ iframe {
 
   .testimonial_card {
     width: 90%;
+  }
+}
+@media (max-width: 1111px) {
+  .programm {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 96%;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+
+  .hero {
+    gap: 1.5rem;
+  }
+
+  .left,
+  .right {
+    flex: 1 1 0;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 420px;
   }
 }
