@@ -247,6 +247,38 @@
   justify-content: center;
   gap: 38px;
 }
+
+.privacy_head {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.privacy_card {
+  padding: 2rem;
+}
+
+.detail_policy {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: start;
+  align-items: center;
+}
+
+.policy_c {
+  padding: 1.4rem;
+}
+.detail_c {
+  padding-left: 1rem;
+}
+.privacy_margin {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 /* Responsive */
 
 @media (max-width: 670px) {
@@ -358,16 +390,4 @@
   .sub {
     margin-left: 2rem;
   }
-}
-
-.privacy_head {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.privacy_card{
-  padding:2rem;
 }

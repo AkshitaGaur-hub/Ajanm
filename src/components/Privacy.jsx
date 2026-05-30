@@ -87,12 +87,12 @@ export default function Privacy() {
       </section>
 
       {/* Main Content */}
-      <section className="Privacy_card max-w-6xl mx-auto px-6 py-20">
-        <div className="grid md:grid-cols-2 gap-8">
+      <section className="Privacy_card px-6 py-20">
+        <div className="Privacy_margin grid md:grid-cols-3 gap-8 justify-items-center">
           {sections.map((item, index) => (
             <div
               key={index}
-              className="bg-white border border-orange-100 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300"
+              className="policy_c w-full max-w-lg bg-white border border-orange-100 rounded-3xl p-8 "
             >
               <div className="w-14 h-14 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center mb-6">
                 {item.icon}
@@ -108,16 +108,16 @@ export default function Privacy() {
         </div>
 
         {/* Detailed Policy */}
-        <div className="mt-20 bg-white rounded-3xl shadow-sm border border-orange-100 p-8 md:p-12">
+        <div className="detail_policy mt-2 p-8 md:p-12">
           <h2 className="text-4xl font-bold mb-8">
             Your Rights & Responsibilities
           </h2>
 
-          <div className="space-y-8 text-gray-600 leading-8">
+          <div className="space-y-8 text-gray-600 leading-8 w-full detail_c">
             <div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+              <h4 className="text-2xl font-semibold text-gray-800 mb-3">
                 Access & Updates
-              </h3>
+              </h4>
               <p>
                 You can review and update your personal information anytime
                 through your account settings to maintain accurate health and
@@ -126,9 +126,9 @@ export default function Privacy() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+              <h4 className="text-2xl font-semibold text-gray-800 mb-3">
                 Account Deletion
-              </h3>
+              </h4>
               <p>
                 You may delete your account at any time. Certain information may
                 still be retained where legally required.
@@ -136,9 +136,9 @@ export default function Privacy() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+              <h4 className="text-2xl font-semibold text-gray-800 mb-3">
                 Cookies & Tracking
-              </h3>
+              </h4>
               <p>
                 We use cookies and tracking technologies to improve app
                 performance, analyze usage patterns, and personalize your
@@ -147,9 +147,9 @@ export default function Privacy() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+              <h4 className="text-2xl font-semibold text-gray-800 mb-3">
                 Children’s Privacy
-              </h3>
+              </h4>
               <p>
                 Our services are not intended for users under the age of 18. We
                 do not knowingly collect data from children.
@@ -157,9 +157,9 @@ export default function Privacy() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+              <h4 className="text-2xl font-semibold text-gray-800 mb-3">
                 Policy Updates
-              </h3>
+              </h4>
               <p>
                 This Privacy Policy may be updated periodically. Significant
                 changes will be communicated within the App or through official
@@ -169,33 +169,9 @@ export default function Privacy() {
           </div>
         </div>
 
-        {/* Contact Card */}
-        <div className="mt-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-3xl p-10 text-white shadow-xl">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
-            <div>
-              <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
-              <p className="text-orange-100 max-w-xl">
-                If you have questions regarding this Privacy Policy or your
-                personal information, feel free to contact our support team.
-              </p>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
-              <div className="flex items-center gap-3 mb-4">
-                <Mail className="w-5 h-5" />
-                <span className="font-medium">admin@ajanm.ai</span>
-              </div>
-
-              <div className="text-orange-100 text-sm">
-                Ajanm.ai <br />
-                B.K. Vedic Pvt. Ltd.
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
     </div>
-    <Footer/>/
+    <Footer/>
     <div>
       <h1>Privacy Page Working</h1>
     </div>
