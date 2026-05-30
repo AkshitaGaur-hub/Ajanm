@@ -18,8 +18,8 @@ const socialLinks = [
 
 const legalLinks = [
   { text: "|   Privacy Policy", href: "./privacy" },
-  { text: "|   Terms of Service", href: "https://ajanm.ai/terms-of-service/" },
-  { text: "|   Refund Policy", href: "https://ajanm.ai/refunds-cancellations-policy/" },
+  { text: "|   Terms of Service", href: "./t&c" },
+  { text: "|   Refund Policy", href: "./rf" },
 ];
 
 const Footer = () => {

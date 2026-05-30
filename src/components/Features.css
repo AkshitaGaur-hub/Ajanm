@@ -263,22 +263,37 @@
 .detail_policy {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
   justify-content: start;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .policy_c {
   padding: 1.4rem;
 }
+
 .detail_c {
   padding-left: 1rem;
 }
+
 .privacy_margin {
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
+.Terms_head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Tnc{
+  margin-left: 2.5rem;
+  margin-right:1.5rem;
+  flex-wrap: wrap;
+}
+.cork{
+  padding: 1rem;
+}
 /* Responsive */
 
 @media (max-width: 670px) {

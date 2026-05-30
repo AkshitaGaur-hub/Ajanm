@@ -8,6 +8,8 @@ import Feature from "./components/Feature";
 import AjanmApp from "./components/AjanmApp"
 import AjanmProgram from "./components/AjanmProgram"
 import Privacy from "./components/Privacy.jsx"
+import Terms from "./components/Terms.jsx"
+import Refund from "./components/Refund.jsx"
 import Aboutus from "./components/Aboutus"
 import Blogs from "./components/Blogs"
 import Subscribe from "./components/Subscribe.jsx"
@@ -36,6 +38,8 @@ function App() {
         <Route path="/blogs" element={<Blogs/>}/>
         <Route path="/subscribe" element={<Subscribe/>}/>
         <Route path="/privacy" element={<Privacy/>}/>
+        <Route path="/t&c" element={<Terms/>}/>
+        <Route path="/rf" element={<Refund/>}/>
 
 
         </Routes>

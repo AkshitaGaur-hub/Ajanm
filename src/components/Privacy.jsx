@@ -61,7 +61,7 @@ export default function Privacy() {
       {/* Hero Section */}
       <section className="privacy_head relative overflow-hidden bg-gradient-to-br from-orange-100 via-white to-orange-50 py-24 px-6">
         <div className=" max-w-6xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="cork inline-flex items-center gap-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium mb-6">
             <ShieldCheck className="w-4 h-4" />
             Privacy & Data Protection
           </div>
@@ -82,13 +82,13 @@ export default function Privacy() {
         </div>
 
         {/* Decorative Blur */}
-        <div className="absolute top-0 left-0 w-72 h-72 bg-orange-200 rounded-full blur-3xl opacity-30"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-300 rounded-full blur-3xl opacity-20"></div>
+        {/* <div className="absolute top-0 left-0 w-72 h-72 bg-orange-200 rounded-full blur-3xl opacity-30"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-300 rounded-full blur-3xl opacity-20"></div> */}
       </section>
 
       {/* Main Content */}
-      <section className="Privacy_card px-6 py-20">
-        <div className="Privacy_margin grid md:grid-cols-3 gap-8 justify-items-center">
+      <section className="privacy_card px-6 py-20">
+        <div className="privacy_c grid md:grid-cols-3 gap-8 justify-items-center">
           {sections.map((item, index) => (
             <div
               key={index}
