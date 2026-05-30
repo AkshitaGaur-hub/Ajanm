@@ -129,9 +129,9 @@ function Program() {
                         TESTIMONIALS
                     </span>
 
-                    <h1 className='main_title'>
+                    <h2 className='main_title'>
                         Real People, Real Transformation
-                    </h1>
+                    </h2>
                     <p className='sub_title'>
                         Hear from our community who've experienced life-changing
                         results through our holistic approach.
