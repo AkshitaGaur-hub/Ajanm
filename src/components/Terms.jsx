@@ -169,7 +169,7 @@ export default function Terms() {
           </div>
         </section> */}
                 {/* Terms Sections */}
-                <section className="Tnc w-full mx-auto px-6 py-16">
+                <section className="Tnc px-6 py-16">
                     <div className="space-y-12">
                         {terms.map((section, index) => (
                             <div
@@ -184,7 +184,7 @@ export default function Terms() {
                                     {section.content.map((item, i) => (
                                         <p
                                             key={i}
-                                            className="text-gray-700 text-lg leading-8"
+                                            className="text-gray-700 text-lg leading-8 break-words"
                                         >
                                             {item}
                                         </p>
