@@ -171,7 +171,9 @@ button:hover {
 } */
 
 .container {
-  width: min(1200px, 92%);
+  width: 100%;
+  max-width: 1400px;
+  padding-inline: 1rem;
   margin-inline: auto;
 }
 
@@ -362,27 +364,27 @@ button:hover {
 } */
 
 .card_container {
-    display: grid;
-    gap: 38px;
-    justify-content: center;
+  display: grid;
+  gap: 38px;
+  justify-content: center;
 }
 
 @media (min-width: 1265px) {
-    .card_container {
-        grid-template-columns: repeat(3, 395px);
-    }
+  .card_container {
+    grid-template-columns: repeat(3, 395px);
+  }
 }
 
 @media (min-width: 678px) and (max-width: 1264px) {
-    .card_container {
-        grid-template-columns: repeat(2, minmax(300px, 1fr));
-    }
+  .card_container {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
 }
 
 @media (max-width: 677px) {
-    .card_container {
-        grid-template-columns: 1fr;
-    }
+  .card_container {
+    grid-template-columns: 1fr;
+  }
 }
 .card1 {
   max-width: 100%;
@@ -401,17 +403,21 @@ button:hover {
   width: 60px;
   height: auto;
 }
-
 footer {
-  /* background: var(); */
   width: 100%;
   padding: 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
+.footer-section {
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+/* ipad pro unfixed hai abhi */
 .mob {
   flex: 0 0 auto;
   max-width: 120px;
@@ -681,6 +687,11 @@ iframe {
 }
 
 @media (max-width: 768px) {
+  .video_box iframe {
+    width: 91vw;
+    height: 30vh;
+    border: none;
+  }
   body {
     margin-top: 1rem;
   }
@@ -817,7 +828,7 @@ iframe {
   .program {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 2rem; */
     align-items: flex-start;
     width: 100%;
     padding: 1rem;
@@ -828,7 +839,6 @@ iframe {
     flex-direction: column;
     width: 80%;
   } */
-
 
   .card-title {
     min-height: auto;
@@ -872,34 +882,19 @@ iframe {
 }
 
 @media (max-width: 1024px) {
-  /* .card_container {
-    grid-template-columns: repeat(2, 1fr);
-  } */
+  .program {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    align-items: center;
+    text-align: center;
+  }
   .ab {
     display: none;
   }
-  /* .hamburger {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    font-weight: 600;
-    font-size: large;
-    list-style: none;
-  }
-  ul {
-    display: flex;
-    align-items: center;
-    font-size: medium;
-    padding-top: 3rem;
-    gap: 2.5rem;
-  } */
 }
 
 @media (max-width: 640px) {
-  /* .card_container {
-    grid-template-columns: 1fr;
-  } */
-
   #programbtn {
     flex-direction: column;
     align-items: center;
@@ -915,14 +910,23 @@ iframe {
   }
 }
 @media (max-width: 768px) {
-  .footer {
+  footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 1.5rem;
   }
+
+  .footer-section {
+    width: 100%;
+    max-width: 400px;
+  }
+
   .social-icons {
-    display: flexbox;
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
   .mob {
@@ -1090,7 +1094,7 @@ iframe {
   }
 
   /* .card_container { */
-    /* grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr);
     width: 100%;
   } */
 
@@ -1100,8 +1104,15 @@ iframe {
     height: 400px;
   }
 
-  .testimonial_card {
-    width: 90%;
+  footer {
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .footer-section {
+    flex: 1 1 45%;
+    min-width: 280px;
   }
 }
 @media (max-width: 1111px) {
@@ -1134,5 +1145,20 @@ iframe {
   .image {
     width: 100%;
     max-width: 420px;
+  }
+}
+@media (max-height: 650px) {
+  footer {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .mob {
+    max-width: 70px;
+    max-height: 70px;
+  }
+
+  .qr {
+    width: 45px;
   }
 }

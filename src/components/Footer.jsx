@@ -67,7 +67,7 @@ const Footer = () => {
 
           <div className="flex items-center gap-3 text-sm text-gray-700">
             <Mail size={18} className="text-orange-500" />
-        <span>Email - <a href="mailto:admin@ajanm.ai" className="hover:underline">admin@ajanm.ai</a></span>
+            <span>Email - <a href="mailto:admin@ajanm.ai" className="hover:underline">admin@ajanm.ai</a></span>
           </div>
 
           <div className="flex items-center gap-3 text-sm text-gray-700">
@@ -127,23 +127,22 @@ const Footer = () => {
       </div>
 
       {/* BOTTOM */}
-      <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-
-        <p className="text-center md:text-left">
+      <div class="max-w-7xl mx-auto px-6 py-6 flex justify-center items-center text-sm text-gray-500 w-full">
+        <p className="text-center">
           © 2026 AJANM Private Limited. All rights reserved.
-        </p>
 
-        <div className="flex flex-wrap justify-center gap-6">
-          {legalLinks.map((link, index) => (
-            <a
-              key={index}
-              href={link.href}
-              className="hover:text-orange-500 transition"
-            >
-              {link.text}
-            </a>
-          ))}
-        </div>
+          <div className="flex flex-wrap justify-center gap-6">
+            {legalLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.href}
+                className="cursor:pointer"
+              >
+                {link.text}
+              </a>
+            ))}
+          </div>
+        </p>
       </div>
     </footer>
   );
