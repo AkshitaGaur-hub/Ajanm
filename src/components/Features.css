@@ -12,7 +12,6 @@
 }
 
 .para {
-  max-width: 700px;
   line-height: 1.5;
 }
 
@@ -425,4 +424,12 @@
     font-size: 0.95rem;
     line-height: 1.6;
   }
+}
+
+@media (min-width: 670px) and (max-width: 1264px){
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(2, 380px);
+  justify-content: center;
+}
 }

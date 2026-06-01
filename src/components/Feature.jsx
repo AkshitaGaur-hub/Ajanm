@@ -10,8 +10,7 @@ function Feature() {
             <Navbar />
             <div className='features'>
                 <h1 className='heading'>Features of the Program</h1>
-                <p className='para'>Everything you need for a complete </p>
-                <p className='para'>mind-body transformation</p>
+                <p className='para'>Everything you need for a complete mind-body transformation</p>
                 <div className="centercard">
                     <div className='card_container'>
                         <div className="card1">
