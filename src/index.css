@@ -1146,6 +1146,11 @@ iframe {
     width: 100%;
     max-width: 420px;
   }
+
+  .joinp{
+    display:flex;
+    flex-direction: column;
+  }
 }
 @media (max-height: 650px) {
   footer {

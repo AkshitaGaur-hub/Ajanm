@@ -108,7 +108,7 @@ const Footer = () => {
             Subscribe for wellness tips, insights, and updates.
           </p>
 
-          <div className="flex w-full">
+          <div className="joinp flex w-full">
             <input
               type="email"
               placeholder="Enter your email"
