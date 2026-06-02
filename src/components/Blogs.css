@@ -1,3 +1,6 @@
+.blogs{
+    margin-top:2rem;
+}
 .blog_top {
   display: flex;
   flex-direction: column;
