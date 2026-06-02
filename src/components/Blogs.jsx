@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { FaHeart } from "react-icons/fa6";
+import JS from '../assets/images/JS.png'
 import { FiMessageCircle } from "react-icons/fi";
 import "./Blogs.css"
 
@@ -66,9 +67,6 @@ const Blogs = () => {
                     <p className="blog_para">Explore our latest articles, expert insights, and wellness tips to support your health journey.</p>
                 </div>
 
-                <div className="blog_start bg-white rounded-lg">
-                    Damn nice
-                </div>
 
                 <div className="blog_card">
                     {blogs.map((blog) => (
