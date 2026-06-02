@@ -1,13 +1,12 @@
-import React from "react";
 import { Mail, Phone, MapPin, ChevronRight } from 'lucide-react';
 import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 const footerLinks = [
-  { text: "Our Approach (108 Days)", href: "#" },
-  { text: "Health Programs", href: "#" },
-  { text: "Expert Mentors", href: "#" },
-  { text: "Ajanm Community", href: "#" },
-  { text: "Blog & Insights", href: "#" },
+  { text: "Our Approach (108 Days)", href: "/" },
+  { text: "Health Programs", href: "/" },
+  { text: "Expert Mentors", href: "/" },
+  { text: "Ajanm Community", href: "/" },
+  { text: "Blog & Insights", href: "/" },
 ];
 
 const socialLinks = [
@@ -17,9 +16,9 @@ const socialLinks = [
 ];
 
 const legalLinks = [
-  { text: "|   Privacy Policy", href: "./privacy" },
-  { text: "|   Terms of Service", href: "./t&c" },
-  { text: "|   Refund Policy", href: "./rf" },
+  { text: "Privacy Policy", href: "./privacy" },
+  { text: "Terms of Service", href: "./t&c" },
+  { text: "Refund Policy", href: "./rf" },
 ];
 
 const Footer = () => {
@@ -27,7 +26,7 @@ const Footer = () => {
     <footer className="w-full bg-[#f8f5f0] text-[#222] mt-16">
 
       {/* TOP */}
-      <div className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 border-b border-gray-200">
+      <div className="w-full px-6 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 border-b border-gray-200">
 
         {/* BRAND */}
         <div className="flex flex-col gap-5">
@@ -108,14 +107,14 @@ const Footer = () => {
             Subscribe for wellness tips, insights, and updates.
           </p>
 
-          <div className="joinp flex w-full">
+          <div className="joinp flex flex-col sm:flex-row w-full gap-3">
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 border border-gray-300 rounded-l-xl outline-none"
+              className="flex-1 min-w-0 px-4 py-3 border border-gray-300 rounded-xl outline-none"
             />
 
-            <button className="bg-black text-white px-5 py-3 rounded-r-xl hover:bg-gray-800 transition">
+            <button className="bg-black text-white px-5 py-3 rounded-xl hover:bg-gray-800 transition whitespace-nowrap">
               Join
             </button>
           </div>
@@ -127,22 +126,23 @@ const Footer = () => {
       </div>
 
       {/* BOTTOM */}
-      <div class="max-w-7xl mx-auto px-6 py-6 flex justify-center items-center text-sm text-gray-500 w-full">
-        <p className="text-center">
-          © 2026 AJANM Private Limited. All rights reserved.
-
-          <div className="flex flex-wrap justify-center gap-6">
+      <div className="max-w-7xl mx-auto px-6 py-6 w-full text-sm text-gray-500">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-center sm:text-left">
+            © 2026 AJANM Private Limited. All rights reserved.
+          </p>
+          <div className="flex flex-wrap justify-center sm:justify-end gap-6">
             {legalLinks.map((link, index) => (
               <a
                 key={index}
                 href={link.href}
-                className="cursor:pointer"
+                className="text-gray-500 hover:text-gray-900 transition"
               >
                 {link.text}
               </a>
             ))}
           </div>
-        </p>
+        </div>
       </div>
     </footer>
   );

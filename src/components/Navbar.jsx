@@ -58,7 +58,7 @@ function Features() {
       `}
           >
 
-            <Link to='/' className='hover:underline'><li>Home</li></Link>
+            <Link to='/' className='home hover:underline lg:hidden'><li>Home</li></Link>
 
             <li>
               <Link to="/features" className='hover:underline'>Features</Link>

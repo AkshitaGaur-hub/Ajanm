@@ -91,24 +91,44 @@
 .ajnamapp,
 .ajanmprogram {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   gap: 2rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .ajnamapp,
+  .ajanmprogram {
+    flex-direction: row;
+  }
 }
 
 .lhs {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .lhs {
+    width: 50%;
+  }
 }
 
 .rhs {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .rhs {
+    width: 50%;
+  }
 }
 .point {
   line-height: 5;
@@ -131,22 +151,47 @@
 }
 
 .lefths {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+@media (min-width: 768px) {
+  .lefths {
+    width: 50%;
+  }
+}
+
 .righths {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .righths {
+    width: 50%;
+  }
 }
 .cardss {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-left: 8rem;
+  margin-left: 0;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .cardss {
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardss {
+    margin-left: 8rem;
+  }
 }
 .items {
   background-color: var(--white);
@@ -157,7 +202,8 @@
 .top {
   display: flex;
   flex-direction: column;
-  margin-left: 8rem;
+  text-align: center;
+  /* margin-left: 8rem; */
 }
 
 .number {
