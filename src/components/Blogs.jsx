@@ -5,7 +5,8 @@ import { FaHeart } from "react-icons/fa6";
 import JS from '../assets/images/JS.png'
 import { FiMessageCircle } from "react-icons/fi";
 import "./Blogs.css"
-
+// removed unused import
+import { Link } from 'react-router-dom';
 const initialBlogs = [
     {
         id: 1,
@@ -16,14 +17,14 @@ const initialBlogs = [
     },
     {
         id: 2,
-        image: 'https://ajanm.ai/wp-content/uploads/2024/05/lifestyle-disorderd-960x720.jpg',
+        image: 'https://ajanm.ai/wp-content/uploads/2024/05/sleep-960x720.jpg',
         title: 'Yoga for Sleep Disorders: A Natural Solution for Better Rest',
         count: 0,
         liked: false,
     },
     {
         id: 3,
-        image: 'https://ajanm.ai/wp-content/uploads/2024/05/sleep-960x720.jpg',
+        image: 'https://ajanm.ai/wp-content/uploads/2024/05/lifestyle-disorderd-960x720.jpg',
         title: 'Yoga as a Treatment for Lifestyle Disorders',
         count: 0,
         liked: false,
@@ -70,6 +71,7 @@ const Blogs = () => {
 
                 <div className="blog_card">
                     {blogs.map((blog) => (
+                        <Link to={`/blogs_desc/${blog.id}`}>
                         <div className="card1" key={blog.id}>
                             <img
                                 src={blog.image}
@@ -93,6 +95,7 @@ const Blogs = () => {
                                 </div>
                             </div>
                         </div>
+                        </Link>
                     ))}
                 </div>
             </div>

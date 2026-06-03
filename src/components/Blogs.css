@@ -1,5 +1,5 @@
-.blogs{
-    margin-top:2rem;
+.blogs {
+  margin-top: 2rem;
 }
 .blog_top {
   display: flex;
@@ -47,6 +47,32 @@
 .heart.liked {
   color: red;
 }
+
+/* Onclick the card description and details of card */
+.description_image {
+    width: 90%;
+    max-width: 1000px;
+    height: 90vh;
+    display: block;
+    margin: 1.2rem auto;
+    border-radius: 3rem;
+    line-height: 2;
+}
+.img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom:2rem;
+}
+.head{
+  font-size:x-large;
+  font-weight: bold;
+  line-height: 3;
+}
+.para{
+  line-height: 2;
+  font-size:medium;
+}
 @media (min-width: 750px) and (max-width: 1264px) {
   .blog_card {
     display: grid;
@@ -63,3 +89,8 @@
   }
 }
 
+@media (max-width:770px) {
+  .description_image{
+     height: 60vh;
+  }
+}
