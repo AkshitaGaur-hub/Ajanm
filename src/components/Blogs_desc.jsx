@@ -3,6 +3,9 @@ import "./Blogs.css"
 import { useParams, useNavigate } from 'react-router-dom'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import { BsArrowLeftCircle } from "react-icons/bs";
+import { BsArrowRightCircle } from "react-icons/bs";
+
 
 const matter = [
     {
@@ -158,6 +161,31 @@ const Blogs_desc = () => {
         return null;
     }
 
+    // next and previous button
+    const previousblog = () => {
+    let prevId = blogId - 1;
+
+    // Go to last blog if currently on first blog
+    if (prevId < 1) {
+        prevId = matter.length;
+    }
+
+    navigate(`/blogs_desc/${prevId}`);
+    window.scrollTo(0, 0);
+};
+
+const nextblog = () => {
+    let nextId = blogId + 1;
+
+    // Go to first blog if currently on last blog
+    if (nextId > matter.length) {
+        nextId = 1;
+    }
+
+    navigate(`/blogs_desc/${nextId}`);
+    window.scrollTo(0, 0);
+};
+
     return (
         <>
             <Navbar />
@@ -245,6 +273,14 @@ const Blogs_desc = () => {
                         </div>
                     </div>
                 </section>
+
+            </div>
+            <div className="arrow arrow-left" onClick={previousblog}>
+                <BsArrowLeftCircle className="text-black text-2xl" />
+            </div>
+
+            <div className="arrow arrow-right"  onClick={nextblog}>
+                <BsArrowRightCircle className="text-black text-2xl"/>
             </div>
 
             <Footer />

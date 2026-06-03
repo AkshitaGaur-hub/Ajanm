@@ -50,32 +50,32 @@
 
 /* Onclick the card description and details of card */
 .description_image {
-    width: 85%;
-    max-width: 900px;
-    height: 85vh;
-    display: block;
-    margin: 1.2rem auto;
-    border-radius: 3rem;
-    line-height: 2;
+  width: 85%;
+  max-width: 900px;
+  height: 85vh;
+  display: block;
+  margin: 1.2rem auto;
+  border-radius: 3rem;
+  line-height: 2;
 }
 .img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
 }
-.head{
-  font-size:x-large;
+.head {
+  font-size: x-large;
   font-weight: bold;
   line-height: 3;
 }
-.para{
+.para {
   line-height: 2;
-  font-size:medium;
+  font-size: medium;
 }
 
 .comment-section {
-  margin:2rem;
+  margin: 2rem;
 }
 
 .comment-card {
@@ -189,7 +189,7 @@
 }
 
 .comment-btn {
-  background:var(--primary);
+  background: var(--primary);
   color: white;
   border: none;
   padding: 16px 38px;
@@ -203,6 +203,48 @@
   background: var(--primary-dark);
 }
 
+.arrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 50px;
+  border-radius: 10px;
+  opacity: 0.7;
+  background: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.arrow:hover {
+  background: var(--primary-dark);
+}
+
+.arrow-left {
+  left: 0px;
+}
+
+.arrow-right {
+  right: 0px;
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    width: 35px;
+    height: 45px;
+  }
+
+  .arrow-left {
+    left: 0px;
+  }
+
+  .arrow-right {
+    right: 0px;
+  }
+}
 @media (max-width: 768px) {
   .comment-card {
     padding: 30px 20px;
@@ -241,8 +283,18 @@
   }
 }
 
-@media (max-width:770px) {
-  .description_image{
-     height: 60vh;
+@media (max-width: 990px) {
+  .description_image {
+    height: 65vh;
+  }
+}
+@media (max-width: 770px) {
+  .description_image {
+    height: 60vh;
+  }
+}
+@media (max-width: 450px) {
+  .description_image {
+    height: 40vh;
   }
 }
