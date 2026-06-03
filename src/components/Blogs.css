@@ -50,9 +50,9 @@
 
 /* Onclick the card description and details of card */
 .description_image {
-    width: 90%;
-    max-width: 1000px;
-    height: 90vh;
+    width: 85%;
+    max-width: 900px;
+    height: 85vh;
     display: block;
     margin: 1.2rem auto;
     border-radius: 3rem;
@@ -72,6 +72,158 @@
 .para{
   line-height: 2;
   font-size:medium;
+}
+
+.comment-section {
+  margin:2rem;
+}
+
+.comment-card {
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  padding: 50px;
+  border-radius: 24px;
+}
+
+.comment-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.comment-note {
+  color: #6b7280;
+  font-size: 1rem;
+  margin-bottom: 35px;
+}
+
+.comment-note span {
+  color: var(--primary-dark);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.form-group textarea,
+.form-group input {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-group textarea:focus,
+.form-group input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(230, 126, 34, 0.12);
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.checkbox-wrapper {
+  margin-top: 30px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: #4b5563;
+}
+
+.bottom-section {
+  margin-top: 50px;
+  padding-top: 35px;
+  border-top: 1px solid #e5e7eb;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.captcha-box h4 {
+  margin-bottom: 15px;
+  color: #1f2937;
+}
+
+.captcha-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.captcha-row input {
+  width: 70px;
+  height: 60px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.captcha-row span {
+  font-size: 1.2rem;
+  color: #374151;
+}
+
+.captcha-box p {
+  margin-top: 10px;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.comment-btn {
+  background:var(--primary);
+  color: white;
+  border: none;
+  padding: 16px 38px;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.comment-btn:hover {
+  background: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+  .comment-card {
+    padding: 30px 20px;
+  }
+
+  .input-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .comment-btn {
+    width: 100%;
+  }
+
+  .comment-title {
+    font-size: 2rem;
+  }
 }
 @media (min-width: 750px) and (max-width: 1264px) {
   .blog_card {

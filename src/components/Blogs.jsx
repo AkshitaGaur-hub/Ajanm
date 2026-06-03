@@ -31,14 +31,14 @@ const initialBlogs = [
     },
     {
         id: 4,
-        image: 'https://ajanm.ai/wp-content/uploads/2024/05/spine-healthy-960x720.jpg',
+        image: 'https://ajanm.ai/wp-content/uploads/2024/05/reverse-aging-960x720.jpg',
         title: 'Reverse Aging with Yoga: A Holistic Approach to Staying Young',
         count: 0,
         liked: false,
     },
     {
         id: 5,
-        image: 'https://ajanm.ai/wp-content/uploads/2024/05/reverse-aging-960x720.jpg',
+        image: 'https://ajanm.ai/wp-content/uploads/2024/05/spine-healthy-960x720.jpg',
         title: 'The Importance of Spine Health and How Yoga Can Keep It Healthy',
         count: 0,
         liked: false,
