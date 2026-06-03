@@ -31,31 +31,31 @@ function Features() {
           {/* NAV LINKS */}
           <ul
             className={`
-        fixed top-0 left-0
-        h-screen w-[75%]
-        bg-white shadow-2xl
-        flex flex-col
-        gap-8
-        pt-24
-        px-8
-        text-lg
-        font-medium
-        transition-all duration-500
-        z-40
+    fixed left-0
+    top-3
+    max-[900px]:top-3
+    min-[901px]:top-0
 
-        ${open ? "translate-x-0" : "-translate-x-full"}
+    h-screen w-[75%]
+    bg-white shadow-2xl
+    flex flex-col gap-8
+    pt-8 px-8
+    text-lg font-medium
+    transition-all duration-500
+    z-40
 
-        lg:static
-        lg:h-auto
-        lg:w-auto
-        lg:max-w-none
-        lg:bg-transparent
-        lg:shadow-none
-        lg:flex-row
-        lg:gap-6
-        lg:p-0
-        lg:translate-x-0
-      `}
+    ${open ? "translate-x-0" : "-translate-x-full"}
+
+    lg:static
+    lg:h-auto
+    lg:w-auto
+    lg:bg-transparent
+    lg:shadow-none
+    lg:flex-row
+    lg:gap-6
+    lg:p-0
+    lg:translate-x-0
+  `}
           >
 
             <Link to='/' className='home hover:underline lg:hidden'><li>Home</li></Link>

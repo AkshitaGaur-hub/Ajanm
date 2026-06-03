@@ -85,7 +85,7 @@ function Feature() {
                             Health Conditions We Target
                         </h3>
 
-                        <h4 className="sub-title">
+                        <h4 className="para">
                             From chronic illnesses to lifestyle challenges, Ajanm addresses:
                         </h4>
                     </div>

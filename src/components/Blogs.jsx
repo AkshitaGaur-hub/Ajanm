@@ -64,7 +64,7 @@ const Blogs = () => {
             <Navbar />
             <div className="blogs">
                 <div className="blog_top">
-                    <h1 className="blog_heading">Blog & Insights</h1>
+                    <h1 className="blog_heading ">Blog & Insights</h1>
                     <p className="blog_para">Explore our latest articles, expert insights, and wellness tips to support your health journey.</p>
                 </div>
 

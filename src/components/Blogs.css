@@ -18,7 +18,7 @@
 }
 
 .blog_heading {
-  font-size: 2.5rem;
+  font-size: var(--Main_heading);
   font-weight: bold;
 }
 
@@ -65,13 +65,13 @@
   margin-bottom: 2rem;
 }
 .head {
-  font-size: x-large;
+  font-size: var(--small_heading);
   font-weight: bold;
   line-height: 3;
 }
 .para {
   line-height: 2;
-  font-size: medium;
+  font-size: var(--para);
 }
 
 .comment-section {
@@ -87,7 +87,7 @@
 }
 
 .comment-title {
-  font-size: 2.5rem;
+  font-size: var(--Main_heading);
   font-weight: 700;
   color: #111827;
   margin-bottom: 10px;
@@ -95,7 +95,7 @@
 
 .comment-note {
   color: #6b7280;
-  font-size: 1rem;
+  font-size: var(--para);
   margin-bottom: 35px;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .form-group label {
-  font-size: 1rem;
+  font-size: var(--para);
   font-weight: 600;
   color: #1f2937;
 }
@@ -120,7 +120,7 @@
   border: 1px solid #e5e7eb;
   border-radius: 14px;
   padding: 16px;
-  font-size: 1rem;
+  font-size: var(--para);
   outline: none;
   transition: 0.3s;
 }
@@ -174,34 +174,20 @@
   border: 1px solid #d1d5db;
   border-radius: 12px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: var(--para);
 }
 
 .captcha-row span {
-  font-size: 1.2rem;
+  font-size: var(--para);
   color: #374151;
 }
 
 .captcha-box p {
   margin-top: 10px;
   color: #6b7280;
-  font-size: 0.9rem;
+  font-size: var(--para);
 }
 
-.comment-btn {
-  background: var(--primary);
-  color: white;
-  border: none;
-  padding: 16px 38px;
-  border-radius: 14px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.comment-btn:hover {
-  background: var(--primary-dark);
-}
 
 .arrow {
   position: fixed;
@@ -264,7 +250,7 @@
   }
 
   .comment-title {
-    font-size: 2rem;
+    font-size: var(--Main_heading);
   }
 }
 @media (min-width: 750px) and (max-width: 1264px) {

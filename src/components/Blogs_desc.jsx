@@ -267,7 +267,7 @@ const nextblog = () => {
                                 <p>Solve the math problem above</p>
                             </div>
 
-                            <button className="comment-btn">
+                            <button className="btn">
                                 Post Comment
                             </button>
                         </div>

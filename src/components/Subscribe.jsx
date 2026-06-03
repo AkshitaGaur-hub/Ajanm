@@ -10,7 +10,7 @@ const Subscribe = () => {
             <Navbar />
             <div className="subscribe">
                 <div className="sub">
-                <h1 className="heading ">Subscribe Now</h1>
+                <h1 className="heading">Subscribe Now</h1>
                 <h3 className='text-2xl font-light'>Choose Your Plan</h3>
                 <p className="para text-gray-600">Start Your Journy Today</p>
                 </div>
