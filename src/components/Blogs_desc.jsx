@@ -5,12 +5,17 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import { BsArrowLeftCircle } from "react-icons/bs";
 import { BsArrowRightCircle } from "react-icons/bs";
+import img from "../assets/blogs-image/spine.png"
+import hormon from "../assets/blogs-image/hormon.png"
+import sleep from "../assets/blogs-image/sleep.png";
+import life from "../assets/blogs-image/life.png";
+import reverse from "../assets/blogs-image/reverse.png";
 
 
 const matter = [
     {
         id: 1,
-        image: 'https://ajanm.ai/wp-content/uploads/2024/05/harmonal-disorder.jpg',
+        image: hormon,
         para1: 'Hormonal disorders affect countless individuals globally, manifesting as thyroid issues, diabetes, adrenal fatigue, and reproductive conditions like polycystic ovary syndrome (PCOS) and endometriosis. These imbalances can disrupt daily life, causing symptoms from fatigue and weight fluctuation to severe mood swings and infertility. Traditional treatments often include medication or invasive procedures, but yoga offers a natural, gentle alternative to help regulate and balance hormones.',
         title1: 'Understanding Hormonal Disorders',
         para2: "Hormones are the body's chemical messengers, influencing nearly every physiological process, including growth, metabolism, fertility, and mood. When hormones are out of balance, it can lead to significant health issues. Hormonal disorders can stem from various causes, including stress, poor diet, environmental toxins, and genetics.",
@@ -40,7 +45,7 @@ const matter = [
     },
     {
         id: 2,
-        image: 'https://ajanm.ai/wp-content/uploads/2024/05/sleep.jpg',
+        image: sleep,
         para1: 'Sleep disorders, which include issues like insomnia, sleep apnea, restless leg syndrome, and irregular sleep-wake cycles, affect millions of people worldwide. These issues can significantly impact overall health, reducing quality of life and increasing the risk of various health problems. Yoga, with its holistic approach to health and well-being, offers a gentle yet effective means to improve sleep quality and resolve sleep disturbances.',
         title1: 'Understanding Sleep Disorders',
         para2: "Sleep is critical for physical health and effective brain function. However, many people struggle with sleep for various reasons including stress, anxiety, physical health issues, and environmental factors. Poor sleep can lead to a weakened immune system, weight gain, depression, and increased anxiety, making it a vital aspect of health to address.",
@@ -69,7 +74,7 @@ const matter = [
     },
     {
         id: 3,
-        image: 'https://ajanm.ai/wp-content/uploads/2024/05/lifestyle-disorderd.jpg',
+        image: life,
         para1: "In the modern world, where the pace of life is continually accelerating, lifestyle disorders such as stress, obesity, diabetes, and cardiovascular diseases have become increasingly common. These conditions are primarily influenced by daily habits and choices, particularly physical inactivity, poor diet, stress, and improper sleep patterns. However, yoga, an ancient practice rooted in Indian philosophy, offers a holistic approach to combating these disorders by promoting a balanced lifestyle and improving overall health.",
         title1: 'Understanding Lifestyle Disorders',
         para2: "Lifestyle disorders are ailments that stem from habitual behaviors which negatively impact our health. These include:",
@@ -98,7 +103,7 @@ const matter = [
     },
     {
         id: 4,
-        image: 'https://ajanm.ai/wp-content/uploads/2024/05/reverse-aging.jpg',
+        image: reverse,
         para1: 'Aging is an inevitable process, but how we age is profoundly influenced by our lifestyle choices. While various products and procedures promise the secret to eternal youth, yoga offers a holistic and sustainable approach to not only slowing down the aging process but also reversing some of its effects. Through a combination of physical postures, breathing exercises, and meditation, yoga nurtures the body, mind, and spirit, offering a blueprint for aging gracefully and healthily.',
         title1: 'The Science Behind Yoga and Anti-Aging',
         subheading1: '1.Cellular Health: ',
@@ -125,7 +130,7 @@ const matter = [
     },
     {
         id: 5,
-        image: 'https://ajanm.ai/wp-content/uploads/2024/05/spine-healthy.jpg',
+        image: img,
         para1: 'The human spine is a crucial yet often overlooked component of overall health and well-being. Acting as the main structural support for the body, it protects the spinal cord, supports the head, and provides flexibility and mobility. Unfortunately, due to modern lifestyle habits such as prolonged sitting and poor posture, spinal health issues are increasingly common. This is where yoga, an ancient practice with modern relevance, steps in as an effective tool to promote spine health and prevent related disorders.',
         title1: 'Understanding Spine Health',
         para2: "The spine is a complex structure made up of bones, muscles, ligaments, and nerves. Its health is essential for performing everyday activities painlessly and efficiently. When the spine is misaligned or under stress, it can lead to a host of issues, including back pain, neck pain, and reduced mobility. Over time, these conditions can significantly diminish quality of life and increase dependency on medications or surgeries.",

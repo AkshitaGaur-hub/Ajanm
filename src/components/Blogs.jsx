@@ -1,44 +1,48 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import { FaHeart } from "react-icons/fa6";
-import JS from '../assets/images/JS.png'
+import { FaHeart } from "react-icons/fa6"; 
 import { FiMessageCircle } from "react-icons/fi";
 import "./Blogs.css"
-// removed unused import
+import img from "../assets/blogs-image/spine.png";
+import hormon from "../assets/blogs-image/hormon.png";
+import sleep from "../assets/blogs-image/sleep.png";
+import life from "../assets/blogs-image/life.png";
+import reverse from "../assets/blogs-image/reverse.png";
+
 import { Link } from 'react-router-dom';
 const initialBlogs = [
     {
         id: 1,
-        image: 'https://ajanm.ai/wp-content/uploads/2024/05/harmonal-disorder-960x720.jpg',
+        image: hormon,
         title: 'Yoga for Hormonal Disorders: Balancing Body Chemistry Naturally',
         count: 0,
         liked: false,
     },
     {
         id: 2,
-        image: 'https://ajanm.ai/wp-content/uploads/2024/05/sleep-960x720.jpg',
+        image: sleep,
         title: 'Yoga for Sleep Disorders: A Natural Solution for Better Rest',
         count: 0,
         liked: false,
     },
     {
         id: 3,
-        image: 'https://ajanm.ai/wp-content/uploads/2024/05/lifestyle-disorderd-960x720.jpg',
+        image: life,
         title: 'Yoga as a Treatment for Lifestyle Disorders',
         count: 0,
         liked: false,
     },
     {
         id: 4,
-        image: 'https://ajanm.ai/wp-content/uploads/2024/05/reverse-aging-960x720.jpg',
+        image: reverse,
         title: 'Reverse Aging with Yoga: A Holistic Approach to Staying Young',
         count: 0,
         liked: false,
     },
     {
         id: 5,
-        image: 'https://ajanm.ai/wp-content/uploads/2024/05/spine-healthy-960x720.jpg',
+        image: img,
         title: 'The Importance of Spine Health and How Yoga Can Keep It Healthy',
         count: 0,
         liked: false,
