@@ -31,9 +31,7 @@ function Features() {
           {/* NAV LINKS */}
           <ul
             className={`
-    fixed left-0
-    top-3
-    max-[900px]:top-3
+    fixed left-0 top-0
     min-[901px]:top-0
 
     h-screen w-[75%]

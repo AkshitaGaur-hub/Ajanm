@@ -30,11 +30,11 @@ const Footer = () => {
 
         {/* BRAND */}
         <div className="flex flex-col gap-5">
-          <h1 className="text-3xl font-extrabold tracking-wide">
+          <h1 className="brand font-extrabold tracking-wide">
             AJANM
           </h1>
 
-          <p className="text-sm leading-7 text-gray-600">
+          <p className="para leading-7 text-gray-600">
             Ancient wisdom meets modern wellness. Personalized healing,
             sustainable habits, and AI-driven guidance for your journey.
           </p>

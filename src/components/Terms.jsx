@@ -126,7 +126,7 @@ export default function Terms() {
         <>
             <Navbar />
 
-            <div className="bg-[#fffaf5] min-h-screen text-gray-800">
+            <div className="bg-[#fffaf5]  text-gray-800">
                 {/* Hero */}
                 <section className="Terms_head py-24 px-6 bg-gradient-to-br from-orange-100 via-white to-orange-50 text-center">
                     <div className="max-w-5xl mx-auto">

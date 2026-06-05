@@ -10,12 +10,10 @@
   --btn-padding: 10px 18px;
   --nav-gap: 24px;
   --fbg: #fbdfb9;
-   --Main_heading:clamp(1.5rem, 2.5vw, 3rem);
-   --para: clamp(1rem, 1.2vw, 1.5rem);
-   --small_heading: clamp(1.7rem, 1.8vw, 2.3rem);
-   --smpara: clamp(0.5rem,0.7vw,1rem);
-
-  
+  --Main_heading: clamp(1.5rem, 2.5vw, 3rem);
+  --para: clamp(1rem, 1.2vw, 1.5rem);
+  --small_heading: clamp(1.7rem, 1.8vw, 2.3rem);
+  --smpara: clamp(0.5rem, 0.7vw, 1rem);
 }
 
 html,
@@ -194,9 +192,10 @@ button:hover {
   margin-bottom: 1rem;
 }
 
-/* .right {
-  margin-top: 2.5rem;
-} */
+.right {
+  display: flex;
+  justify-content: center;
+}
 
 .container {
   width: 100%;
@@ -228,7 +227,7 @@ button:hover {
   font-size: var(--para);
   margin-top: 1vh;
   font-weight: 300;
-  line-height: 0.2;
+  line-height: 1;
 }
 
 #programbtn {
@@ -379,17 +378,9 @@ button:hover {
   gap: 20px;
 }
 
-/* .card_container {
-  display: grid;
-  grid-template-columns: repeat(3, 395px);
-  justify-content: center;
-  gap: 38px;
+.brand{
+  font-size: var(--small_heading);
 }
-@media (min-width: 678px) and (max-width:1264px){
-  .card_container{
-    grid-template-columns: repeat(2,1fr);
-  }
-} */
 
 .card_container {
   display: grid;
@@ -561,12 +552,6 @@ footer {
 .rp {
   width: 100%;
 }
-/* .card_container {
-  display: grid;
-  grid-template-columns: repeat(3, 260px);
-  justify-content: center;
-  gap: 20px;
-} */
 
 html {
   scroll-behavior: smooth;
@@ -624,7 +609,7 @@ html {
   font-weight: bold;
 }
 
-.journy{
+.journy {
   font-size: var(--small_heading);
   font-weight: bolder;
 }
@@ -758,15 +743,6 @@ iframe {
     font-size: 14px;
   }
 
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    gap: 5rem;
-    font-weight: 600;
-    font-size: var(--small_heading);
-    list-style: none;
-  }
   ul {
     display: flex;
     align-items: center;
@@ -925,8 +901,8 @@ iframe {
   .ab {
     display: none;
   }
-  body{
-    margin-top:1.1rem;
+  body {
+    margin-top: 1.1rem;
   }
 }
 
@@ -1129,10 +1105,6 @@ iframe {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* .card_container { */
-  /* grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-  } */
 
   iframe {
     width: 100%;
@@ -1183,8 +1155,8 @@ iframe {
     max-width: 420px;
   }
 
-  .joinp{
-    display:flex;
+  .joinp {
+    display: flex;
     flex-direction: column;
   }
 }
@@ -1214,4 +1186,32 @@ iframe {
   body {
     padding-top: 90px;
   }
+}
+@media (min-height: 300px) and (max-width: 968px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    font-weight: 600;
+    font-size: var(--small_heading);
+    list-style: none;
+  }
+}
+@media (max-width: 968px) {
+    ul {
+        display: flex;
+        align-items: center;
+        font-size: var(--para);
+        padding-top: 3rem;
+        gap: 3rem;
+    }
+}
+@media (max-height: 550px) {
+    ul {
+        display: flex;
+        align-items: center;
+        font-size: var(--para);
+        padding-top: 2rem;
+        gap: 1.5rem;
+    }
 }

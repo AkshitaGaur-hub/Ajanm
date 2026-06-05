@@ -57,7 +57,7 @@ export default function Privacy() {
   return (
     <>
      <Navbar/>
-    <div className="bg-[#fffaf5] min-h-screen text-gray-800">
+    <div className="bg-[#fffaf5]  text-gray-800">
       {/* Hero Section */}
       <section className="privacy_head relative overflow-hidden bg-gradient-to-br from-orange-100 via-white to-orange-50 py-24 px-6">
         <div className=" max-w-6xl mx-auto text-center">

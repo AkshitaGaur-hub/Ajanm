@@ -34,7 +34,7 @@
 }
 
 .main-title {
-    font-size: var(--Main_heading);
+  font-size: var(--Main_heading);
   font-weight: bold;
 }
 
@@ -55,7 +55,7 @@
   padding: 10px;
   border-radius: 20px;
   text-align: center;
-   width: 100%;
+  width: 100%;
   max-width: 400px;
   margin: auto;
 }
@@ -65,8 +65,8 @@
   font-size: var(--small_heading);
   font-weight: bold;
 }
-.card-text{
-  font-size:var(--para);
+.card-text {
+  font-size: var(--para);
 }
 .card-desc {
   margin-top: 10px;
@@ -89,7 +89,7 @@
   width: 100%;
   max-width: 480px;
   height: auto;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
 .ajnamapp,
 .ajanmprogram {
@@ -256,7 +256,7 @@
 
 .siddhasana {
   margin-top: 2rem;
-  width:80%;
+  width: 80%;
   max-width: 550px;
   height: 350px;
   border-radius: 20px;
@@ -337,7 +337,8 @@
   flex-wrap: wrap;
 }
 .cork {
-  padding: 1.5px;
+  margin:0.5rem;
+  padding: 0.8rem;
 }
 /* Responsive */
 
@@ -440,7 +441,7 @@
   .ajnamapp,
   .ajanmprogram {
     flex-direction: column-reverse;
-    gap:0px;
+    gap: 0px;
   }
 
   .lhs,
@@ -473,12 +474,20 @@
     font-size: var(--para);
     line-height: 1.6;
   }
+ 
 }
 
-@media (min-width: 670px) and (max-width: 1264px){
-.card_container {
-  display: grid;
-  grid-template-columns: repeat(2, 380px);
-  justify-content: center;
+@media (min-width: 670px) and (max-width: 1264px) {
+  .card_container {
+    display: grid;
+    grid-template-columns: repeat(2, 380px);
+    justify-content: center;
+  }
 }
+
+@media (min-width:650px) and (max-width:915px){
+   .privacy_c{
+    display: grid;
+     grid-template-columns: repeat(2, 1fr);
+  }
 }

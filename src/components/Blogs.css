@@ -33,6 +33,7 @@
 
 .yoga_img {
   border-radius: 3rem;
+  
 }
 
 .heart {
@@ -187,7 +188,6 @@
   color: #6b7280;
   font-size: var(--para);
 }
-
 
 .arrow {
   position: fixed;
