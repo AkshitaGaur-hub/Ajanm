@@ -264,22 +264,11 @@
 
 /* Subscribe */
 .sub {
-}
-.subscribe {
-  margin-left: 3rem;
-}
-
-.siddhasana {
-  margin-top: 2rem;
-  width: 80%;
-  max-width: 550px;
-  height: 350px;
-  border-radius: 20px;
+  text-align: center;
 }
 
 .fee {
   background-color: var(--fbg);
-  width: 85%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -291,14 +280,6 @@
   border-radius: 50px;
   width: 50px;
   height: 50px;
-}
-
-.rhside {
-  width: 50%;
-  margin-bottom: 2rem;
-}
-.lhside {
-  width: 50%;
 }
 
 .card_container {
@@ -355,7 +336,61 @@
   margin: 0.5rem;
   padding: 0.8rem;
 }
+.subscribe {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
 
+.sn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.lhside,
+.rhside {
+  flex: 1;
+}
+
+.lhside {
+  display: flex;
+  justify-content: center;
+}
+
+.siddhasana {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.rhside {
+  display: flex;
+  justify-content: center;
+}
+
+.daily_imp {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  padding: 1rem;
+  text-align: center;
+  justify-content: space-between;
+}
+.secure {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+.fee {
+  width: 100%;
+  max-width: 550px;
+  background-color: var(--fbg);
+  padding: 2rem;
+  border-radius: 20px;
+}
 /* Responsive */
 
 @media (max-width: 670px) {
@@ -429,12 +464,6 @@
     justify-content: center;
     align-items: center;
   }
-  .rhside {
-    width: 100%;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-  }
   .lhside {
     width: 100%;
     display: flex;
@@ -445,12 +474,6 @@
     width: 353px;
     height: 250px;
     border-radius: 20px;
-  }
-  .subscribe {
-    margin-left: 0;
-  }
-  .sub {
-    margin-left: 2rem;
   }
 }
 @media (max-width: 648px) {
@@ -504,5 +527,44 @@
   .privacy_c {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 880px) {
+  .sn {
+    display: flex;
+    flex-direction: column;
+  }
+  .lhside {
+    text-align: center;
+  }
+  .lhside,
+  .rhside {
+    width: 100%;
+  }
+
+  .fee {
+    max-width: 100%;
+  }
+
+  .siddhasana {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+}
+
+@media (max-width: 530px) {
+  .subscribe_icon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .secure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
