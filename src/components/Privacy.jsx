@@ -56,125 +56,121 @@ const sections = [
 export default function Privacy() {
   return (
     <>
-     <Navbar/>
-    <div className="bg-[#fffaf5]  text-gray-800">
-      {/* Hero Section */}
-      <section className="privacy_head relative overflow-hidden bg-gradient-to-br from-orange-100 via-white to-orange-50 py-24 px-6">
-        <div className=" max-w-6xl mx-auto text-center">
-          <div className="cork inline-flex items-center gap-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium mb-6">
-            <ShieldCheck className="w-4 h-4" />
-            Privacy & Data Protection
+      <Navbar />
+      <div className="bg-[#fffaf5]  text-gray-800">
+        {/* Hero Section */}
+        <section className="privacy_head relative overflow-hidden bg-gradient-to-br from-orange-100 via-white to-orange-50 py-24 px-6">
+          <div className=" max-w-6xl mx-auto text-center">
+            <div className="cork inline-flex items-center gap-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium mb-6">
+              <ShieldCheck className="w-4 h-4" />
+              Privacy & Data Protection
+            </div>
+
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+              Privacy Policy
+            </h1>
+
+            <p className="max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">
+              At <span className="font-semibold text-orange-600">Ajanm</span>,
+              your privacy matters. We are committed to protecting your personal
+              data and maintaining transparency in how your information is used.
+            </p>
+
+            <div className="mt-8 text-sm text-gray-500">
+              Effective Date: 02-01-2025
+            </div>
+          </div>
+        </section>
+
+        {/* Main Content */}
+        <section className="privacy_card px-6 py-20">
+          <div className="privacy_c grid md:grid-cols-3 gap-8 justify-items-center">
+            {sections.map((item, index) => (
+              <div
+                key={index}
+                className="policy_c w-full max-w-lg bg-white border border-orange-100 rounded-3xl p-8 "
+              >
+                <div className="w-14 h-14 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center mb-6">
+                  {item.icon}
+                </div>
+
+                <h2 className="text-2xl font-semibold mb-4">{item.title}</h2>
+
+                <p className="text-gray-600 leading-relaxed">
+                  {item.content}
+                </p>
+              </div>
+            ))}
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Privacy Policy
-          </h1>
+          {/* Detailed Policy */}
+          <div className="detail_policy mt-2 p-8 md:p-12">
+            <h2 className="text-4xl font-bold mb-8">
+              Your Rights & Responsibilities
+            </h2>
 
-          <p className="max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">
-            At <span className="font-semibold text-orange-600">Ajanm</span>,
-            your privacy matters. We are committed to protecting your personal
-            data and maintaining transparency in how your information is used.
-          </p>
-
-          <div className="mt-8 text-sm text-gray-500">
-            Effective Date: 02-01-2025
-          </div>
-        </div>
-
-        {/* Decorative Blur */}
-        {/* <div className="absolute top-0 left-0 w-72 h-72 bg-orange-200 rounded-full blur-3xl opacity-30"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-300 rounded-full blur-3xl opacity-20"></div> */}
-      </section>
-
-      {/* Main Content */}
-      <section className="privacy_card px-6 py-20">
-        <div className="privacy_c grid md:grid-cols-3 gap-8 justify-items-center">
-          {sections.map((item, index) => (
-            <div
-              key={index}
-              className="policy_c w-full max-w-lg bg-white border border-orange-100 rounded-3xl p-8 "
-            >
-              <div className="w-14 h-14 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center mb-6">
-                {item.icon}
+            <div className="space-y-8 text-gray-600 leading-8 w-full detail_c">
+              <div>
+                <h4 className="text-2xl font-semibold text-gray-800 mb-3">
+                  Access & Updates
+                </h4>
+                <p>
+                  You can review and update your personal information anytime
+                  through your account settings to maintain accurate health and
+                  program data.
+                </p>
               </div>
 
-              <h2 className="text-2xl font-semibold mb-4">{item.title}</h2>
+              <div>
+                <h4 className="text-2xl font-semibold text-gray-800 mb-3">
+                  Account Deletion
+                </h4>
+                <p>
+                  You may delete your account at any time. Certain information may
+                  still be retained where legally required.
+                </p>
+              </div>
 
-              <p className="text-gray-600 leading-relaxed">
-                {item.content}
-              </p>
-            </div>
-          ))}
-        </div>
+              <div>
+                <h4 className="text-2xl font-semibold text-gray-800 mb-3">
+                  Cookies & Tracking
+                </h4>
+                <p>
+                  We use cookies and tracking technologies to improve app
+                  performance, analyze usage patterns, and personalize your
+                  experience.
+                </p>
+              </div>
 
-        {/* Detailed Policy */}
-        <div className="detail_policy mt-2 p-8 md:p-12">
-          <h2 className="text-4xl font-bold mb-8">
-            Your Rights & Responsibilities
-          </h2>
+              <div>
+                <h4 className="text-2xl font-semibold text-gray-800 mb-3">
+                  Children’s Privacy
+                </h4>
+                <p>
+                  Our services are not intended for users under the age of 18. We
+                  do not knowingly collect data from children.
+                </p>
+              </div>
 
-          <div className="space-y-8 text-gray-600 leading-8 w-full detail_c">
-            <div>
-              <h4 className="text-2xl font-semibold text-gray-800 mb-3">
-                Access & Updates
-              </h4>
-              <p>
-                You can review and update your personal information anytime
-                through your account settings to maintain accurate health and
-                program data.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="text-2xl font-semibold text-gray-800 mb-3">
-                Account Deletion
-              </h4>
-              <p>
-                You may delete your account at any time. Certain information may
-                still be retained where legally required.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="text-2xl font-semibold text-gray-800 mb-3">
-                Cookies & Tracking
-              </h4>
-              <p>
-                We use cookies and tracking technologies to improve app
-                performance, analyze usage patterns, and personalize your
-                experience.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="text-2xl font-semibold text-gray-800 mb-3">
-                Children’s Privacy
-              </h4>
-              <p>
-                Our services are not intended for users under the age of 18. We
-                do not knowingly collect data from children.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="text-2xl font-semibold text-gray-800 mb-3">
-                Policy Updates
-              </h4>
-              <p>
-                This Privacy Policy may be updated periodically. Significant
-                changes will be communicated within the App or through official
-                channels.
-              </p>
+              <div>
+                <h4 className="text-2xl font-semibold text-gray-800 mb-3">
+                  Policy Updates
+                </h4>
+                <p>
+                  This Privacy Policy may be updated periodically. Significant
+                  changes will be communicated within the App or through official
+                  channels.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-      </section>
-    </div>
-    <Footer/>
-    <div>
-      <h1>Privacy Page Working</h1>
-    </div>
+        </section>
+      </div>
+      <Footer />
+      <div>
+        <h1>Privacy Page Working</h1>
+      </div>
     </>
   );
 }

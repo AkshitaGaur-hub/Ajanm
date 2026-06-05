@@ -37,6 +37,8 @@ const Subscribe = () => {
                     </div>
                 </div>
             </div>
+
+           
             <Footer />
         </>
     )

@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center gap-3 text-sm text-gray-700">
-            <MapPin size={18} className="text-orange-500" />
+            <MapPin size={35} className="text-orange-500" />
             BK Vedic Pvt. Ltd. 3, Paneri Upvan, Bedla Road,Fatehpura, Udaipur,Rajasthan, 313001
           </div>
 
