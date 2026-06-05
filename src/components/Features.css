@@ -207,14 +207,14 @@
 }
 
 @media (min-width: 1024px) {
-  .cardss {
+  /* .cardss {
     margin-left: 8rem;
-  }
+  } */
 }
 .items {
   background-color: var(--white);
   border-radius: 20px;
-  width: 32vw;
+  width: 35vw;
   align-items: center;
 }
 .top {
