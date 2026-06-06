@@ -6,7 +6,6 @@ import './Features.css'
 import { IoMdCheckbox } from "react-icons/io";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { FaAppStoreIos } from "react-icons/fa";
-import { CiSaveDown2 } from "react-icons/ci";
 
 import {
     Download,

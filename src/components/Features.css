@@ -115,6 +115,7 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
+
 @media (min-width: 768px) {
   .ajnamapp,
   .ajanmprogram {
@@ -247,7 +248,7 @@
 .ab {
   width: 100%;
   max-width: 550px;
-  height: 465px;
+  height: 410px;
   border-radius: 20px;
 }
 
@@ -566,5 +567,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (min-width:780px) and (max-width:1100px) {
+  .lhands{
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }

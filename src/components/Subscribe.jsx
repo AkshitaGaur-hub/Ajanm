@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { IoMdCheckbox } from "react-icons/io";
-// import image from "../assets/images/Siddhasana.PNG"
 import { GoGoal } from "react-icons/go";
 import { IoPerson } from "react-icons/io5";
 import { IoBarChartSharp } from "react-icons/io5";
