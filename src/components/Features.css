@@ -261,6 +261,7 @@
   align-items: center;
 }
 
+
 /* Blogs */
 
 /* Subscribe */
@@ -574,4 +575,11 @@
     justify-content: flex-start;
     align-items: flex-start;
   }
+}
+
+@media (max-width:878px) {
+  .sub_icon{
+  align-items: center;
+}
+  
 }

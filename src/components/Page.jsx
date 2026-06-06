@@ -15,9 +15,7 @@ function Page() {
                         <div className="heading font-extrabold flex flex-col m-3 gap-3">
                             <span id="heading" className="text-2xl sm:text-3xl md:text-4xl">Transform Your Life</span>
                             <span id="heading" className="text-2xl sm:text-3xl md:text-4xl"><span id="org" className="color">AI-Enhanced Yoga & Nutrition</span></span>
-                            <span id="para" className="text-sm sm:text-base md:text-lg">A revolutionary 108-day program that combines ancient yogic</span>
-                            <span id="para" className="text-sm sm:text-base md:text-lg">wisdom with cutting-edge AI technology to heal, rejuvenate</span>
-                            <span id="para" className="text-sm sm:text-base md:text-lg">and empower you.</span>
+                            <span id="para" className="text-sm sm:text-base md:text-lg ">A revolutionary 108-day program that combines ancient yogic wisdom with cutting-edge AI technology to heal, rejuvenate and empower you.</span>
                         </div>
                     </div>
                     <div id="programbtn" className="flex flex-wrap gap-4">

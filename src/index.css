@@ -72,9 +72,9 @@ img {
   max-width: 400px;
 }
 
-nav{
+/* nav{
  box-shadow: 0 8px 12px -6px rgba(0, 0, 0, 0.2);
-}
+} */
 
 @media (min-width: 768px) {
   .leftprogramm {
@@ -193,6 +193,7 @@ button:hover {
   border-radius: 8px;
   color: var(--primary);
   font-size: 0.875rem;
+  margin-top:0.5rem;
   margin-bottom: 1rem;
 }
 
@@ -231,7 +232,7 @@ button:hover {
   font-size: var(--para);
   margin-top: 1vh;
   font-weight: 300;
-  line-height: 1;
+  line-height: 2;
 }
 
 #programbtn {

@@ -26,19 +26,19 @@ const Subscribe = () => {
                         <div className="heading">Invest in Yourself , <span className='text-orange-400'>Transform Your Life.</span></div>
                         <div className="para text-gray-500">Join our 108-Days of Transformation program and take the first step towards a helthier, happier you.</div>
                         <div className="subscribe_icon grid grid-cols-4 gap-7">
-                            <div className='flex flex-col m-2'>
+                            <div className='flex flex-col m-2 sub_icon '>
                                 <div className='w-24 h-24 rounded-3xl border-[10px] border-orange-50 bg-orange-100  flex items-center justify-center text-center z-10'><GoGoal className='text-orange-600 font-bold text-5xl' /></div>
                                 <span><b>Goal-Oriented Program</b></span>
                             </div>
-                            <div className='flex flex-col'>
+                            <div className='flex flex-col sub_icon '>
                                 <div className='w-24 h-24 rounded-3xl border-[10px] border-orange-50 bg-orange-100  flex items-center justify-center text-center z-10'><IoPerson className='text-orange-600 font-bold text-5xl' /></div>
                                 <span><b>Expert Guidance</b></span>
                             </div>
-                            <div className='flex flex-col '>
+                            <div className='flex flex-col  sub_icon '>
                                 <div className='w-24 h-24 rounded-3xl border-[10px] border-orange-50 bg-orange-100  flex items-center justify-center text-center z-10'><IoBarChartSharp className='text-orange-600 font-bold text-5xl' /></div>
                                 <span><b>Track Your Progress</b></span>
                             </div>
-                            <div className='flex flex-col'>
+                            <div className='flex flex-col sub_icon '>
                                 <div className='w-24 h-24 rounded-3xl border-[10px] border-orange-50 bg-orange-100  flex items-center justify-center text-center z-10'><CiHeart className='text-orange-600 font-bold text-5xl' /></div>
                                 <span><b>Healthy Body,Happy Mind</b></span>
                             </div>
@@ -70,14 +70,14 @@ const Subscribe = () => {
                             <h3 className='text-2xl font-bold'>108-Days of Transformation</h3>
                             <h1 className="heading">₹2100</h1>
                             <div className="feepoint para flex flex-col gap-1 mt-4">
-                                <span className='flex items-center gap-3'><IoMdCheckbox /><p className='m-0'>Subscription Duration : 126 Days</p></span>
-                                <span className='flex items-center gap-3'><IoMdCheckbox /><p className='m-0'>Program Duration: 108 Days</p></span>
-                                <span className='flex items-center gap-3'><IoMdCheckbox /><p className='m-0'>AI generated personalized weekly programs</p></span>
-                                <span className='flex items-center gap-3'><IoMdCheckbox /><p className='m-0'>Live Counseling with an Expert</p></span>
-                                <span className='flex items-center gap-3'><IoMdCheckbox /><p className='m-0'>Access to performance report</p></span>
-                                <span className='flex items-center gap-3'><IoMdCheckbox /><p className='m-0'>Live Counseling with an Expert</p></span>
-                                <span className='flex items-center gap-3'><IoMdCheckbox /><p className='m-0'>Free access to our contents</p></span>
-                                <span className='flex items-center gap-3'><IoMdCheckbox /><p className='m-0'>Free access to Live webinars</p></span>
+                                <span className='flex items-center gap-3'><IoMdCheckbox className='text-orange-600'/><p className='m-0'>Subscription Duration : 126 Days</p></span>
+                                <span className='flex items-center gap-3'><IoMdCheckbox className='text-orange-600'/><p className='m-0'>Program Duration: 108 Days</p></span>
+                                <span className='flex items-center gap-3'><IoMdCheckbox className='text-orange-600'/><p className='m-0'>AI generated personalized weekly programs</p></span>
+                                <span className='flex items-center gap-3'><IoMdCheckbox className='text-orange-600'/><p className='m-0'>Live Counseling with an Expert</p></span>
+                                <span className='flex items-center gap-3'><IoMdCheckbox className='text-orange-600'/><p className='m-0'>Access to performance report</p></span>
+                                <span className='flex items-center gap-3'><IoMdCheckbox className='text-orange-600'/><p className='m-0'>Live Counseling with an Expert</p></span>
+                                <span className='flex items-center gap-3'><IoMdCheckbox className='text-orange-600'/><p className='m-0'>Free access to our contents</p></span>
+                                <span className='flex items-center gap-3'><IoMdCheckbox className='text-orange-600'/><p className='m-0'>Free access to Live webinars</p></span>
                             </div>
                             <button className='m-3'>Pay now</button>
                         </div>
