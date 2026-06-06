@@ -49,10 +49,32 @@ const initialBlogs = [
     },
 ];
 
-const Blogs = () => {
-    const [blogs, setBlogs] = React.useState(initialBlogs);
+const BLOG_STORAGE_KEY = 'ajnam-blog-likes';
 
-    const toggleLike = (id) => {
+const Blogs = () => {
+    const [blogs, setBlogs] = React.useState(() => {
+        const saved = localStorage.getItem(BLOG_STORAGE_KEY);
+        if (!saved) return initialBlogs;
+
+        try {
+            const storedBlogs = JSON.parse(saved);
+            return initialBlogs.map((blog) => {
+                const persisted = storedBlogs.find((item) => item.id === blog.id);
+                return persisted ? { ...blog, liked: persisted.liked, count: persisted.count } : blog;
+            });
+        } catch (error) {
+            return initialBlogs;
+        }
+    });
+
+    React.useEffect(() => {
+        localStorage.setItem(BLOG_STORAGE_KEY, JSON.stringify(blogs));
+    }, [blogs]);
+
+    const toggleLike = (event, id) => {
+        event.stopPropagation();
+        event.preventDefault();
+
         setBlogs((prevBlogs) =>
             prevBlogs.map((blog) => {
                 if (blog.id !== id) return blog;
@@ -88,7 +110,7 @@ const Blogs = () => {
                                     <div className="like flex items-center gap-2">
                                         <FaHeart
                                             className={`heart ${blog.liked ? 'liked' : ''}`}
-                                            onClick={() => toggleLike(blog.id)}
+                                            onClick={(event) => toggleLike(event, blog.id)}
                                         />
                                         <span>{blog.count}</span>
                                     </div>
