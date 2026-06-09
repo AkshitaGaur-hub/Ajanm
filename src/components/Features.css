@@ -156,10 +156,16 @@
 .download {
   background-color: black;
   color: white;
-  font-size: var(--small_heading);
+  font-size: var(--para);
 }
 .download:hover {
   background-color: rgb(46, 46, 46);
+}
+
+.dow{
+  height:2rem;
+  width:2rem;
+
 }
 
 /* Ajanm Program */

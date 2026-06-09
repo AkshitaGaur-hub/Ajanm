@@ -72,9 +72,9 @@ img {
   max-width: 400px;
 }
 
-/* nav{
- box-shadow: 0 8px 12px -6px rgba(0, 0, 0, 0.2);
-} */
+nav{
+ box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
 
 @media (min-width: 768px) {
   .leftprogramm {
@@ -92,7 +92,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 1rem;
+  padding: 10px 1rem;
   position: fixed;
   top: 0;
   left: 0;
