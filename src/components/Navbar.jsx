@@ -13,7 +13,7 @@ function Features() {
         {/* LOGO */}
         <Link to='/' className="flex items-center gap-2">
           <img src={logo} alt="" className="go" />
-          <span className='font-bold text-2xl lg:text-3xl'>
+          <span className='heading font-bold text-2xl lg:text-3xl'>
             AJANM
           </span>
         </Link>

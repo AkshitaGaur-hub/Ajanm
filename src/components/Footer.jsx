@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, ChevronRight } from 'lucide-react';
 import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const footerLinks = [
   { text: "Our Approach (108 Days)", href: "/" },
@@ -74,9 +75,18 @@ const Footer = () => {
             +91 XXX XXX XXXX
           </div>
 
-          <div className="flex items-center gap-3 text-sm text-gray-700">
-            <MapPin size={35} className="text-orange-500" />
+          {/* <div className="flex items-center gap-3 text-sm text-gray-700">
+            <MapPin size={40} className="text-orange-500" />
             BK Vedic Pvt. Ltd. 3, Paneri Upvan, Bedla Road,Fatehpura, Udaipur,Rajasthan, 313001
+          </div> */}
+
+          <div className="flex gap-3 text-sm text-gray-700">
+            <MapPin className="text-orange-500 shrink-0 mt-1" size={20} />
+            <p className="leading-5 text-left">
+              BK Vedic Pvt. Ltd. 3, Paneri Upvan,
+              Bedla Road, Fatehpura,
+              Udaipur, Rajasthan, 313001
+            </p>
           </div>
 
           {/* SOCIALS */}
@@ -111,17 +121,19 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 min-w-0 px-4 py-3 border border-gray-300 rounded-xl outline-none"
+              className="mail flex-1 min-w-0 px-4 py-3 border border-gray-300 rounded-xl outline-none justify-center"
             />
-
-            <button className="bg-black text-white px-5 py-3 rounded-xl hover:bg-gray-800 transition whitespace-nowrap">
-              Join
-            </button>
+            <Link to="/subscribe">
+              <button className="bg-black text-white px-5 py-3 rounded-xl hover:bg-gray-800 transition whitespace-nowrap">
+                Join
+              </button>
+            </Link>
           </div>
-
-          <button className="bg-[#4d664a] text-white py-3 rounded-full font-semibold hover:bg-[#3f513c] transition">
-            Download App
-          </button>
+          <Link to="/ajanmapp">
+            <button className="bg-[#4d664a] text-white py-3 rounded-full font-semibold hover:bg-[#3f513c] transition">
+              Download App
+            </button>
+          </Link>
         </div>
       </div>
 

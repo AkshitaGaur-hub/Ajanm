@@ -72,8 +72,8 @@ img {
   max-width: 400px;
 }
 
-nav{
- box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.2);
+nav {
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 768px) {
@@ -143,6 +143,11 @@ ul {
   /* list-style: none; */
 }
 
+.mail {
+  display: flex;
+  text-align: center;
+}
+
 .hamburger {
   color: black;
   cursor: pointer;
@@ -193,7 +198,7 @@ button:hover {
   border-radius: 8px;
   color: var(--primary);
   font-size: 0.875rem;
-  margin-top:0.5rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 
@@ -383,7 +388,7 @@ button:hover {
   gap: 20px;
 }
 
-.brand{
+.brand {
   font-size: var(--small_heading);
 }
 
@@ -1110,7 +1115,6 @@ iframe {
     grid-template-columns: repeat(2, 1fr);
   }
 
-
   iframe {
     width: 100%;
     max-width: 700px;
@@ -1203,20 +1207,28 @@ iframe {
   }
 }
 @media (max-width: 968px) {
-    ul {
-        display: flex;
-        align-items: center;
-        font-size: var(--para);
-        padding-top: 3rem;
-        gap: 3rem;
-    }
+  ul {
+    display: flex;
+    align-items: center;
+    font-size: var(--para);
+    padding-top: 3rem;
+    gap: 3rem;
+  }
+  ul :hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
 }
 @media (max-height: 550px) {
-    ul {
-        display: flex;
-        align-items: center;
-        font-size: var(--para);
-        padding-top: 2rem;
-        gap: 1.5rem;
-    }
+  ul {
+    display: flex;
+    align-items: center;
+    font-size: var(--para);
+    padding-top: 2rem;
+    gap: 1.5rem;
+  }
+  ul :hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
 }
