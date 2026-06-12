@@ -1187,7 +1187,7 @@ iframe {
 /* RESPONSIVE BASE STYLES */
 @media (max-width: 640px) {
   body {
-    padding-top:40px;
+    padding-top:55px;
   }
 }
 
@@ -1205,6 +1205,7 @@ iframe {
     font-size: var(--small_heading);
     list-style: none;
   }
+  
 }
 @media (max-width: 968px) {
   ul {
@@ -1230,5 +1231,15 @@ iframe {
   ul :hover {
     text-decoration: underline;
     font-weight: bold;
+  }
+}
+@media (min-height: 300px) and (max-width: 1024px){
+  .joinbutton{
+    width:10rem;
+  }
+
+  .mail{
+    width:60%;
+    padding:0.8rem;
   }
 }

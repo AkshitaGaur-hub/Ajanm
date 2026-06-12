@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, } from 'lucide-react';
 import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
@@ -31,11 +31,11 @@ const Footer = () => {
 
         {/* BRAND */}
         <div className="flex flex-col gap-5">
-          <h1 className="brand font-extrabold tracking-wide">
+          <h1 className="brand font-extrabold tracking-wide text-left">
             AJANM
           </h1>
 
-          <p className="para leading-7 text-gray-600">
+          <p className="para leading-7 text-gray-600 text-left">
             Ancient wisdom meets modern wellness. Personalized healing,
             sustainable habits, and AI-driven guidance for your journey.
           </p>
@@ -43,7 +43,7 @@ const Footer = () => {
 
         {/* LINKS */}
         <div className="flex flex-col gap-4">
-          <h2 className="text-lg font-bold">
+          <h2 className="text-lg font-bold text-left">
             Quick Links
           </h2>
 
@@ -51,7 +51,7 @@ const Footer = () => {
             <a
               key={index}
               href={link.href}
-              className="flex items-center gap-2 text-sm text-gray-700 hover:text-orange-500 transition"
+              className="flex  gap-2 text-sm text-gray-700 hover:text-orange-500 transition"
             >
               {/* <ChevronRight size={16} /> */}
               {link.text}
@@ -61,7 +61,7 @@ const Footer = () => {
 
         {/* CONTACT */}
         <div className="flex flex-col gap-5">
-          <h2 className="text-lg font-bold">
+          <h2 className="text-lg font-bold text-left">
             Contact
           </h2>
 
@@ -108,7 +108,7 @@ const Footer = () => {
         </div>
 
         {/* NEWSLETTER */}
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 text-left">
           <h2 className="text-lg font-bold">
             Stay Updated
           </h2>
@@ -124,13 +124,13 @@ const Footer = () => {
               className="mail flex-1 min-w-0 px-4 py-3 border border-gray-300 rounded-xl outline-none justify-center"
             />
             <Link to="/subscribe">
-              <button className="bg-black text-white px-5 py-3 rounded-xl hover:bg-gray-800 transition whitespace-nowrap">
+              <button className="joinbutton  px-5 py-3 rounded-xl hover:bg-gray-800 transition whitespace-nowrap">
                 Join
               </button>
             </Link>
           </div>
           <Link to="/ajanmapp">
-            <button className="bg-[#4d664a] text-white py-3 rounded-full font-semibold hover:bg-[#3f513c] transition">
+            <button className="joinbutton text-white py-3 rounded-full font-semibold hover:bg-[#3f513c] transition">
               Download App
             </button>
           </Link>
