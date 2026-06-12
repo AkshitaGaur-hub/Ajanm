@@ -1,13 +1,13 @@
-import { Mail, Phone, MapPin, ChevronRight } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 const footerLinks = [
   { text: "Our Approach (108 Days)", href: "/" },
-  { text: "Health Programs", href: "/" },
-  { text: "Expert Mentors", href: "/" },
-  { text: "Ajanm Community", href: "/" },
-  { text: "Blog & Insights", href: "/" },
+  { text: "Ajanm Features", href: "/features" },
+  { text: "Ajanm Program", href: "/ajanmprogram" },
+  { text: "About Us", href: "/aboutus" },
+  { text: "Blog & Insights", href: "/blogs" },
 ];
 
 const socialLinks = [
@@ -53,7 +53,7 @@ const Footer = () => {
               href={link.href}
               className="flex items-center gap-2 text-sm text-gray-700 hover:text-orange-500 transition"
             >
-              <ChevronRight size={16} />
+              {/* <ChevronRight size={16} /> */}
               {link.text}
             </a>
           ))}
