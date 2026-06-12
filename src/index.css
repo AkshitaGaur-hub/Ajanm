@@ -92,7 +92,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:1rem;
+  padding:0.2rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -1187,7 +1187,7 @@ iframe {
 /* RESPONSIVE BASE STYLES */
 @media (max-width: 640px) {
   body {
-    padding-top: 60px;
+    padding-top:40px;
   }
 }
 

@@ -20,7 +20,7 @@ const AjanmProgram = () => {
                         </h1>
 
                         <p className="text-gray-600 para">
-                            A 105-day structured program designed for lasting transformation.
+                           A 108-day structured program designed for lasting transformation.
                         </p>
                     </div>
             <div className="ajanmprogram flex">

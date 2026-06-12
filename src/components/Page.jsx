@@ -22,7 +22,9 @@ function Page() {
                         <Link to="/subscribe">
                             <button className="color border-radius padding flex align-items">Start Your Journey</button>
                         </Link>
+                        <Link to ="/ajanmprogram">
                         <button className='explore-btn border-radius padding flex align-items'>Explore Program</button>
+                        </Link>
                     </div>
 
                     <div id="proof1" className="flex flex-wrap items-center gap-4">
