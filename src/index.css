@@ -10,9 +10,9 @@
   --btn-padding: 10px 18px;
   --nav-gap: 24px;
   --fbg: #fbdfb9;
-  --Main_heading: clamp(1.5rem, 2.5vw, 3rem);
-  --small_heading: clamp(1.3rem, 1.5vw, 2rem);
-  --para: clamp(1rem, 1.2vw, 1.5rem);
+  --Main_heading: clamp(1.3rem, 1.9vw, 2.15rem);
+  --small_heading: clamp(1.1rem, 1.5vw, 1.9rem);
+  --para: clamp(0.95rem, 1.2vw, 1.5rem);
   --smpara: clamp(0.5rem, 0.7vw, 1rem);
 }
 .icon_color{
