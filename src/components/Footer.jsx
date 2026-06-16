@@ -51,7 +51,7 @@ const Footer = () => {
             <a
               key={index}
               href={link.href}
-              className="flex  gap-2 text-sm text-gray-700 hover:text-orange-500 transition"
+              className="flex  gap-2 text-sm text-gray-700 hover:icon_color transition"
             >
               {/* <ChevronRight size={16} /> */}
               {link.text}
@@ -66,12 +66,12 @@ const Footer = () => {
           </h2>
 
           <div className="flex items-center gap-3 text-sm text-gray-700">
-            <Mail size={18} className="text-orange-500" />
+            <Mail size={18} className="icon_color" />
             <span>Email - <a href="mailto:admin@ajanm.ai" className="hover:underline">admin@ajanm.ai</a></span>
           </div>
 
           <div className="flex items-center gap-3 text-sm text-gray-700">
-            <Phone size={18} className="text-orange-500" />
+            <Phone size={18} className="icon_color" />
             +91 XXX XXX XXXX
           </div>
 
@@ -81,7 +81,7 @@ const Footer = () => {
           </div> */}
 
           <div className="flex gap-3 text-sm text-gray-700">
-            <MapPin className="text-orange-500 shrink-0 mt-1" size={20} />
+            <MapPin className="icon_color shrink-0 mt-1" size={20} />
             <p className="leading-5 text-left">
               BK Vedic Pvt. Ltd. 3, Paneri Upvan,
               Bedla Road, Fatehpura,
@@ -100,7 +100,7 @@ const Footer = () => {
                   href={link.href}
                   className="p-2 rounded-full bg-white shadow hover:scale-110 transition"
                 >
-                  <Icon size={18} className="text-orange-500" />
+                  <Icon size={18} className="icon_color" />
                 </a>
               );
             })}

@@ -61,7 +61,7 @@ export default function Privacy() {
         {/* Hero Section */}
         <section className="privacy_head relative overflow-hidden bg-gradient-to-br from-orange-100 via-white to-orange-50 py-24 px-6">
           <div className=" max-w-6xl mx-auto text-center">
-            <div className="cork inline-flex items-center gap-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium mb-6">
+            <div className="cork inline-flex items-center gap-2 bg-orange-100 icon_color rounded-full text-sm font-medium mb-6">
               <ShieldCheck className="w-4 h-4" />
               Privacy & Data Protection
             </div>
@@ -71,7 +71,7 @@ export default function Privacy() {
             </h1>
 
             <p className="max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">
-              At <span className="font-semibold text-orange-600">Ajanm</span>,
+              At <span className="font-semibold icon_color">Ajanm</span>,
               your privacy matters. We are committed to protecting your personal
               data and maintaining transparency in how your information is used.
             </p>
@@ -90,7 +90,7 @@ export default function Privacy() {
                 key={index}
                 className="policy_c w-full max-w-lg bg-white border border-orange-100 rounded-3xl p-8 "
               >
-                <div className="w-14 h-14 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center mb-6">
+                <div className="w-14 h-14 rounded-2xl bg-orange-100 icon_color flex items-center justify-center mb-6">
                   {item.icon}
                 </div>
 

@@ -11,8 +11,8 @@
   --nav-gap: 24px;
   --fbg: #fbdfb9;
   --Main_heading: clamp(1.5rem, 2.5vw, 3rem);
+  --small_heading: clamp(1.3rem, 1.5vw, 2rem);
   --para: clamp(1rem, 1.2vw, 1.5rem);
-  --small_heading: clamp(1.7rem, 1.8vw, 2.3rem);
   --smpara: clamp(0.5rem, 0.7vw, 1rem);
 }
 .icon_color{
@@ -22,10 +22,12 @@ html,
 body {
   overflow-x: hidden;
   width: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   padding-top: 70px;
+  color: var(--text);
 }
 
 * {
@@ -170,7 +172,7 @@ button {
   align-items: center;
   justify-content: center;
   font-size: var(--para);
-  font-weight: 500;
+  font-weight: 300;
   cursor: pointer;
   margin-left: 15px;
   margin-right: 15px;
@@ -229,7 +231,7 @@ button:hover {
 
 .heading {
   font-size: var(--Main_heading);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.05;
   margin: 1rem 0 0.75rem;
   color: var(--text);
@@ -268,7 +270,7 @@ button:hover {
 }
 
 .plain {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   display: flex;
   flex-direction: column;
@@ -504,7 +506,7 @@ footer {
 
 .main_title {
   font-size: var(--Main_heading);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1;
   margin-top: 1rem;
   color: #111;
@@ -618,12 +620,12 @@ html {
 
 .holistic {
   font-size: var(--small_heading);
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .journy {
   font-size: var(--small_heading);
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 .testimonial_container {
@@ -657,7 +659,7 @@ html {
   font-size: var(--para);
   line-height: 3;
   color: #222;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .video_box {
@@ -1219,7 +1221,7 @@ iframe {
   }
   ul :hover {
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: 700;
   }
 }
 @media (max-height: 550px) {
@@ -1232,7 +1234,7 @@ iframe {
   }
   ul :hover {
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: 700;
   }
 }
 @media (min-height: 300px) and (max-width: 1024px){

@@ -130,7 +130,7 @@ export default function Terms() {
                 {/* Hero */}
                 <section className="Terms_head py-24 px-6 bg-gradient-to-br from-orange-100 via-white to-orange-50 text-center">
                     <div className="max-w-5xl mx-auto">
-                        <div className="cork inline-flex items-center gap-2 bg-orange-100 text-orange-700 rounded-full mb-6">
+                        <div className="cork inline-flex items-center gap-2 bg-orange-100 icon_color rounded-full mb-6">
                             <FileText className="w-4 h-4" />
                             Terms & Conditions
                         </div>

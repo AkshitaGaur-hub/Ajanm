@@ -87,7 +87,7 @@ const AjanmApp = () => {
 
             <section>
                 <div className="container working flex justify-center flex-col">
-                    <div className="para text-orange-400 font-extrabold">
+                    <div className="para icon_color font-extrabold">
                         How it works
                     </div>
                     <div className="process">
