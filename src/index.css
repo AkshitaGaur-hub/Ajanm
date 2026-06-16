@@ -12,7 +12,7 @@
   --fbg: #fbdfb9;
   --Main_heading: clamp(1.3rem, 1.9vw, 2.15rem);
   --small_heading: clamp(1.1rem, 1.5vw, 1.9rem);
-  --para: clamp(0.95rem, 1.2vw, 1.5rem);
+  --para: clamp(0.85rem, 1.2vw, 1.3rem);
   --smpara: clamp(0.5rem, 0.7vw, 1rem);
 }
 .icon_color{
