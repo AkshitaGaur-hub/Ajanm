@@ -15,7 +15,9 @@
   --small_heading: clamp(1.7rem, 1.8vw, 2.3rem);
   --smpara: clamp(0.5rem, 0.7vw, 1rem);
 }
-
+.icon_color{
+  color : var(--primary);
+}
 html,
 body {
   overflow-x: hidden;
