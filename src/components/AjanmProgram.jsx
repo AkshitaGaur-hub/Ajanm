@@ -3,6 +3,8 @@ import "./Features.css"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 import pro from "../assets/images/pro.png"
+import progress1 from "../assets/images/progress1.png"
+import progress2 from "../assets/images/process2.png"
 import num1 from "../assets/images/num1.png"
 import num2 from "../assets/images/num2.png"
 import num3 from "../assets/images/num3.png"
@@ -73,7 +75,9 @@ const AjanmProgram = () => {
                 </div>
 
                 <div className="righths">
+                    <img src={progress1} className='pro1' alt="" />
                     <img src={pro} alt="" className='pro' />
+                    <img src={progress2} className='pro1' alt="" />
                 </div>
             </div>
             <Footer />
