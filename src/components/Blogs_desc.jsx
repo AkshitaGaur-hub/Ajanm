@@ -197,7 +197,7 @@ const nextblog = () => {
             <div className="container">
                 <div className="blog_content">
                     <div className="img" key={blog.id}>
-                        <img className="description_image w-full" src={blog.image} alt={blog.title1} />
+                        <img className="description_image w-full" src={blog.image} alt={blog.title1} loading='lazy' />
 
                         <p className='para'>{blog.para1}</p>
                         <h3 className='head'>{blog.title1}</h3>

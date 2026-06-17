@@ -18,6 +18,7 @@ function Feature() {
                                 src="https://ajanm.ai/wp-content/uploads/2019/12/app6-icon3.png"
                                 className="scale-with-grid"
                                 alt="app6-icon3"
+                                loading='lazy'
                             />
                             <div className="cardt">
                                 <h2 className='card-title'><b>Micro-Habits</b></h2>
@@ -30,6 +31,7 @@ function Feature() {
                                 src="https://ajanm.ai/wp-content/uploads/2019/12/app6-icon6.png"
                                 className="scale-with-grid"
                                 alt="app6-icon6"
+                                loading='lazy'
                             />
                             <div className="cardt">
                                 <h2 className='card-title'><b>Tailored Wellness</b></h2>
@@ -42,6 +44,7 @@ function Feature() {
                                 src="https://ajanm.ai/wp-content/uploads/2019/12/app6-icon1.png"
                                 className="scale-with-grid w-20 h-20"
                                 alt="app6-icon1"
+                                loading='lazy'
                             />
                             <div className="cardt">
                                 <h2 className='card-title'><b>Time Efficient
@@ -55,6 +58,7 @@ function Feature() {
                                 src="https://ajanm.ai/wp-content/uploads/2019/12/app6-icon5.png"
                                 className="scale-with-grid"
                                 alt="app6-icon5"
+                                loading='lazy'
                             />
                             <div className="cardt">
                                 <h2 className='card-title'><b>Proven Results</b></h2>
@@ -67,6 +71,7 @@ function Feature() {
                                 src="https://ajanm.ai/wp-content/uploads/2019/12/app6-icon4.png"
                                 className="scale-with-grid"
                                 alt="proven-result"
+                                loading='lazy'
                             />
                             <div className="cardt">
                                 <h2 className='card-title'><b>Comprehensive Health Tracking</b></h2>
@@ -94,7 +99,7 @@ function Feature() {
 
                         <div className="health-card">
                             <div className="icon-wrapper">
-                                <img src={heart} alt="" className="icon-img" />
+                                <img src={heart} alt="Heart icon" className="icon-img" loading='lazy'/>
                             </div>
 
                             <h4 className="card-title">Physical Health</h4>
@@ -106,7 +111,7 @@ function Feature() {
 
                         <div className="health-card">
                             <div className="icon-wrapper">
-                                <img src={msg} alt="" className="icon-img" />
+                                <img src={msg} alt="Message image" className="icon-img" loading='lazy'/>
                             </div>
 
                             <h4 className="card-title">Mental Health</h4>
@@ -118,7 +123,7 @@ function Feature() {
 
                         <div className="health-card">
                             <div className="icon-wrapper">
-                                <img src={apple} alt="" className="icon-img" />
+                                <img src={apple} alt="apple" className="icon-img" loading='lazy'/>
                             </div>
 
                             <h4 className="card-title">Lifestyle Concerns</h4>

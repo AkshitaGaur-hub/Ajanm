@@ -1,4 +1,4 @@
-import image from '../assets/images/SU.png'
+import image from '../assets/images/SU.webp'
 import { Link } from "react-router-dom";
 
 
@@ -29,10 +29,10 @@ function Page() {
 
                     <div id="proof1" className="flex flex-wrap items-center gap-4">
                         <div className="flex items-center" id="proof">
-                            <img className="rounded-full" src="https://i.pravatar.cc/100?img=1" alt="" />
-                            <img className="rounded-full" src="https://i.pravatar.cc/100?img=2" alt="" />
-                            <img className="rounded-full" src="https://i.pravatar.cc/100?img=3" alt="" />
-                            <img className="rounded-full" src="https://i.pravatar.cc/100?img=4" alt="" />
+                            <img className="rounded-full" src="https://i.pravatar.cc/100?img=1" alt="user1" loading='lazy'/>
+                            <img className="rounded-full" src="https://i.pravatar.cc/100?img=2" alt="user2" loading='lazy'/>
+                            <img className="rounded-full" src="https://i.pravatar.cc/100?img=3" alt="user3" loading='lazy'/>
+                            <img className="rounded-full" src="https://i.pravatar.cc/100?img=4" alt="user4" loading='lazy'/>
                         </div>
                         <p className="text-xs sm:text-sm font-bold text-black">
                             10,000+ <span className="font-normal text-gray-600">lives transformed</span>
@@ -42,7 +42,7 @@ function Page() {
 
                 <div className="right  overflow-hidden">
                     <div className="image">
-                        <img src={image} alt="" className='rounded-4xl' />
+                        <img src={image} alt="Assan" className='rounded-4xl' loading='lazy'/>
                     </div>
                 </div>
             </div>

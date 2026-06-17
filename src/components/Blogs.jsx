@@ -62,7 +62,8 @@ const Blogs = () => {
                 const persisted = storedBlogs.find((item) => item.id === blog.id);
                 return persisted ? { ...blog, liked: persisted.liked, count: persisted.count } : blog;
             });
-        } catch (error) {
+        } catch (err) {
+            console(err)
             return initialBlogs;
         }
     });
@@ -103,6 +104,7 @@ const Blogs = () => {
                                 src={blog.image}
                                 className="yoga_img scale-with-grid"
                                 alt={blog.title}
+                                loading='lazy'
                             />
                             <div className="cardt">
                                 <p className='card-text'><b>{blog.title}</b></p>

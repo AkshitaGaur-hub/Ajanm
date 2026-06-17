@@ -40,14 +40,14 @@ function Program() {
                 <div className="rightprogram">
                     <div className='p_container'>
                         <div className="card1">
-                            <img src={women} alt="" srcset="" className="cardimage" />
+                            <img src={women} alt="" srcset="Women" className="cardimage" loading='lazy'/>
                             <div className="cardt">
                                 <h2 className='card-title'><b>Yoga & Movement</b></h2>
                                 <p className='card-text'>Therapeutic exercises for strength, flexibility & healing.</p>
                             </div>
                         </div>
                         <div className="card1">
-                            <img src={habit} alt="" srcset="" className="cardimage" />
+                            <img src={habit} alt="Diet" srcset="" className="cardimage" loading='lazy'/>
                             <div className="cardt">
                                 <h2 className='card-title'><b>Nutrition & Diet</b></h2>
                                 <p className='card-text'>Personalized nutrition plans for optimal health.</p>
@@ -55,7 +55,7 @@ function Program() {
                         </div>
 
                         <div className="card1">
-                            <img src={mind} alt="" srcset="" className="cardimage" />
+                            <img src={mind} alt="Habit" srcset="" className="cardimage" loading='lazy'/>
                             <div className="cardt">
                                 <h2 className='card-title'><b>Habit & Lifestyle</b></h2>
                                 <p className='card-text'>Build sustainable habits for long term wellness.</p>
@@ -63,7 +63,7 @@ function Program() {
 
                         </div>
                         <div className="card1">
-                            <img src={med} alt="" srcset="" className="cardimage" />
+                            <img src={med} alt="Mind" srcset="" className="cardimage" loading='lazy'/>
                             <div className="cardt">
                                 <h2 className='card-title'><b>Mind & Breath</b></h2>
                                 <p className='card-text'>Pranayama & meditation for mental clarity & stress relief.</p>
@@ -71,14 +71,14 @@ function Program() {
                         </div>
 
                         <div className="card1">
-                            <img src={mon} alt="" srcset="" className="cardimage" />
+                            <img src={mon} alt="Ai" srcset="" className="cardimage" loading='lazy'/>
                             <div className="cardt">
                                 <h2 className='card-title'><b>AI Tracking</b></h2>
                                 <p className='card-text'>Smart analytics to monitor your progress.</p>
                             </div>
                         </div>
                         <div className="card1">
-                            <img src={man} alt="" srcset="" className="cardimage" />
+                            <img src={man} alt="Expert" srcset="" className="cardimage" loading='lazy'/>
                             <div className="cardt">
                                 <h2 className='card-title'><b>Expert Support</b></h2>
                                 <p className='card-text'>Guidance from expert proffesionals every step of the way.</p>
@@ -97,7 +97,7 @@ function Program() {
 
             <div className='program'>
                 <div className="leftprogramm">
-                    <img src={image} alt="" srcset="" className='image' />
+                    <img src={image} alt="assana" srcset="" className='image' loading='lazy'/>
                 </div>
                 <div className="rightprogramm">
                     <div className="rp">
@@ -160,7 +160,7 @@ function Program() {
                                 <span>Bhopal, India</span>
                             </div>
 
-                            <img className='star' src={star} alt="" />
+                            <img className='star' src={star} alt="rating" loading='lazy'/>
                         </div>
                     </div>
                     <div className="video_box">
