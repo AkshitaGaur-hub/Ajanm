@@ -159,12 +159,12 @@ const Blogs_desc = () => {
     const blog = matter.find((m) => m.id === blogId);
 
     // If no matching blog, navigate back to blogs list
-    if (!blog) {
-        React.useEffect(() => {
-            navigate('/blogs');
-        }, [navigate]);
-        return null;
-    }
+    // if (!blog) {
+    //     React.useEffect(() => {
+    //         navigate('/blogs');
+    //     }, [navigate]);
+    //     return null;
+    // }
 
     // next and previous button
     const previousblog = () => {

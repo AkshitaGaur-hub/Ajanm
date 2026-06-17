@@ -22,17 +22,17 @@ function Page() {
                         <Link to="/subscribe">
                             <button aria-label='start' className="color border-radius padding flex align-items">Start Your Journey</button>
                         </Link>
-                        <Link to ="/ajanmprogram">
-                        <button aria-label='explore' className='explore-btn border-radius padding flex align-items'>Explore Program</button>
+                        <Link to="/ajanmprogram">
+                            <button aria-label='explore' className='explore-btn border-radius padding flex align-items'>Explore Program</button>
                         </Link>
                     </div>
 
                     <div id="proof1" className="flex flex-wrap items-center gap-4">
                         <div className="flex items-center" id="proof">
-                            <img className="rounded-full" src="https://i.pravatar.cc/100?img=1" alt="user1" loading='lazy'/>
-                            <img className="rounded-full" src="https://i.pravatar.cc/100?img=2" alt="user2" loading='lazy'/>
-                            <img className="rounded-full" src="https://i.pravatar.cc/100?img=3" alt="user3" loading='lazy'/>
-                            <img className="rounded-full" src="https://i.pravatar.cc/100?img=4" alt="user4" loading='lazy'/>
+                            <img className="rounded-full" src="https://i.pravatar.cc/100?img=1" alt="user1" loading='lazy' />
+                            <img className="rounded-full" src="https://i.pravatar.cc/100?img=2" alt="user2" loading='lazy' />
+                            <img className="rounded-full" src="https://i.pravatar.cc/100?img=3" alt="user3" loading='lazy' />
+                            <img className="rounded-full" src="https://i.pravatar.cc/100?img=4" alt="user4" loading='lazy' />
                         </div>
                         <p className="text-xs sm:text-sm font-bold text-black">
                             10,000+ <span className="font-normal text-gray-600">lives transformed</span>
@@ -41,9 +41,13 @@ function Page() {
                 </div>
 
                 <div className="right  overflow-hidden">
-                    <div className="image">
-                        <img src={image} alt="Assan" className='rounded-4xl'/>
-                    </div>
+                    <img
+                        src={image}
+                        alt="Ajanm transformation visual"
+                        className="rounded-4xl"
+                        loading="eager"
+                        fetchpriority="high"
+                    />
                 </div>
             </div>
         </>
