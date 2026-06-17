@@ -42,7 +42,7 @@ function Page() {
 
                 <div className="right  overflow-hidden">
                     <div className="image">
-                        <img src={image} alt="Assan" className='rounded-4xl' loading='lazy'/>
+                        <img src={image} alt="Assan" className='rounded-4xl'/>
                     </div>
                 </div>
             </div>

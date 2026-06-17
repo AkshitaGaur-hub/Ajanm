@@ -99,7 +99,7 @@ function Feature() {
 
                         <div className="health-card">
                             <div className="icon-wrapper">
-                                <img src={heart} alt="Heart icon" className="icon-img" loading='lazy'/>
+                                <img src={heart} alt="Heart icon" className="icon-img" />
                             </div>
 
                             <h4 className="card-title">Physical Health</h4>
@@ -111,7 +111,7 @@ function Feature() {
 
                         <div className="health-card">
                             <div className="icon-wrapper">
-                                <img src={msg} alt="Message image" className="icon-img" loading='lazy'/>
+                                <img src={msg} alt="Message image" className="icon-img" />
                             </div>
 
                             <h4 className="card-title">Mental Health</h4>
@@ -123,7 +123,7 @@ function Feature() {
 
                         <div className="health-card">
                             <div className="icon-wrapper">
-                                <img src={apple} alt="apple" className="icon-img" loading='lazy'/>
+                                <img src={apple} alt="apple" className="icon-img"/>
                             </div>
 
                             <h4 className="card-title">Lifestyle Concerns</h4>

@@ -104,7 +104,6 @@ const Blogs = () => {
                                 src={blog.image}
                                 className="yoga_img scale-with-grid"
                                 alt={blog.title}
-                                loading='lazy'
                             />
                             <div className="cardt">
                                 <p className='card-text'><b>{blog.title}</b></p>

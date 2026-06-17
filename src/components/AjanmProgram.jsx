@@ -29,42 +29,42 @@ const AjanmProgram = () => {
                 <div className="lefths">
                     <div className="cardss">
                         <div className='items flex'>
-                            <img src={num1} alt="number1" className='number' loading='lazy'/>
+                            <img src={num1} alt="number1" className='number' />
                             <div className="card_matter">
                                 <b>Diagnostic & Assessment</b>
                                 <p>Share your health profile and goals.</p>
                             </div>
                         </div>
                         <div className='items flex'>
-                            <img src={num2} alt="number2" className='number' loading='lazy'/>
+                            <img src={num2} alt="number2" className='number'/>
                             <div className="card_matter">
                                 <b>AI-Personalized Plan</b>
                                 <p>AI- creates a plan tailored just for you.</p>
                             </div>
                         </div>
                         <div className='items flex'>
-                            <img src={num3} alt="number3" className='number' loading='lazy'/>
+                            <img src={num3} alt="number3" className='number'/>
                             <div className="card_matter">
                                 <b>Expert Review</b>
                                 <p>Reviewed by experts for best results.</p>
                             </div>
                         </div>
                         <div className='items flex'>
-                            <img src={num4} alt="number4" className='number' loading='lazy'/>
+                            <img src={num4} alt="number4" className='number'/>
                             <div className="card_matter">
                                 <b>Smooth Start</b>
                                 <p>Easy onboarding & orientation.</p>
                             </div>
                         </div>
                         <div className='items flex'>
-                            <img src={num5} alt="number5" className='number' loading='lazy'/>
+                            <img src={num5} alt="number5" className='number'/>
                             <div className="card_matter">
                                 <b>Ongoing Support</b>
                                 <p>Weekly sessions with experts.</p>
                             </div>
                         </div>
                         <div className='items flex'>
-                            <img src={num6} alt="number6" className='number' loading='lazy'/>
+                            <img src={num6} alt="number6" className='number'/>
                             <div className="card_matter">
                                 <b>Real-time Tracking</b>
                                 <p>Track progress and see transformation.</p>
@@ -75,9 +75,9 @@ const AjanmProgram = () => {
                 </div>
 
                 <div className="righths">
-                    <img src={progress1} className='pro1' alt="mobile-left" loading='lazy'/>
-                    <img src={pro} alt="mobile" className='pro' loading='lazy'/>
-                    <img src={progress2} className='pro1' alt="mobile-right" loading='lazy'/>
+                    <img src={progress1} className='pro1' alt="mobile-left"/>
+                    <img src={pro} alt="mobile" className='pro'/>
+                    <img src={progress2} className='pro1' alt="mobile-right" />
                 </div>
             </div>
             <Footer />
