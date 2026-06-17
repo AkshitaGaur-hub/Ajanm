@@ -77,53 +77,7 @@ const Footer = () => {
               Udaipur, Rajasthan, 313001
             </p>
           </div>
-
-          {/* SOCIALS */}
-          {/* <div className="flex gap-4 pt-2">
-            {socialLinks.map((link, index) => {
-              const Icon = link.icon;
-
-              return (
-                <a
-                  key={index}
-                  href={link.href}
-                  className="p-2 rounded-full bg-white shadow hover:scale-110 transition"
-                >
-                  <Icon size={18} className="icon_color" />
-                </a>
-              );
-            })}
-          </div> */}
         </div>
-
-        {/* NEWSLETTER */}
-        {/* <div className="flex flex-col gap-5 text-left">
-          <h2 className="text-lg font-bold">
-            Stay Updated
-          </h2>
-
-          <p className="text-sm text-gray-600 leading-6">
-            Subscribe for wellness tips, insights, and updates.
-          </p>
-
-          <div className="joinp flex flex-col sm:flex-row w-full gap-3">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="mail flex-1 min-w-0 px-4 py-3 border border-gray-300 rounded-xl outline-none justify-center"
-            />
-            <Link to="/subscribe">
-              <button className="joinbutton  px-5 py-3 rounded-xl hover:bg-gray-800 transition whitespace-nowrap">
-                Join
-              </button>
-            </Link>
-          </div>
-          <Link to="/ajanmapp">
-            <button className="joinbutton text-white py-3 rounded-full font-semibold hover:bg-[#3f513c] transition">
-              Download App
-            </button>
-          </Link>
-        </div> */}
       </div>
 
       {/* BOTTOM */}

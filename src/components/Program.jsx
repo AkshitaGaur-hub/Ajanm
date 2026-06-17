@@ -32,7 +32,7 @@ function Program() {
                     <p className="para">Ajanm AI blends advanced technology with personalized healthcare to create a smarter wellness experience. From preventive care to lifestyle support, we help individuals achieve better physical, mental, and everyday well-being through accessible, AI-driven solutions designed for complete holistic health.
                     </p>
                     <Link to="/ajanmprogram">
-                    <button className="w-fit bg-orange-500 text-white px-4 py-2 rounded">
+                    <button aria-label='explore' className="w-fit bg-orange-500 text-white px-4 py-2 rounded">
                         Explore Program
                     </button>
                     </Link>

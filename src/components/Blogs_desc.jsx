@@ -272,7 +272,7 @@ const nextblog = () => {
                                 <p>Solve the math problem above</p>
                             </div>
 
-                            <button className="btn">
+                            <button aria-label='post' className="btn">
                                 Post Comment
                             </button>
                         </div>

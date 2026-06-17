@@ -20,10 +20,10 @@ function Page() {
                     </div>
                     <div id="programbtn" className="flex flex-wrap gap-4">
                         <Link to="/subscribe">
-                            <button className="color border-radius padding flex align-items">Start Your Journey</button>
+                            <button aria-label='start' className="color border-radius padding flex align-items">Start Your Journey</button>
                         </Link>
                         <Link to ="/ajanmprogram">
-                        <button className='explore-btn border-radius padding flex align-items'>Explore Program</button>
+                        <button aria-label='explore' className='explore-btn border-radius padding flex align-items'>Explore Program</button>
                         </Link>
                     </div>
 

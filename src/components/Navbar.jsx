@@ -81,7 +81,7 @@ function Features() {
               to='/subscribe'
               className="lg:hidden"
             >
-              <button className="w-full bg-orange-500 text-white py-3 rounded-xl shadow-lg">
+              <button aria-label="subscribe now" className="w-full bg-orange-500 text-white py-3 rounded-xl shadow-lg">
                 Subscribe Now
               </button>
             </Link>
@@ -92,7 +92,7 @@ function Features() {
             to='/subscribe'
             className="hidden lg:block"
           >
-            <button className="color border-radius padding flex align-items">
+            <button aria-label='subsribe now' className="color border-radius padding flex align-items">
               Subscribe Now
             </button>
           </Link>

@@ -76,10 +76,10 @@ const AjanmApp = () => {
                     </div>
                     <div className="btn flex">
                         <Link to="https://apps.apple.com/in/app/ajanm/id6736587790">
-                            <button className="download flex items-center gap-4"><FaAppStoreIos className='text-lg dow'/>App store</button>
+                            <button aria-label='app_store' className="download flex items-center gap-4"><FaAppStoreIos className='text-lg dow'/>App store</button>
                         </Link>
                         <Link to="https://play.google.com/store/apps/details?id=ajanm.ai&pcampaignid=web_share">
-                            <button className="download flex items-center gap-4"><IoLogoGooglePlaystore className='text-lg dow'/>Google Play</button>
+                            <button aria-label='play_store' className="download flex items-center gap-4"><IoLogoGooglePlaystore className='text-lg dow'/>Google Play</button>
                         </Link>
                     </div>
                 </div>

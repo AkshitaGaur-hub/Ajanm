@@ -79,7 +79,7 @@ const Subscribe = () => {
                                 <span className='flex items-center gap-3'><IoMdCheckbox className='icon_color'/><p className='m-0'>Free access to our contents</p></span>
                                 <span className='flex items-center gap-3'><IoMdCheckbox className='icon_color'/><p className='m-0'>Free access to Live webinars</p></span>
                             </div>
-                            <button className='m-3'>Pay now</button>
+                            <button aria-label='pay_now' className='m-3'>Pay now</button>
                         </div>
                     </div>
 
