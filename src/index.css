@@ -43,19 +43,12 @@ img {
   display: block;
 }
 
-/* .image {
-  width: 500px;
-  height:300px;
-  border-radius: 20px;
-  object-fit: cover;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-} */
-/* .image img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-} */
-
+.ql{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
+}
 .image {
   width: 100%;
   max-width: 500px;

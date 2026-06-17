@@ -1,5 +1,5 @@
 import { Mail, Phone, MapPin, } from 'lucide-react';
-import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
+// import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 const footerLinks = [
@@ -10,11 +10,11 @@ const footerLinks = [
   { text: "Blog & Insights", href: "/blogs" },
 ];
 
-const socialLinks = [
-  { icon: FaInstagram, href: "#" },
-  { icon: FaLinkedin, href: "#" },
-  { icon: FaYoutube, href: "#" },
-];
+// const socialLinks = [
+//   { icon: FaInstagram, href: "#" },
+//   { icon: FaLinkedin, href: "#" },
+//   { icon: FaYoutube, href: "#" },
+// ];
 
 const legalLinks = [
   { text: "Privacy Policy", href: "./privacy" },
@@ -27,7 +27,7 @@ const Footer = () => {
     <footer className="w-full bg-[#f8f5f0] text-[#222] mt-16">
 
       {/* TOP */}
-      <div className="w-full px-6 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 border-b border-gray-200">
+      <div className="w-full px-6 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15 border-b border-gray-200">
 
         {/* BRAND */}
         <div className="flex flex-col gap-5">
@@ -42,21 +42,20 @@ const Footer = () => {
         </div>
 
         {/* LINKS */}
-        <div className="flex flex-col gap-4">
-          <h2 className="text-lg font-bold text-left">
-            Quick Links
-          </h2>
-
-          {footerLinks.map((link, index) => (
-            <a
-              key={index}
-              href={link.href}
-              className="flex  gap-2 text-sm text-gray-700 hover:icon_color transition"
-            >
-              {/* <ChevronRight size={16} /> */}
-              {link.text}
-            </a>
-          ))}
+        <div className="ql">
+          <div className="flex flex-col gap-4">
+            <h2 className="text-lg font-bold text-left">
+              Quick Links
+            </h2>
+            {footerLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.href}
+                className="flex  gap-2 text-sm text-gray-700 hover:icon_color transition">
+                {link.text}
+              </a>
+            ))}
+          </div>
         </div>
 
         {/* CONTACT */}
@@ -70,16 +69,6 @@ const Footer = () => {
             <span>Email - <a href="mailto:admin@ajanm.ai" className="hover:underline">admin@ajanm.ai</a></span>
           </div>
 
-          <div className="flex items-center gap-3 text-sm text-gray-700">
-            <Phone size={18} className="icon_color" />
-            +91 XXX XXX XXXX
-          </div>
-
-          {/* <div className="flex items-center gap-3 text-sm text-gray-700">
-            <MapPin size={40} className="text-orange-500" />
-            BK Vedic Pvt. Ltd. 3, Paneri Upvan, Bedla Road,Fatehpura, Udaipur,Rajasthan, 313001
-          </div> */}
-
           <div className="flex gap-3 text-sm text-gray-700">
             <MapPin className="icon_color shrink-0 mt-1" size={20} />
             <p className="leading-5 text-left">
@@ -90,7 +79,7 @@ const Footer = () => {
           </div>
 
           {/* SOCIALS */}
-          <div className="flex gap-4 pt-2">
+          {/* <div className="flex gap-4 pt-2">
             {socialLinks.map((link, index) => {
               const Icon = link.icon;
 
@@ -104,11 +93,11 @@ const Footer = () => {
                 </a>
               );
             })}
-          </div>
+          </div> */}
         </div>
 
         {/* NEWSLETTER */}
-        <div className="flex flex-col gap-5 text-left">
+        {/* <div className="flex flex-col gap-5 text-left">
           <h2 className="text-lg font-bold">
             Stay Updated
           </h2>
@@ -134,11 +123,11 @@ const Footer = () => {
               Download App
             </button>
           </Link>
-        </div>
+        </div> */}
       </div>
 
       {/* BOTTOM */}
-      <div className="max-w-7xl mx-auto px-6 py-6 w-full text-sm text-gray-500">
+      <div className="max-w-9xl mx-auto px-6 py-6 w-full text-sm text-gray-500">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-center sm:text-left">
             © 2026 AJANM Private Limited. All rights reserved.
