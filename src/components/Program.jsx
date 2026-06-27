@@ -8,7 +8,7 @@ import { FaBrain } from "react-icons/fa6";
 import { GiPiercedBody } from "react-icons/gi";
 import { FaWeight } from "react-icons/fa";
 import { CiSquareMore } from "react-icons/ci";
-import women from '../assets/images/wo.png';
+import women from '../assets/images/women.png';
 import habit from '../assets/images/habit.png';
 import mind from '../assets/images/mind.png';
 import med from '../assets/images/med.png';
@@ -40,48 +40,48 @@ function Program() {
                 <div className="rightprogram">
                     <div className='p_container'>
                         <div className="card1">
-                            <img src={women} alt="" srcset="Women" className="cardimage"/>
+                            <img src={women} alt="Yoga and movement" className="cardimage"/>
                             <div className="cardt">
-                                <h2 className='card-title'><b>Yoga & Movement</b></h2>
-                                <p className='card-text'>Therapeutic exercises for strength, flexibility & healing.</p>
+                                <h2 className='card-title'>Yoga & Movement</h2>
+                                <p className='card-text'>Therapeutic exercises for strength & flexibility.</p>
                             </div>
                         </div>
                         <div className="card1">
-                            <img src={habit} alt="Diet" srcset="" className="cardimage"/>
+                            <img src={habit} alt="Nutrition and diet" className="cardimage"/>
                             <div className="cardt">
-                                <h2 className='card-title'><b>Nutrition & Diet</b></h2>
-                                <p className='card-text'>Personalized nutrition plans for optimal health.</p>
-                            </div>
-                        </div>
-
-                        <div className="card1">
-                            <img src={mind} alt="Habit" srcset="" className="cardimage"/>
-                            <div className="cardt">
-                                <h2 className='card-title'><b>Habit & Lifestyle</b></h2>
-                                <p className='card-text'>Build sustainable habits for long term wellness.</p>
-                            </div>
-
-                        </div>
-                        <div className="card1">
-                            <img src={med} alt="Mind" srcset="" className="cardimage"/>
-                            <div className="cardt">
-                                <h2 className='card-title'><b>Mind & Breath</b></h2>
-                                <p className='card-text'>Pranayama & meditation for mental clarity & stress relief.</p>
+                                <h2 className='card-title'>Nutrition & Diet</h2>
+                                <p className='card-text'>Personalized nutrition plans.</p>
                             </div>
                         </div>
 
                         <div className="card1">
-                            <img src={mon} alt="Ai" srcset="" className="cardimage"/>
+                            <img src={mind} alt="Habit and lifestyle" className="cardimage"/>
                             <div className="cardt">
-                                <h2 className='card-title'><b>AI Tracking</b></h2>
-                                <p className='card-text'>Smart analytics to monitor your progress.</p>
+                                <h2 className='card-title'>Habit & Lifestyle</h2>
+                                <p className='card-text'>Healthy habits for lasting wellness.</p>
+                            </div>
+
+                        </div>
+                        <div className="card1">
+                            <img src={med} alt="Mind and breath" className="cardimage"/>
+                            <div className="cardt">
+                                <h2 className='card-title'>Mind & Breath</h2>
+                                <p className='card-text'>Meditation & breathing for calm.</p>
+                            </div>
+                        </div>
+
+                        <div className="card1">
+                            <img src={mon} alt="AI tracking" className="cardimage"/>
+                            <div className="cardt">
+                                <h2 className='card-title'>AI Tracking</h2>
+                                <p className='card-text'>Track progress with AI insights.</p>
                             </div>
                         </div>
                         <div className="card1">
-                            <img src={man} alt="Expert" srcset="" className="cardimage"/>
+                            <img src={man} alt="Expert support" className="cardimage"/>
                             <div className="cardt">
-                                <h2 className='card-title'><b>Expert Support</b></h2>
-                                <p className='card-text'>Guidance from expert proffesionals every step of the way.</p>
+                                <h4 className='card-title'>Expert Support</h4>
+                                <p className='card-text'>Guidance from certified experts.</p>
                             </div>
                         </div>
                     </div>
