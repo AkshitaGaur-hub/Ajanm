@@ -15,14 +15,14 @@
   --para: clamp(1rem, 1.2vw, 1.3rem);
   --smpara: clamp(0.5rem, 0.7vw, 1rem);
 }
-.icon_color{
-  color : var(--primary);
+.icon_color {
+  color: var(--primary);
 }
 html,
 body {
   overflow-x: hidden;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -43,7 +43,7 @@ img {
   display: block;
 }
 
-.ql{
+.ql {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,7 +89,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:0.2rem;
+  padding: 0.2rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -100,7 +100,7 @@ nav {
 
 @media (min-width: 768px) {
   nav {
-    padding:2px  1.25rem;
+    padding: 2px 1.25rem;
   }
 }
 .left {
@@ -525,7 +525,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8rem;
+  gap: 2rem;
   width: 100%;
   padding: 2rem;
   overflow: hidden;
@@ -549,8 +549,10 @@ footer {
   display: flex;
   justify-content: center;
 }
+
 .rightprogramm {
   min-width: 0;
+  padding-left: 8rem;
   width: 65%;
   display: flex;
   line-height: 2;
@@ -911,6 +913,16 @@ iframe {
   body {
     margin-top: 0.65rem;
   }
+  .rightprogramm {
+    padding-left: 0rem;
+  }
+  .quote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:auto;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1184,7 +1196,7 @@ iframe {
 /* RESPONSIVE BASE STYLES */
 @media (max-width: 640px) {
   body {
-    padding-top:55px;
+    padding-top: 55px;
   }
 }
 
@@ -1202,7 +1214,6 @@ iframe {
     font-size: var(--small_heading);
     list-style: none;
   }
-  
 }
 @media (max-width: 968px) {
   ul {
@@ -1230,13 +1241,13 @@ iframe {
     font-weight: 700;
   }
 }
-@media (min-height: 300px) and (max-width: 1024px){
-  .joinbutton{
-    width:10rem;
+@media (min-height: 300px) and (max-width: 1024px) {
+  .joinbutton {
+    width: 10rem;
   }
 
-  .mail{
-    width:60%;
-    padding:0.8rem;
+  .mail {
+    width: 60%;
+    padding: 0.8rem;
   }
 }

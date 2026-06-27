@@ -1,6 +1,7 @@
-import { Mail, Phone, MapPin, } from 'lucide-react';
-// import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
+import { Mail, MapPin, } from 'lucide-react';
+import { FaAppStoreIos} from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { IoLogoGooglePlaystore } from "react-icons/io5";
 
 const footerLinks = [
   { text: "Our Approach (108 Days)", href: "/" },
@@ -76,6 +77,14 @@ const Footer = () => {
               Bedla Road, Fatehpura,
               Udaipur, Rajasthan, 313001
             </p>
+          </div>
+          <div className="btn flex">
+            <Link to="https://apps.apple.com/in/app/ajanm/id6736587790">
+              <button aria-label='app_store' className=" flex items-center gap-4"><FaAppStoreIos className='text-lg' />App store</button>
+            </Link>
+            <Link to="https://play.google.com/store/apps/details?id=ajanm.ai&pcampaignid=web_share">
+              <button aria-label='play_store' className=" flex items-center gap-4"><IoLogoGooglePlaystore  className='text-lg' />Google Play</button>
+            </Link>
           </div>
         </div>
       </div>
