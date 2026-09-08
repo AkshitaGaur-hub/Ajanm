@@ -12,8 +12,9 @@ import Terms from "./components/Terms.jsx"
 import Refund from "./components/Refund.jsx"
 import Aboutus from "./components/Aboutus"
 import Blogs from "./components/Blogs"
-import Subscribe from "./components/Subscribe.jsx"
 import Blogs_desc from "./components/Blogs_desc"
+import AddBlog from "./components/AddBlog"
+import Subscribe from "./components/Subscribe.jsx"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Route path="/aboutus" element={<Aboutus/>}/>
         <Route path="/blogs" element={<Blogs/>}/>
         <Route path="/blogs_desc/:id" element={<Blogs_desc/>}/>
+        <Route path="/add-blog" element={<AddBlog/>}/>
         <Route path="/subscribe" element={<Subscribe/>}/>
         <Route path="/privacy" element={<Privacy/>}/>
         <Route path="/t&c" element={<Terms/>}/>

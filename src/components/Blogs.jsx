@@ -1,134 +1,163 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import { FaHeart } from "react-icons/fa6"; 
-import { FiMessageCircle } from "react-icons/fi";
-import "./Blogs.css"
-import img from "../assets/blogs-image/spine.png";
-import hormon from "../assets/blogs-image/hormon.png";
-import sleep from "../assets/blogs-image/sleep.png";
-import life from "../assets/blogs-image/life.png";
-import reverse from "../assets/blogs-image/reverse.png";
-
+import React, { useState, useEffect } from 'react';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import { FaHeart, FaPlus } from 'react-icons/fa6';
+import { FiMessageCircle } from 'react-icons/fi';
+import './Blogs.css';
 import { Link } from 'react-router-dom';
-const initialBlogs = [
-    {
-        id: 1,
-        image: hormon,
-        title: 'Yoga for Hormonal Disorders: Balancing Body Chemistry Naturally',
-        count: 0,
-        liked: false,
-    },
-    {
-        id: 2,
-        image: sleep,
-        title: 'Yoga for Sleep Disorders: A Natural Solution for Better Rest',
-        count: 0,
-        liked: false,
-    },
-    {
-        id: 3,
-        image: life,
-        title: 'Yoga as a Treatment for Lifestyle Disorders',
-        count: 0,
-        liked: false,
-    },
-    {
-        id: 4,
-        image: reverse,
-        title: 'Reverse Aging with Yoga: A Holistic Approach to Staying Young',
-        count: 0,
-        liked: false,
-    },
-    {
-        id: 5,
-        image: img,
-        title: 'The Importance of Spine Health and How Yoga Can Keep It Healthy',
-        count: 0,
-        liked: false,
-    },
-];
-
-const BLOG_STORAGE_KEY = 'ajnam-blog-likes';
+import { fetchBlogs, toggleBlogLike, resolveBlogImage } from '../services/api';
 
 const Blogs = () => {
-    const [blogs, setBlogs] = React.useState(() => {
-        const saved = localStorage.getItem(BLOG_STORAGE_KEY);
-        if (!saved) return initialBlogs;
+  const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [togglingId, setTogglingId] = useState(null);
 
-        try {
-            const storedBlogs = JSON.parse(saved);
-            return initialBlogs.map((blog) => {
-                const persisted = storedBlogs.find((item) => item.id === blog.id);
-                return persisted ? { ...blog, liked: persisted.liked, count: persisted.count } : blog;
-            });
-        } catch (err) {
-            console(err)
-            return initialBlogs;
-        }
-    });
+  const loadBlogs = async () => {
+    try {
+      setLoading(true);
+      setError(null);
+      const data = await fetchBlogs();
+      setBlogs(data);
+    } catch (err) {
+      console.error('Error loading blogs:', err);
+      setError('Unable to load articles from the database. Please try again.');
+    } finally {
+      setLoading(false);
+    }
+  };
 
-    React.useEffect(() => {
-        localStorage.setItem(BLOG_STORAGE_KEY, JSON.stringify(blogs));
-    }, [blogs]);
+  useEffect(() => {
+    loadBlogs();
+  }, []);
 
-    const toggleLike = (event, id) => {
-        event.stopPropagation();
-        event.preventDefault();
+  const handleToggleLike = async (event, id) => {
+    event.stopPropagation();
+    event.preventDefault();
 
-        setBlogs((prevBlogs) =>
-            prevBlogs.map((blog) => {
-                if (blog.id !== id) return blog;
-                const liked = !blog.liked;
-                const count = liked ? blog.count + 1 : Math.max(0, blog.count - 1);
-                return { ...blog, liked, count };
-            })
-        );
-    };
+    if (togglingId === id) return; // Prevent double click spam
+    setTogglingId(id);
 
-    return (
-        <>
-            <Navbar />
-            <div className="blogs">
-                <div className="blog_top">
-                    <h1 className="blog_heading ">Blog & Insights</h1>
-                    <p className="blog_para">Explore our latest articles, expert insights, and wellness tips to support your health journey.</p>
-                </div>
+    // Optimistic UI update
+    const previousBlogs = [...blogs];
+    setBlogs((prev) =>
+      prev.map((blog) => {
+        if (blog.id !== id) return blog;
+        const willLike = !blog.liked;
+        const nextCount = willLike ? blog.count + 1 : Math.max(0, blog.count - 1);
+        return { ...blog, liked: willLike, count: nextCount };
+      })
+    );
 
+    try {
+      const updated = await toggleBlogLike(id);
+      setBlogs((prev) =>
+        prev.map((blog) =>
+          blog.id === id ? { ...blog, liked: updated.liked, count: updated.count } : blog
+        )
+      );
+    } catch (err) {
+      console.error('Failed to toggle like on database:', err);
+      // Rollback on failure
+      setBlogs(previousBlogs);
+    } finally {
+      setTogglingId(null);
+    }
+  };
 
-                <div className="blog_card">
-                    {blogs.map((blog) => (
-                        <Link to={`/blogs_desc/${blog.id}`}>
-                        <div className="card1" key={blog.id}>
-                            <img
-                                src={blog.image}
-                                className="yoga_img scale-with-grid"
-                                alt={blog.title}
-                            />
-                            <div className="cardt">
-                                <p className='card-text'><b>{blog.title}</b></p>
-                                <div className="flex justify-between items-center mt-4">
-                                    <div className="like flex items-center gap-2">
-                                        <FaHeart
-                                            className={`heart ${blog.liked ? 'liked' : ''}`}
-                                            onClick={(event) => toggleLike(event, blog.id)}
-                                        />
-                                        <span>{blog.count}</span>
-                                    </div>
-                                    <div className="comment flex items-center gap-2">
-                                        <FiMessageCircle />
-                                        <span>Read more</span>
-                                    </div>
-                                </div>
-                            </div>
+  return (
+    <>
+      <Navbar />
+      <div className="blogs">
+        <div className="blog_top">
+          <div className="flex flex-col items-center text-center px-4">
+            <h1 className="blog_heading">Blog & Insights</h1>
+            <p className="blog_para mt-2 max-w-2xl">
+              Explore our latest articles, expert insights, and wellness tips to support your health journey.
+            </p>
+          </div>
+
+          <div className="blog_actions mt-6 flex justify-center items-center gap-4">
+            <Link to="/add-blog" className="add_blog_btn inline-flex items-center gap-2">
+              <FaPlus className="text-sm" />
+              <span>Write / Add Blog</span>
+            </Link>
+          </div>
+        </div>
+
+        {loading ? (
+          <div className="blog_status_box">
+            <div className="blog_spinner"></div>
+            <p>Loading real-time articles & community insights...</p>
+          </div>
+        ) : error ? (
+          <div className="blog_status_box error_box">
+            <p className="text-red-600 font-medium mb-3">{error}</p>
+            <button onClick={loadBlogs} className="retry_btn">
+              Try Again
+            </button>
+          </div>
+        ) : blogs.length === 0 ? (
+          <div className="blog_status_box">
+            <p className="text-gray-600 text-lg mb-4">No articles found in the database.</p>
+            <Link to="/add-blog" className="add_blog_btn">
+              Be the first to publish a blog
+            </Link>
+          </div>
+        ) : (
+          <div className="blog_card">
+            {blogs.map((blog) => {
+              const imageSrc = resolveBlogImage(blog.image, blog.id);
+              return (
+                <Link to={`/blogs_desc/${blog.id}`} key={blog.id} className="card_link_wrapper">
+                  <div className="card1">
+                    <div className="card_img_wrapper">
+                      <img
+                        src={imageSrc}
+                        className="yoga_img scale-with-grid"
+                        alt={blog.title}
+                        loading="lazy"
+                      />
+                      {blog.category && (
+                        <span className="blog_category_badge">{blog.category}</span>
+                      )}
+                    </div>
+                    <div className="cardt">
+                      <p className="card-text">
+                        <b>{blog.title}</b>
+                      </p>
+                      {blog.summary && (
+                        <p className="card_excerpt text-xs text-gray-500 line-clamp-2 mt-1">
+                          {blog.summary}
+                        </p>
+                      )}
+                      <div className="flex justify-between items-center mt-4 pt-2 border-t border-gray-100">
+                        <div
+                          className="like flex items-center gap-2 cursor-pointer"
+                          onClick={(event) => handleToggleLike(event, blog.id)}
+                          title={blog.liked ? 'Unlike this blog' : 'Like this blog'}
+                        >
+                          <FaHeart className={`heart ${blog.liked ? 'liked' : ''}`} />
+                          <span className="font-semibold text-sm">{blog.count}</span>
                         </div>
-                        </Link>
-                    ))}
-                </div>
-            </div>
-            <Footer />
-        </>
-    )
-}
+                        <div className="comment flex items-center gap-2 text-gray-600 hover:text-orange-500">
+                          <FiMessageCircle />
+                          <span className="text-xs font-medium">
+                            {blog.commentsCount > 0 ? `${blog.commentsCount} comments` : 'Read more'}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        )}
+      </div>
+      <Footer />
+    </>
+  );
+};
 
-export default Blogs
+export default Blogs;
