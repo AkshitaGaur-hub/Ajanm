@@ -67,8 +67,9 @@ const initialBlogsData = [
     author: 'Dr. Ananya Sharma',
     summary: 'Hormonal disorders affect countless individuals globally. Learn how gentle yoga practices, pranayama, and meditation help regulate and balance hormones naturally.',
     image: 'hormon',
-    likes_count: 12,
+    likes_count: 0,
     content: JSON.stringify({
+
       para1: 'Hormonal disorders affect countless individuals globally, manifesting as thyroid issues, diabetes, adrenal fatigue, and reproductive conditions like polycystic ovary syndrome (PCOS) and endometriosis. These imbalances can disrupt daily life, causing symptoms from fatigue and weight fluctuation to severe mood swings and infertility. Traditional treatments often include medication or invasive procedures, but yoga offers a natural, gentle alternative to help regulate and balance hormones.',
       title1: 'Understanding Hormonal Disorders',
       para2: "Hormones are the body's chemical messengers, influencing nearly every physiological process, including growth, metabolism, fertility, and mood. When hormones are out of balance, it can lead to significant health issues. Hormonal disorders can stem from various causes, including stress, poor diet, environmental toxins, and genetics.",
@@ -103,7 +104,7 @@ const initialBlogsData = [
     author: 'Vikram Joshi',
     summary: 'Sleep disorders like insomnia and restless nights can severely compromise immunity and well-being. Explore how yoga restores the nervous system for deep, restful sleep.',
     image: 'sleep',
-    likes_count: 8,
+    likes_count: 0,
     content: JSON.stringify({
       para1: 'Sleep disorders, which include issues like insomnia, sleep apnea, restless leg syndrome, and irregular sleep-wake cycles, affect millions of people worldwide. These issues can significantly impact overall health, reducing quality of life and increasing the risk of various health problems. Yoga, with its holistic approach to health and well-being, offers a gentle yet effective means to improve sleep quality and resolve sleep disturbances.',
       title1: 'Understanding Sleep Disorders',
@@ -139,7 +140,7 @@ const initialBlogsData = [
     author: 'Pooja Mehta',
     summary: 'Combat hypertension, sedentary stress, and obesity through the ancient yet modern practice of yoga, mindful breathing, and wholesome habits.',
     image: 'life',
-    likes_count: 15,
+    likes_count: 0,
     content: JSON.stringify({
       para1: "In the modern world, where the pace of life is continually accelerating, lifestyle disorders such as stress, obesity, diabetes, and cardiovascular diseases have become increasingly common. These conditions are primarily influenced by daily habits and choices, particularly physical inactivity, poor diet, stress, and improper sleep patterns. However, yoga, an ancient practice rooted in Indian philosophy, offers a holistic approach to combating these disorders by promoting a balanced lifestyle and improving overall health.",
       title1: 'Understanding Lifestyle Disorders',
@@ -175,7 +176,7 @@ const initialBlogsData = [
     author: 'Dr. Rohan Sen',
     summary: 'Discover how daily yoga, cellular detoxification, and conscious breathwork preserve elasticity, mental sharpness, and youthfulness naturally.',
     image: 'reverse',
-    likes_count: 21,
+    likes_count: 0,
     content: JSON.stringify({
       para1: 'Aging is an inevitable process, but how we age is profoundly influenced by our lifestyle choices. While various products and procedures promise the secret to eternal youth, yoga offers a holistic and sustainable approach to not only slowing down the aging process but also reversing some of its effects. Through a combination of physical postures, breathing exercises, and meditation, yoga nurtures the body, mind, and spirit, offering a blueprint for aging gracefully and healthily.',
       title1: 'The Science Behind Yoga and Anti-Aging',
@@ -209,7 +210,7 @@ const initialBlogsData = [
     author: 'Aarav Patel',
     summary: 'The human spine supports every movement we make. Learn effective asanas to align vertebrae, relieve chronic stiffness, and keep your back resilient.',
     image: 'spine',
-    likes_count: 19,
+    likes_count: 0,
     content: JSON.stringify({
       para1: 'The human spine is a crucial yet often overlooked component of overall health and well-being. Acting as the main structural support for the body, it protects the spinal cord, supports the head, and provides flexibility and mobility. Unfortunately, due to modern lifestyle habits such as prolonged sitting and poor posture, spinal health issues are increasingly common. This is where yoga, an ancient practice with modern relevance, steps in as an effective tool to promote spine health and prevent related disorders.',
       title1: 'Understanding Spine Health',
@@ -245,17 +246,7 @@ if (Number(checkBlogsCount.count) === 0) {
     insertBlog.run(b.id, b.title, b.summary, b.content, b.image, b.category, b.author, b.likes_count);
   }
 
-  // Seed initial sample comments
-  const insertComment = db.prepare(`
-    INSERT INTO comments (blog_id, name, email, website, comment, created_at)
-    VALUES (?, ?, ?, ?, ?, ?)
-  `);
-
-  insertComment.run(1, 'Neha Gupta', 'neha@example.com', '', 'Pranayama and regular yoga sessions have genuinely helped ease my hormonal fluctuations. Such a detailed and motivating article!', '2026-03-01 14:20:00');
-  insertComment.run(2, 'Rahul Verma', 'rahul.v@example.com', 'https://rahulwellness.org', 'Doing 10 minutes of gentle forward bends and deep breathing before bed has completely transformed my sleep routine.', '2026-03-02 09:15:00');
-  insertComment.run(5, 'Priya Sharma', 'priya.s@example.com', '', 'The Cat-Cow and Bridge pose recommendations significantly reduced my lower back stiffness after long desk hours. Thank you Ajnam!', '2026-03-03 16:45:00');
-
-  console.log('Seeded initial blogs and comments into SQLite database.');
+  console.log('Seeded initial blogs into SQLite database with 0 initial likes.');
 }
 
 // Data Access API
@@ -275,7 +266,7 @@ export const blogDb = {
         (SELECT COUNT(*) FROM comments c WHERE c.blog_id = b.id) AS comments_count,
         (SELECT COUNT(*) FROM blog_likes bl WHERE bl.blog_id = b.id AND bl.client_id = ?) AS user_liked
       FROM blogs b
-      ORDER BY b.id DESC
+      ORDER BY b.id ASC
     `);
     const rows = blogsQuery.all(clientId);
     return rows.map((r) => ({
