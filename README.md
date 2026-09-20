@@ -169,6 +169,8 @@ flowchart LR
     F --> G[Navigate to /blogs_desc/:id]
     G --> H[Article Live for Global Readers]
 ```
+### Program Workflow
+<img width="531" height="582" alt="image" src="https://github.com/user-attachments/assets/1ad08e72-7bdf-4c5c-b649-b6dde1dfba51" />
 
 ---
 
